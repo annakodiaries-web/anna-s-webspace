@@ -1,12 +1,18 @@
 # Annako (@dear_annako)
 
-> Beauty and travel content creator. Makes GRWMs, skincare routines, honest product videos and travel vlogs. Open to gifted PR and paid UGC.
+> Beauty and travel content creator. Makes GRWMs, skincare routines, honest product videos on TikTok and travel vlogs on YouTube. Open to gifted PR and paid UGC.
 
-Draft only. No major AI search provider has said it reads llms.txt (see the report). Harmless, 5 minutes, low priority.
+## Start here
+- [Portfolio and rate card](https://dearannako.com/): videos, brands worked with, UGC rates, contact
+- [Plain-text version of the portfolio](https://dearannako.com/index.md): who, rates, brands, every video link
+- [Media kit as JSON](https://dearannako.com/media-kit.json): rates, add-ons, brands, profiles, contact in machine-readable form
 
-## Pages
-- [Portfolio and rate card](https://dearannako.com/): videos, brands worked with, UGC rates (single video $120, 3-video bundle $300, posted on TikTok $150), contact
-- [Free creator portfolio template](https://dearannako.com/template/): in-browser editor, 7 styles, download your own site, free
+## Rates (USD, starting points)
+- Single UGC video: $120 (15 to 60 seconds, concept + script, raw footage, 1 round of edits)
+- 3-video bundle: $300
+- Posted on TikTok @dear_annako: $150 per post
+- Add-ons: paid ad usage 30 days +$50, extra hook +$25, 48-hour rush +$30
+- Gifted PR and custom deals: ask by email
 
 ## Profiles
 - [TikTok @dear_annako](https://www.tiktok.com/@dear_annako)
@@ -15,3 +21,6 @@ Draft only. No major AI search provider has said it reads llms.txt (see the repo
 
 ## Contact
 - annako.diaries@gmail.com
+
+## Optional
+- [Free creator portfolio template](https://dearannako.com/template/): in-browser editor, 7 styles, download your own site

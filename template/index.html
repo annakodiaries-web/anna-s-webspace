@@ -30,7 +30,11 @@
   "applicationCategory": "DesignApplication",
   "operatingSystem": "Any (web browser)",
   "browserRequirements": "Requires JavaScript",
-  "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"},
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  },
   "inLanguage": "en",
   "author": {
     "@type": "Person",
@@ -42,7 +46,94 @@
       "https://www.instagram.com/annako.10/",
       "https://www.youtube.com/@annako.archive"
     ]
+  },
+  "featureList": [
+    "No sign-up: edit in your browser",
+    "7 style concepts: Clean, Clipboard, Lace & polka, Gingham diary, Newspaper, Coquette, Storybook",
+    "13 colour palettes plus custom colours",
+    "10 font styles",
+    "9 background patterns and 8 photo frames",
+    "Draggable stickers: embroidered patches, washi tape, binder clips, buttons, chrome, wax seals, fabric corners, labels",
+    "Sections for Get to know me, quick numbers, brands, videos, services, rate card and contact",
+    "Download a standalone index.html website or a long PNG image",
+    "Edits saved in your browser"
+  ],
+  "isAccessibleForFree": true,
+  "creator": {
+    "@type": "Person",
+    "name": "Annako",
+    "alternateName": "dear_annako",
+    "url": "https://dearannako.com/",
+    "sameAs": [
+      "https://www.tiktok.com/@dear_annako",
+      "https://www.instagram.com/annako.10/",
+      "https://www.youtube.com/@annako.archive"
+    ]
   }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Is this creator portfolio template really free?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. It is free to use, there is no sign-up and no account, and the website you download is yours to keep."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do I need to code?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. You edit the page directly in your browser: tap any text to rewrite it, tap a photo to swap it, and add or remove sections like Get to know me, quick numbers, brands, videos, services, rate card and contact."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I change the colours, fonts and style?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Choose from 7 style concepts (Clean, Clipboard, Lace & polka, Gingham diary, Newspaper, Coquette and Storybook), 13 colour palettes or your own custom colours, 10 font styles, 9 background patterns and 8 photo frames. You can also drag stickers such as embroidered patches, washi tape, binder clips, buttons, chrome, wax seals, fabric corners and labels anywhere on the page."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I put my portfolio online?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Press Save, then Download my website to get a single index.html file. Put it in a folder, go to app.netlify.com/drop and drag the folder onto the page for a free link. You can also save the page as a long PNG image to send to brands."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does it work on my phone?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, the editor and the portfolio you make are built to work on a phone. Editing on a computer is easier for uploading photos and for the Netlify Drop step."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Where are my edits stored?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Your edits are saved in your own browser on your device, not on a server. Download your website when you are done so you have a copy, because clearing your browser data can erase the saved draft."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Who made this template?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It was made by Annako (@dear_annako), a UGC and beauty creator. Exported sites keep a small \"template by @dear_annako\" credit link at the bottom."
+      }
+    }
+  ]
 }
 </script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -311,6 +402,15 @@ body.editing{padding-bottom:110px}
 .stkbar{position:absolute;z-index:40;display:flex;gap:4px;background:var(--ed-ink);border-radius:999px;padding:4px;box-shadow:0 6px 18px rgba(0,0,0,.2)}
 .stkbar button{all:unset;color:#fff;font:600 14px/1 system-ui,sans-serif;width:32px;height:32px;display:grid;place-items:center;border-radius:50%;cursor:pointer}
 .stkbar button:hover,.stkbar button:focus-visible{background:rgba(255,255,255,.18)}
+.about{max-width:760px;margin:0 auto;padding:28px 20px 12px;color:var(--ed-ink);font:400 15px/1.55 system-ui,sans-serif}
+.about h2{font-size:20px;line-height:1.25;margin:0 0 10px}
+.about h3{font-size:13px;letter-spacing:.06em;text-transform:uppercase;color:var(--ed-mute);margin:20px 0 8px}
+.about p{margin:0 0 8px}
+.about a{color:var(--ed-ink);font-weight:700}
+.about ol{margin:0;padding-left:20px}
+.about details{border:1.5px solid var(--ed-ink);border-radius:14px;background:var(--ed-paper);padding:10px 14px;margin-bottom:8px}
+.about summary{cursor:pointer;font-weight:700}
+.about details p{margin:8px 0 0;color:var(--ed-mute)}
 /* dock */
 .dock{position:fixed;left:50%;transform:translateX(-50%);bottom:calc(14px + env(safe-area-inset-bottom,0px));z-index:50;display:flex;gap:4px;background:var(--ed-ink);padding:6px;border-radius:999px;box-shadow:0 10px 30px rgba(0,0,0,.25);max-width:calc(100% - 24px)}
 .dock button{all:unset;cursor:pointer;color:#fff;font:600 14px/1 system-ui,sans-serif;padding:11px 14px;border-radius:999px;white-space:nowrap;display:flex;align-items:center;gap:6px}
@@ -456,7 +556,7 @@ body.editing{padding-bottom:110px}
     <a class="btn" data-link data-mail href="mailto:you@email.com" data-e>Email me</a>
   </div>
 
-  <p class="credit">template by <a href="https://www.tiktok.com/@dear_annako" target="_blank" rel="noopener">@dear_annako</a> ♡</p>
+  <p class="credit">template by <a href="https://dearannako.com/" target="_blank" rel="noopener">@dear_annako</a> · <a href="https://www.tiktok.com/@dear_annako" target="_blank" rel="noopener">TikTok</a> ♡</p>
 </div>
 
 <!-- editor UI (removed from the saved site) -->
@@ -502,6 +602,25 @@ body.editing{padding-bottom:110px}
     <button class="mini" type="button" id="resetBtn">Reset to the blank template</button>
     <span id="resetConfirm" hidden> <span style="font-size:14px">This erases your edits.</span> <button class="mini" type="button" id="resetYes" style="background:var(--ed-pink);color:#fff">Yes, reset</button></span>
   </div>
+
+  <section class="about" id="about-template" aria-labelledby="about-h">
+    <h2 id="about-h">Free creator portfolio template: UGC and PR media kit, no sign-up</h2>
+    <p>This is a free, in-browser template for building a UGC, beauty or lifestyle creator portfolio. The page above is a sample you can edit. Pick a style, colours, fonts and stickers, rewrite the text, add your photos, then download your own one-file website or save it as an image to send to brands. Template by <a href="https://dearannako.com/">Annako (@dear_annako)</a>.</p>
+    <h3>How it works</h3>
+    <ol>
+      <li>Tap any text or photo on the sample page to edit it.</li>
+      <li>Use the bar at the bottom to change the style, colours, fonts and stickers.</li>
+      <li>Press Save to download your website (index.html) or a PNG, then put it online free with Netlify Drop.</li>
+    </ol>
+    <h3>Questions</h3>
+    <details><summary>Is this creator portfolio template really free?</summary><p>Yes. It is free to use, there is no sign-up and no account, and the website you download is yours to keep.</p></details>
+    <details><summary>Do I need to code?</summary><p>No. You edit the page directly in your browser: tap any text to rewrite it, tap a photo to swap it, and add or remove sections like Get to know me, quick numbers, brands, videos, services, rate card and contact.</p></details>
+    <details><summary>Can I change the colours, fonts and style?</summary><p>Yes. Choose from 7 style concepts (Clean, Clipboard, Lace &amp; polka, Gingham diary, Newspaper, Coquette and Storybook), 13 colour palettes or your own custom colours, 10 font styles, 9 background patterns and 8 photo frames. You can also drag stickers such as embroidered patches, washi tape, binder clips, buttons, chrome, wax seals, fabric corners and labels anywhere on the page.</p></details>
+    <details><summary>How do I put my portfolio online?</summary><p>Press Save, then Download my website to get a single index.html file. Put it in a folder, go to app.netlify.com/drop and drag the folder onto the page for a free link. You can also save the page as a long PNG image to send to brands.</p></details>
+    <details><summary>Does it work on my phone?</summary><p>Yes, the editor and the portfolio you make are built to work on a phone. Editing on a computer is easier for uploading photos and for the Netlify Drop step.</p></details>
+    <details><summary>Where are my edits stored?</summary><p>Your edits are saved in your own browser on your device, not on a server. Download your website when you are done so you have a copy, because clearing your browser data can erase the saved draft.</p></details>
+    <details><summary>Who made this template?</summary><p>It was made by Annako (@dear_annako), a UGC and beauty creator. Exported sites keep a small "template by @dear_annako" credit link at the bottom.</p></details>
+  </section>
 
   <nav class="dock" aria-label="Editor">
     <button type="button" data-panel="p-styles"><span class="ico">🎀</span><span class="txt">Styles</span></button>

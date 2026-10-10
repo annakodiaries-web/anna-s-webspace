@@ -1,0 +1,223 @@
+{
+  "name": "Annako",
+  "legal_name_on_site": "Anna Dang",
+  "url": "https://dearannako.com/",
+  "positioning": "Beauty + travel creator",
+  "summary": "Hi, I'm Anna. I make GRWMs, routines and honest product videos on TikTok, and travel vlogs on YouTube. Open to gifted PR and paid UGC.",
+  "open_to": [
+    "Gifted PR",
+    "Paid UGC"
+  ],
+  "contact": {
+    "email": "annako.diaries@gmail.com"
+  },
+  "profiles": [
+    {
+      "platform": "TikTok",
+      "handle": "@dear_annako",
+      "url": "https://www.tiktok.com/@dear_annako"
+    },
+    {
+      "platform": "Instagram",
+      "handle": "@annako.10",
+      "url": "https://www.instagram.com/annako.10/"
+    },
+    {
+      "platform": "YouTube",
+      "handle": "@annako.archive",
+      "url": "https://www.youtube.com/@annako.archive"
+    }
+  ],
+  "rates_usd": [
+    {
+      "name": "Single UGC video",
+      "price": 120,
+      "unit": "per video",
+      "includes": [
+        "15 to 60 seconds",
+        "Concept + script",
+        "Raw footage included",
+        "1 round of edits"
+      ]
+    },
+    {
+      "name": "3-video bundle",
+      "price": 300,
+      "unit": "bundle",
+      "includes": [
+        "3 videos, different hooks or angles",
+        "Raw footage included",
+        "2 rounds of edits"
+      ]
+    },
+    {
+      "name": "Posted on my TikTok",
+      "price": 150,
+      "unit": "per post",
+      "includes": [
+        "Posted to @dear_annako",
+        "Product linked",
+        "Raw footage included"
+      ]
+    },
+    {
+      "name": "Gifted PR or custom",
+      "price": "Let's talk",
+      "unit": "",
+      "includes": [
+        "Product-for-content collabs",
+        "Bundles and long-term deals",
+        "Tell me what you need"
+      ]
+    }
+  ],
+  "add_ons_usd": [
+    {
+      "name": "Paid ad usage, 30 days",
+      "price_usd": 50
+    },
+    {
+      "name": "Extra hook",
+      "price_usd": 25
+    },
+    {
+      "name": "48-hr rush",
+      "price_usd": 30
+    }
+  ],
+  "rates_note": "Rates are a starting point. Bundles and gifted collabs are always open to chat.",
+  "brands_worked_with": [
+    "Derma Factory",
+    "Beauty of Joseon",
+    "ISNTREE",
+    "Dr.Cellx",
+    "JOOCYEE",
+    "TIRTIR",
+    "celimax",
+    "YesStyle",
+    "CaraSeoul",
+    "dasique"
+  ],
+  "videos": [
+    {
+      "title": "Kyoto vlog",
+      "category": "Travel",
+      "brand": null,
+      "url": "https://www.tiktok.com/@dear_annako/video/7683346853223632141"
+    },
+    {
+      "title": "Tokyo vlog ep. 1",
+      "category": "Travel",
+      "brand": null,
+      "url": "https://www.tiktok.com/@dear_annako/video/7677731089124805901"
+    },
+    {
+      "title": "Tokyo vlog day 3",
+      "category": "Travel",
+      "brand": null,
+      "url": "https://www.tiktok.com/@dear_annako/video/7678150848450465037"
+    },
+    {
+      "title": "GRWM soft glam makeup",
+      "category": "Beauty",
+      "brand": null,
+      "url": "https://www.tiktok.com/@dear_annako/video/7685495018265611534"
+    },
+    {
+      "title": "GRWM igari makeup",
+      "category": "Beauty",
+      "brand": null,
+      "url": "https://www.tiktok.com/@dear_annako/video/7682536696470097166"
+    },
+    {
+      "title": "Heartleaf cleanser that actually foams",
+      "category": "Beauty",
+      "brand": "CaraSeoul",
+      "url": "https://www.tiktok.com/@dear_annako/video/7694882496487410958"
+    },
+    {
+      "title": "Best tinted sunscreen ever?",
+      "category": "Beauty",
+      "brand": "Beauty of Joseon",
+      "url": "https://www.tiktok.com/@dear_annako/video/7694349349714677005"
+    },
+    {
+      "title": "JOOCYEE aura glazed blush + highlighter",
+      "category": "Beauty",
+      "brand": "JOOCYEE",
+      "url": "https://www.tiktok.com/@dear_annako/video/7694081245541600525"
+    },
+    {
+      "title": "Beauty of Joseon tinted mineral sunscreen",
+      "category": "Beauty",
+      "brand": "Beauty of Joseon",
+      "url": "https://www.tiktok.com/@dear_annako/video/7693994312425655565"
+    },
+    {
+      "title": "Dr.Cellx pore reset PDRN mask",
+      "category": "Beauty",
+      "brand": "Dr.Cellx",
+      "url": "https://www.tiktok.com/@dear_annako/video/7693578527928585486"
+    },
+    {
+      "title": "3 dasique products for $37 at Target",
+      "category": "Beauty",
+      "brand": "dasique",
+      "url": "https://www.tiktok.com/@dear_annako/video/7693338325662436621"
+    },
+    {
+      "title": "Derma Factory retinal cream",
+      "category": "Beauty",
+      "brand": "Derma Factory",
+      "url": "https://www.tiktok.com/@dear_annako/video/7693201549572508942"
+    },
+    {
+      "title": "Derma Factory niacinamide 20%",
+      "category": "Beauty",
+      "brand": "Derma Factory",
+      "url": "https://www.tiktok.com/@dear_annako/video/7693201080401857805"
+    },
+    {
+      "title": "ISNTREE yam root milky toner",
+      "category": "Beauty",
+      "brand": "ISNTREE",
+      "url": "https://www.tiktok.com/@dear_annako/video/7691166676557237518"
+    },
+    {
+      "title": "ISNTREE yam root routine",
+      "category": "Beauty",
+      "brand": "ISNTREE",
+      "url": "https://www.tiktok.com/@dear_annako/video/7690843755758308621"
+    },
+    {
+      "title": "He walked in at the wrong time",
+      "category": "Beauty",
+      "brand": "celimax",
+      "url": "https://www.tiktok.com/@dear_annako/video/7689485682095525133"
+    },
+    {
+      "title": "JOOCYEE dewy blush",
+      "category": "Beauty",
+      "brand": "JOOCYEE",
+      "url": "https://www.tiktok.com/@dear_annako/video/7688565417610136845"
+    },
+    {
+      "title": "My bf's skincare budget for me",
+      "category": "Beauty",
+      "brand": null,
+      "url": "https://www.tiktok.com/@dear_annako/video/7692111901928541453"
+    },
+    {
+      "title": "2000s Shin Min-ah makeup",
+      "category": "Beauty",
+      "brand": null,
+      "url": "https://www.tiktok.com/@dear_annako/video/7685057262217481486"
+    }
+  ],
+  "discount_code": {
+    "store": "YesStyle",
+    "code": "ANNAKO10"
+  },
+  "human_page": "https://dearannako.com/",
+  "markdown_page": "https://dearannako.com/index.md"
+}
