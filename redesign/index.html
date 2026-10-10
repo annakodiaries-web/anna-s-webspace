@@ -1,0 +1,390 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Annako's Webspace</title>
+<meta name="description" content="Annako, K-beauty and travel creator. TikTok @dear_annako. Open to gifted PR and paid UGC. Email annako.diaries@gmail.com.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,800&family=Figtree:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#ffe6ee;        /* strawberry milk */
+  --paper:#fffafc;
+  --ink:#2a1622;
+  --pink:#ff6f9f;
+  --matcha:#cfe86a;
+  --lilac:#d9ccff;
+  --butter:#ffe27a;
+  --line:2px solid var(--ink);
+  --pop:4px 4px 0 var(--ink);
+}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font:400 16px/1.55 'Figtree',system-ui,sans-serif;overflow-x:hidden;-webkit-text-size-adjust:100%}
+img{max-width:100%;display:block}
+a{color:inherit}
+h1,h2,h3,.disp{font-family:'Bricolage Grotesque','Figtree',sans-serif;font-weight:800;letter-spacing:-.02em;line-height:1}
+.wrap{max-width:1080px;margin:0 auto;padding:0 16px}
+section{padding:44px 0}
+.tag{display:inline-block;font-weight:700;font-size:13px;border:var(--line);border-radius:99px;padding:3px 12px;background:var(--paper)}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:48px;padding:0 22px;border:var(--line);border-radius:99px;background:var(--pink);color:var(--ink);font:700 16px 'Figtree',sans-serif;text-decoration:none;box-shadow:var(--pop);cursor:pointer;transition:transform .12s,box-shadow .12s}
+.btn:active{transform:translate(3px,3px);box-shadow:1px 1px 0 var(--ink)}
+@media(hover:hover){.btn:hover{transform:translate(-1px,-1px);box-shadow:5px 5px 0 var(--ink)}}
+.btn.alt{background:var(--paper)}
+.btn.sm{min-height:40px;padding:0 16px;font-size:14px}
+:focus-visible{outline:3px solid var(--ink);outline-offset:3px}
+
+/* top bar */
+.bar{position:sticky;top:0;z-index:20;background:rgba(255,230,238,.92);backdrop-filter:blur(8px);border-bottom:var(--line)}
+.bar .wrap{display:flex;align-items:center;justify-content:space-between;height:60px}
+.logo{font:800 24px 'Bricolage Grotesque',sans-serif;text-decoration:none;letter-spacing:-.03em}
+.logo i{font-style:normal;color:var(--pink)}
+.bar nav{display:none;gap:22px;font-weight:700}
+.bar nav a{text-decoration:none}
+@media(min-width:760px){.bar nav{display:flex}}
+
+/* hero */
+.hero{padding-top:28px}
+.hero .grid{display:grid;gap:28px;grid-template-columns:minmax(0,1fr)}.hero .grid>*{min-width:0}
+h1{font-size:clamp(44px,13vw,92px);line-height:.92}
+h1 mark{background:var(--matcha);padding:0 .12em;border-radius:.25em;display:inline-block;transform:rotate(-2deg)}
+h1 em{font-style:normal;color:var(--pink);-webkit-text-stroke:0}
+.lede{font-size:18px;margin:18px 0 22px;max-width:34ch}
+.cta{display:flex;flex-wrap:wrap;gap:12px}
+.mail{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin-top:18px;font-weight:500}
+.mail code{font:700 15px 'Figtree',sans-serif;background:var(--paper);border:var(--line);border-radius:12px;padding:6px 10px;user-select:all;-webkit-user-select:all;word-break:break-all}
+.copy{min-height:36px;padding:0 14px;border:var(--line);border-radius:99px;background:var(--butter);font:700 14px 'Figtree',sans-serif;cursor:pointer}
+.copy.done{background:var(--matcha)}
+.photo{position:relative;width:min(78%,340px);justify-self:center}
+.photo .frame{border:var(--line);border-radius:999px 999px 28px 28px;overflow:hidden;box-shadow:8px 8px 0 var(--ink);background:var(--lilac)}
+.photo img{width:100%;height:auto;aspect-ratio:3/4;object-fit:cover;object-position:50% 40%}
+.sticker{position:absolute;border:var(--line);border-radius:99px;padding:8px 14px;font:800 15px/1.1 'Bricolage Grotesque',sans-serif;box-shadow:3px 3px 0 var(--ink);white-space:nowrap}
+.s1{background:var(--matcha);left:-14px;top:18%;transform:rotate(-8deg)}
+.s2{background:var(--butter);right:-14px;bottom:20%;transform:rotate(6deg)}
+@media(min-width:760px){
+  .hero .grid{grid-template-columns:1.25fr 1fr;align-items:center;gap:48px}
+  section{padding:72px 0}
+  .photo{width:100%;max-width:380px}
+}
+
+/* stats: uneven blobs, not identical cards */
+.stats{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:12px;margin-top:22px}
+.stat{border:var(--line);padding:16px 14px;background:var(--paper)}
+.stat b{display:block;font:800 clamp(30px,8vw,46px)/1 'Bricolage Grotesque',sans-serif;letter-spacing:-.03em}
+.stat span{font-size:13.5px;font-weight:500;display:block;margin-top:4px;line-height:1.3}
+.stat:nth-child(1){grid-column:span 6;background:var(--pink);border-radius:28px 28px 28px 8px}
+.stat:nth-child(2){grid-column:span 3;background:var(--matcha);border-radius:8px 28px 28px 28px}
+.stat:nth-child(3){grid-column:span 3;background:var(--lilac);border-radius:28px 8px 28px 28px}
+.stat:nth-child(4){grid-column:span 3;border-radius:28px}
+.stat:nth-child(5){grid-column:span 3;background:var(--butter);border-radius:28px 28px 8px 28px}
+.stat:nth-child(6){grid-column:span 6;border-radius:99px;display:flex;gap:12px;align-items:center;padding:12px 22px}
+.stat:nth-child(6) b{font-size:24px}
+.src{font-size:13px;margin-top:12px;opacity:.75}
+@media(min-width:760px){
+  .stats{grid-template-columns:repeat(12,minmax(0,1fr))}
+  .stat:nth-child(1){grid-column:span 5;grid-row:span 2;display:flex;flex-direction:column;justify-content:flex-end;min-height:200px}
+  .stat:nth-child(1) b{font-size:72px}
+  .stat:nth-child(2),.stat:nth-child(3){}
+  .stat:nth-child(2){grid-column:span 4}.stat:nth-child(3){grid-column:span 3}
+  .stat:nth-child(4){grid-column:span 4}.stat:nth-child(5){grid-column:span 3}
+  .stat:nth-child(6){grid-column:span 12}
+}
+
+/* shared heading */
+.head{display:flex;flex-wrap:wrap;align-items:end;justify-content:space-between;gap:12px;margin-bottom:20px}
+h2{font-size:clamp(34px,9vw,60px)}
+.sub{max-width:44ch}
+
+/* brands */
+.brands{display:flex;flex-wrap:wrap;gap:10px}
+.brand{display:inline-flex;align-items:center;gap:8px;border:var(--line);border-radius:99px;background:var(--paper);padding:6px 16px 6px 8px;font-weight:700;min-height:44px}
+.brand img{width:30px;height:30px;border-radius:50%;object-fit:cover;border:1.5px solid var(--ink)}
+.brand.noimg{padding-left:16px}
+.brand:nth-child(3n+1){transform:rotate(-1.5deg)}.brand:nth-child(3n){transform:rotate(1.5deg)}
+
+/* work rail */
+.tabs{display:flex;gap:8px;margin-bottom:16px;flex-wrap:wrap}
+.tabs button{min-height:40px;padding:0 18px;border:var(--line);border-radius:99px;background:var(--paper);font:700 15px 'Figtree',sans-serif;cursor:pointer}
+.tabs button[aria-pressed=true]{background:var(--ink);color:var(--paper)}
+.rail{display:flex;gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;padding:6px 16px 22px;margin:0 -16px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+.rail::-webkit-scrollbar{display:none}
+.vid{flex:0 0 62%;max-width:230px;scroll-snap-align:start;text-decoration:none;display:block}
+.vid .th{position:relative;border:var(--line);border-radius:22px;overflow:hidden;aspect-ratio:9/16;background:var(--lilac);box-shadow:var(--pop)}
+.vid:nth-child(even) .th{border-radius:22px 22px 22px 80px}
+.vid:nth-child(3n) .th{border-radius:80px 22px 22px 22px}
+.vid img{width:100%;height:100%;object-fit:cover}
+.vid .play{position:absolute;right:10px;bottom:10px;width:40px;height:40px;border-radius:50%;background:var(--paper);border:var(--line);display:grid;place-items:center;font-size:14px;padding-left:3px}
+.vid h3{font:700 15px/1.25 'Figtree',sans-serif;letter-spacing:0;margin:12px 2px 2px}
+.vid small{font-size:13px;opacity:.8;margin-left:2px}
+.vid small b{background:var(--matcha);border-radius:99px;padding:1px 8px;font-weight:700;opacity:1}
+@media(min-width:760px){.rail{padding-left:0;padding-right:0;margin:0}.vid{flex-basis:210px}}
+@media(hover:hover){.vid:hover .th{transform:translateY(-4px) rotate(-1deg)}.vid .th{transition:transform .15s}}
+.hint{font-size:13px;opacity:.7}
+
+/* rates */
+.rates{display:grid;gap:16px;grid-template-columns:minmax(0,1fr)}
+.rate{display:block;text-decoration:none;border:var(--line);padding:22px 20px 20px;background:var(--paper);box-shadow:var(--pop);position:relative;transition:transform .12s,box-shadow .12s}
+.rate:active{transform:translate(3px,3px);box-shadow:1px 1px 0 var(--ink)}
+@media(hover:hover){.rate:hover{transform:translate(-2px,-2px);box-shadow:6px 6px 0 var(--ink)}}
+.rate:nth-child(1){border-radius:30px 30px 8px 30px;background:var(--lilac)}
+.rate:nth-child(2){border-radius:30px;background:var(--pink)}
+.rate:nth-child(3){border-radius:8px 30px 30px 30px;background:var(--matcha)}
+.rate:nth-child(4){border-radius:30px 8px 30px 30px;background:var(--butter)}
+.rate h3{font-size:24px;margin-bottom:6px}
+.price{font:800 44px/1 'Bricolage Grotesque',sans-serif;letter-spacing:-.03em}
+.price small{font:500 15px 'Figtree',sans-serif;letter-spacing:0;margin-left:6px}
+.rate ul{list-style:none;padding:0;margin:14px 0 18px}
+.rate li{padding-left:22px;position:relative;margin:4px 0}
+.rate li::before{content:"";position:absolute;left:2px;top:.5em;width:10px;height:6px;border-left:2.5px solid var(--ink);border-bottom:2.5px solid var(--ink);transform:rotate(-45deg)}
+.rate .go{display:inline-flex;align-items:center;gap:6px;font-weight:700;border-bottom:2px solid var(--ink)}
+@media(min-width:760px){.rates{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:1000px){.rates{grid-template-columns:repeat(4,1fr)}}
+.addons{display:flex;flex-wrap:wrap;gap:8px;margin-top:22px}
+.addons .tag{background:var(--paper)}
+.note{margin-top:16px;max-width:60ch}
+
+/* about */
+.about{display:grid;grid-template-columns:minmax(0,1fr);gap:24px;align-items:center}
+.about .pic{border:var(--line);border-radius:28px;overflow:hidden;box-shadow:var(--pop);max-width:300px;transform:rotate(-2deg);background:var(--paper)}
+.about .pic img{width:100%;height:auto;aspect-ratio:4/5;object-fit:cover}
+.about p{max-width:52ch;margin-top:12px}
+.code{display:inline-flex;align-items:center;gap:10px;flex-wrap:wrap;margin-top:16px;border:var(--line);border-radius:20px;background:var(--paper);padding:10px 12px 10px 16px}
+@media(min-width:760px){.about{grid-template-columns:300px 1fr;gap:56px}}
+
+/* contact */
+.contact{background:var(--ink);color:var(--paper);border-radius:36px 36px 0 0;margin-top:20px}
+.contact .wrap{padding-top:8px}
+.contact h2{font-size:clamp(40px,12vw,96px);line-height:.95}
+.contact h2 mark{background:var(--pink);color:var(--ink);padding:0 .12em;border-radius:.25em;display:inline-block;transform:rotate(-2deg)}
+.contact p{margin:16px 0 22px;max-width:44ch}
+.contact .mail code{background:var(--paper);color:var(--ink)}
+.socials{display:flex;flex-wrap:wrap;gap:10px;margin-top:28px}
+.socials a{color:var(--paper);border:2px solid var(--paper);border-radius:99px;padding:8px 16px;text-decoration:none;font-weight:700;min-height:44px;display:inline-flex;align-items:center}
+.foot{font-size:13px;opacity:.7;margin-top:28px;padding-bottom:28px}
+.contact{padding-bottom:0}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+
+<header class="bar">
+  <div class="wrap">
+    <a class="logo" href="#top" aria-label="Annako home">anna<i>ko</i></a>
+    <nav aria-label="Sections">
+      <a href="#work">Videos</a><a href="#rates">Rates</a><a href="#about">About</a>
+    </nav>
+    <a class="btn sm" href="mailto:annako.diaries@gmail.com?subject=Collab%20with%20Annako">Email me</a>
+  </div>
+</header>
+
+<main id="top">
+<section class="hero">
+  <div class="wrap grid">
+    <div>
+      <span class="tag">K-beauty + travel creator</span>
+      <h1 style="margin-top:14px">Skincare <mark>tested</mark> on <em>real</em> skin.</h1>
+      <p class="lede">Hi, I'm Anna. I make GRWMs, routines and honest product videos on TikTok, and travel vlogs on YouTube. Open to gifted PR and paid UGC.</p>
+      <div class="cta">
+        <a class="btn" href="mailto:annako.diaries@gmail.com?subject=Collab%20with%20Annako">Email me</a>
+        <a class="btn alt" href="#work">Watch my videos</a>
+      </div>
+      <div class="mail">
+        <code id="em1">annako.diaries@gmail.com</code>
+        <button class="copy" type="button" data-copy="annako.diaries@gmail.com">Copy</button>
+      </div>
+    </div>
+    <div class="photo">
+      <div class="frame"><img src="assets/hero.jpg" alt="Anna smiling in a pink top at sunset" width="800" height="1067" fetchpriority="high"></div>
+      <span class="sticker s1">@dear_annako</span>
+      <span class="sticker s2">92% US viewers</span>
+    </div>
+  </div>
+</section>
+
+<section id="audience" style="padding-top:12px">
+  <div class="wrap">
+    <div class="head"><h2>Who watches</h2><p class="sub">Young, female, US-based skincare shoppers.</p></div>
+    <div class="stats">
+      <div class="stat"><b>12.3K</b><span>TikTok views in the last 7 days</span></div>
+      <div class="stat"><b>74%</b><span>of viewers are female</span></div>
+      <div class="stat"><b>59%</b><span>are aged 18 to 24</span></div>
+      <div class="stat"><b>92%</b><span>are in the US</span></div>
+      <div class="stat"><b>1.2K</b><span>TikTok followers</span></div>
+      <div class="stat"><b>5.3K</b><span>views on my best post, the dasique Target deal</span></div>
+    </div>
+    <p class="src">TikTok analytics, pulled Oct 10, 2026. Instagram @annako.10 has 249 followers.</p>
+  </div>
+</section>
+
+<section id="brands">
+  <div class="wrap">
+    <div class="head"><h2>Brands I've made content for</h2></div>
+    <div class="brands">
+      <span class="brand"><img src="assets/logo-DermaFactory.webp" alt="" width="30" height="30">Derma Factory</span>
+      <span class="brand"><img src="assets/logo-BeautyofJoseon.webp" alt="" width="30" height="30">Beauty of Joseon</span>
+      <span class="brand"><img src="assets/logo-Isntree.webp" alt="" width="30" height="30">ISNTREE</span>
+      <span class="brand"><img src="assets/logo-DrCellX.webp" alt="" width="30" height="30">Dr.Cellx</span>
+      <span class="brand"><img src="assets/logo-Joocyee.webp" alt="" width="30" height="30">JOOCYEE</span>
+      <span class="brand noimg">TIRTIR</span>
+      <span class="brand noimg">celimax</span>
+      <span class="brand noimg">YesStyle</span>
+    </div>
+  </div>
+</section>
+
+<section id="work">
+  <div class="wrap">
+    <div class="head">
+      <h2>Videos to watch</h2>
+      <p class="sub">Tap any video to open it on TikTok.</p>
+    </div>
+    <div class="tabs" role="group" aria-label="Filter videos">
+      <button type="button" data-f="all" aria-pressed="true">All</button>
+      <button type="button" data-f="Brand" aria-pressed="false">Brand work</button>
+      <button type="button" data-f="Beauty" aria-pressed="false">GRWM + skincare</button>
+      <button type="button" data-f="Travel" aria-pressed="false">Travel</button>
+    </div>
+    <div class="rail" id="rail" tabindex="0" aria-label="Video list"></div>
+    <p class="hint">Swipe for more.</p>
+  </div>
+</section>
+
+<section id="rates">
+  <div class="wrap">
+    <div class="head">
+      <h2>Work with me</h2>
+      <p class="sub">Tap a card and it opens an email to me with that package already in the subject.</p>
+    </div>
+    <div class="rates">
+      <a class="rate" href="mailto:annako.diaries@gmail.com?subject=UGC%20package%3A%20Single%20UGC%20video&body=Hi%20Anna%2C%0A%0AWe%27d%20like%20to%20book%20a%20single%20UGC%20video.%0ABrand%3A%20%0AProduct%3A%20%0ATimeline%3A%20%0A">
+        <h3>Single UGC video</h3>
+        <div class="price">$120<small>per video</small></div>
+        <ul><li>15 to 60 seconds</li><li>Concept + script</li><li>Raw footage included</li><li>1 round of edits</li></ul>
+        <span class="go">Email about this &rarr;</span>
+      </a>
+      <a class="rate" href="mailto:annako.diaries@gmail.com?subject=UGC%20package%3A%203-video%20bundle&body=Hi%20Anna%2C%0A%0AWe%27d%20like%20to%20book%20the%203-video%20bundle.%0ABrand%3A%20%0AProduct%3A%20%0ATimeline%3A%20%0A">
+        <h3>3-video bundle</h3>
+        <div class="price">$300<small>bundle</small></div>
+        <ul><li>3 videos, different hooks or angles</li><li>Raw footage included</li><li>2 rounds of edits</li></ul>
+        <span class="go">Email about this &rarr;</span>
+      </a>
+      <a class="rate" href="mailto:annako.diaries@gmail.com?subject=UGC%20package%3A%20Posted%20on%20TikTok&body=Hi%20Anna%2C%0A%0AWe%27d%20like%20a%20video%20posted%20on%20your%20TikTok.%0ABrand%3A%20%0AProduct%3A%20%0ATimeline%3A%20%0A">
+        <h3>Posted on my TikTok</h3>
+        <div class="price">$150<small>per post</small></div>
+        <ul><li>Posted to @dear_annako</li><li>Product linked</li><li>Raw footage included</li></ul>
+        <span class="go">Email about this &rarr;</span>
+      </a>
+      <a class="rate" href="mailto:annako.diaries@gmail.com?subject=Gifted%20PR%20collab&body=Hi%20Anna%2C%0A%0AWe%27d%20like%20to%20send%20you%20product.%0ABrand%3A%20%0AProduct%3A%20%0A">
+        <h3>Gifted PR or custom</h3>
+        <div class="price">Let's talk</div>
+        <ul><li>Product-for-content collabs</li><li>Bundles and long-term deals</li><li>Tell me what you need</li></ul>
+        <span class="go">Email about this &rarr;</span>
+      </a>
+    </div>
+    <div class="addons">
+      <span class="tag">Paid ad usage, 30 days: +$50</span>
+      <span class="tag">Extra hook: +$25</span>
+      <span class="tag">48-hr rush: +$30</span>
+    </div>
+    <p class="note">Rates are a starting point. Bundles and gifted collabs are always open to chat.</p>
+  </div>
+</section>
+
+<section id="about">
+  <div class="wrap about">
+    <div class="pic"><img src="assets/about.jpg" alt="Anna in a pink cardigan standing in a flower garden" width="700" height="933" loading="lazy"></div>
+    <div>
+      <h2>Hi, I'm Annako</h2>
+      <p>I make beauty and travel content that looks like real life, not an ad. GRWMs, skincare routines and honest reviews, the kind of recommendation you'd get from a friend.</p>
+      <p>I'm also a senior studying Neuroscience, so I like reading the ingredient list before I say anything about a product.</p>
+      <div class="code">
+        <span>YesStyle code <b>ANNAKO10</b></span>
+        <button class="copy" type="button" data-copy="ANNAKO10">Copy code</button>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="contact" id="contact">
+  <div class="wrap" style="padding-top:44px">
+    <h2>Send me <mark>product</mark> or a brief.</h2>
+    <p>One email is all it takes.</p>
+    <div class="cta">
+      <a class="btn" href="mailto:annako.diaries@gmail.com?subject=Collab%20with%20Annako">Email me</a>
+    </div>
+    <div class="mail">
+      <code>annako.diaries@gmail.com</code>
+      <button class="copy" type="button" data-copy="annako.diaries@gmail.com">Copy</button>
+    </div>
+    <div class="socials">
+      <a href="https://www.tiktok.com/@dear_annako" target="_blank" rel="noopener">TikTok @dear_annako</a>
+      <a href="https://www.instagram.com/annako.10/" target="_blank" rel="noopener">Instagram @annako.10</a>
+      <a href="https://www.youtube.com/@annako.archive" target="_blank" rel="noopener">YouTube @annako.archive</a>
+    </div>
+    <p class="foot">&copy; 2026 Anna Dang</p>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var V=[
+    ['v17','Derma Factory niacinamide 20%','Beauty','Derma Factory','7693201080401857805'],
+    ['v18','Derma Factory retinal cream','Beauty','Derma Factory','7693201549572508942'],
+    ['v19','Dr.Cellx pore reset PDRN mask','Beauty','Dr.Cellx','7693578527928585486'],
+    ['v21','JOOCYEE aura glazed blush + highlighter','Beauty','JOOCYEE','7694081245541600525'],
+    ['v22','Beauty of Joseon tinted mineral sunscreen','Beauty','Beauty of Joseon','7693994312425655565'],
+    ['v9','ISNTREE yam root routine','Beauty','ISNTREE','7690843755758308621'],
+    ['v10','ISNTREE yam root milky toner','Beauty','ISNTREE','7691166676557237518'],
+    ['v20','PUL & SAHM eye cream','Beauty','PUL & SAHM','7692561521880173837'],
+    ['v15','JOOCYEE dewy blush','Beauty','JOOCYEE','7688565417610136845'],
+    ['v13','Dr. Althea 345 duo cream','Beauty','','7687133217329106189'],
+    ['v14','SKIN1004 centella sunscreen','Beauty','','7689279425191480590'],
+    ['v11','GRWM soft glam makeup','Beauty','','7685495018265611534'],
+    ['v12','GRWM, skincare edition','Beauty','','7685120453609786637'],
+    ['v1','GRWM igari makeup','Beauty','','7682536696470097166'],
+    ['v4','Cakey makeup fixed in seconds with 345 relief cream mist','Beauty','','7682907583094476046'],
+    ['v7','GRWM to school','Beauty','','7680703926680702221'],
+    ['v8','GRWM skincare','Beauty','','7680613995153329421'],
+    ['v3','Kyoto vlog','Travel','','7683346853223632141'],
+    ['v16','Tokyo vlog ep. 1','Travel','','7677731089124805901'],
+    ['v6','Tokyo vlog day 3','Travel','','7678150848450465037']
+  ];
+  var rail=document.getElementById('rail');
+  function esc(s){return s.replace(/&/g,'&amp;').replace(/</g,'&lt;')}
+  function render(f){
+    rail.innerHTML=V.filter(function(v){
+      return f==='all'||(f==='Brand'?!!v[3]:v[2]===f);
+    }).map(function(v){
+      return '<a class="vid" target="_blank" rel="noopener" href="https://www.tiktok.com/@dear_annako/video/'+v[4]+'">'+
+        '<div class="th"><img src="assets/thumb-'+v[0]+'.webp" alt="" width="510" height="907" loading="lazy" draggable="false"><span class="play" aria-hidden="true">&#9654;</span></div>'+
+        '<h3>'+esc(v[1])+'</h3><small>'+(v[3]?'<b>'+esc(v[3])+'</b>':v[2]==='Travel'?'Travel':'TikTok')+'</small></a>';
+    }).join('');
+    rail.scrollLeft=0;
+  }
+  render('all');
+  document.querySelectorAll('.tabs button').forEach(function(b){
+    b.addEventListener('click',function(){
+      document.querySelectorAll('.tabs button').forEach(function(x){x.setAttribute('aria-pressed',x===b)});
+      render(b.dataset.f);
+    });
+  });
+  document.querySelectorAll('.copy').forEach(function(b){
+    b.addEventListener('click',function(){
+      var t=b.dataset.copy,old=b.textContent;
+      function ok(){b.textContent='Copied';b.classList.add('done');setTimeout(function(){b.textContent=old;b.classList.remove('done')},1600)}
+      function fallback(){
+        var a=document.createElement('textarea');a.value=t;a.style.position='fixed';a.style.opacity='0';document.body.appendChild(a);a.select();
+        try{document.execCommand('copy');ok()}catch(e){}document.body.removeChild(a);
+      }
+      if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(t).then(ok,fallback)}else fallback();
+    });
+  });
+})();
+</script>
+</body>
+</html>
