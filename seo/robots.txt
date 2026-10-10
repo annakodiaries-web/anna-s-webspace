@@ -1,0 +1,9 @@
+# Goes at the HOST ROOT to be honoured by crawlers:
+#   https://annakodiaries-web.github.io/robots.txt  (needs a repo named annakodiaries-web.github.io)
+#   or https://yourdomain.com/robots.txt after a custom domain (then put it in this repo's root).
+# Placed in this project repo it is served at /anna-s-webspace/robots.txt, which crawlers ignore.
+# Default is allow-all; this file mainly declares the sitemap. Do not add Disallow rules for AI bots if you want citations.
+User-agent: *
+Allow: /
+
+Sitemap: https://dearannako.com/sitemap.xml

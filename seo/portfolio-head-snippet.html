@@ -1,0 +1,43 @@
+<!-- Paste inside <head> of the portfolio index.html, after the existing <meta name="description">.
+     The live page (checked 2026-10-10) is plain static HTML (~22 KB, images in assets/), so crawlers see the text.
+     RE-APPLY AFTER EVERY EXPORT/REWRITE of index.html. tools/site_sync.py only touches the var V array and brand tiles,
+     so the nightly sync will not remove these, but it REFUSES to run if index.html has uncommitted edits elsewhere:
+     commit this change first. -->
+<link rel="canonical" href="https://dearannako.com/">
+<meta name="author" content="Annako (@dear_annako)">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Annako's Webspace">
+<meta property="og:title" content="Annako | beauty + travel creator, UGC and PR">
+<meta property="og:description" content="Beauty and travel creator on TikTok @dear_annako. Open to gifted PR and paid UGC. UGC video from $120, 3-video bundle $300.">
+<meta property="og:url" content="https://dearannako.com/">
+<!-- TODO: make a 1200x630 image (assets/og.png); hero.jpg is portrait 800x1067 and will be cropped badly -->
+<meta property="og:image" content="https://dearannako.com/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Annako | beauty + travel creator, UGC and PR">
+<meta name="twitter:description" content="Beauty and travel creator. Gifted PR and paid UGC. TikTok @dear_annako.">
+<meta name="twitter:image" content="https://dearannako.com/assets/og.png">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfilePage",
+  "url": "https://dearannako.com/",
+  "mainEntity": {
+    "@type": "Person",
+    "name": "Annako",
+    "alternateName": ["dear_annako", "annako.10", "annako.archive"],
+    "description": "Beauty and travel content creator. Makes GRWMs, skincare routines, honest product videos and travel vlogs. Open to gifted PR and paid UGC.",
+    "jobTitle": "Content creator (beauty and travel)",
+    "url": "https://dearannako.com/",
+    "image": "https://dearannako.com/assets/about.jpg",
+    "email": "annako.diaries@gmail.com",
+    "knowsAbout": ["Skincare", "K-beauty", "UGC", "Travel vlogs"],
+    "sameAs": [
+      "https://www.tiktok.com/@dear_annako",
+      "https://www.instagram.com/annako.10/",
+      "https://www.youtube.com/@annako.archive"
+    ]
+  }
+}
+</script>

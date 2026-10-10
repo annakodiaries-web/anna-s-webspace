@@ -1,0 +1,984 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Free Creator Portfolio Template (UGC + PR media kit) | by @dear_annako</title>
+<meta name="description" content="A free portfolio template for UGC and beauty creators. Edit it in your browser: 7 styles, colours, fonts, stickers and a rate card. Download your own site. No sign-up.">
+<link rel="canonical" href="https://dearannako.com/template/">
+<meta name="author" content="Annako (@dear_annako)">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Annako's Webspace">
+<meta property="og:title" content="Free Creator Portfolio Template (UGC + PR media kit)">
+<meta property="og:description" content="Edit it in your browser, pick a style, add stickers, download your own portfolio site. Free, no sign-up. Template by @dear_annako.">
+<meta property="og:url" content="https://dearannako.com/template/">
+<meta property="og:image" content="https://dearannako.com/template/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Creator portfolio template editor showing a pink scrapbook-style portfolio page">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Free Creator Portfolio Template (UGC + PR media kit)">
+<meta name="twitter:description" content="Edit it in your browser, pick a style, download your own portfolio site. Free, no sign-up.">
+<meta name="twitter:image" content="https://dearannako.com/template/og.png">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Creator Portfolio Template",
+  "url": "https://dearannako.com/template/",
+  "description": "A free, in-browser editor for building a creator portfolio or media kit site. Choose a style, colours, fonts and stickers, then download your own single-file website.",
+  "applicationCategory": "DesignApplication",
+  "operatingSystem": "Any (web browser)",
+  "browserRequirements": "Requires JavaScript",
+  "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"},
+  "inLanguage": "en",
+  "author": {
+    "@type": "Person",
+    "name": "Annako",
+    "alternateName": "dear_annako",
+    "url": "https://dearannako.com/",
+    "sameAs": [
+      "https://www.tiktok.com/@dear_annako",
+      "https://www.instagram.com/annako.10/",
+      "https://www.youtube.com/@annako.archive"
+    ]
+  }
+}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link id="fontlink" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,800&family=Figtree:wght@400;500;700&family=Fraunces:opsz,wght@9..144,600;9..144,800&family=DM+Sans:wght@400;500;700&family=Gaegu:wght@400;700&family=Nunito:wght@400;600;800&family=Shrikhand&family=Titan+One&family=Pinyon+Script&family=Cormorant+Garamond:wght@500;600;700&family=Dancing+Script:wght@600;700&family=Patrick+Hand&family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=UnifrakturMaguntia&display=swap">
+<style id="sitecss">
+/* Layout: one long scrapbook-ish portfolio column; every colour + font is a token the editor rewrites */
+:root{
+  --bg:#ffe6ee; --paper:#fffafc; --ink:#2a1622; --accent:#ff6f9f; --hl:#cfe86a; --chip:#ffe27a;
+  --display:'Bricolage Grotesque','Figtree',system-ui,sans-serif;
+  --body:'Figtree',system-ui,sans-serif;
+  --line:1.5px solid var(--ink);
+  --pop:0 6px 18px rgba(42,22,34,.10);
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.55;overflow-x:hidden}
+img{max-width:100%;display:block}
+a{color:inherit}
+.site{position:relative;max-width:1080px;margin:0 auto;padding:0 20px 40px;overflow-x:clip}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:18px 0 14px;border-bottom:var(--line)}
+.logo{font-family:var(--display);font-weight:800;font-size:26px;letter-spacing:-.02em}
+.logo .two{color:var(--accent)}
+.nav .navlinks{display:flex;gap:16px;font-weight:600;font-size:15px}
+.nav .navlinks a{text-decoration:none}
+.hero{display:grid;grid-template-columns:1.2fr 1fr;gap:36px;align-items:center;padding:36px 0 30px}
+.hero > *{min-width:0}
+.pill{display:inline-block;border:var(--line);border-radius:999px;padding:4px 14px;font-weight:700;font-size:14px;background:var(--paper)}
+h1{font-family:var(--display);font-weight:800;font-size:clamp(44px,8.5vw,92px);line-height:.98;letter-spacing:var(--track,-.035em);margin:18px 0 18px;text-wrap:balance;overflow-wrap:anywhere}
+h1 .mark{background:var(--hl);border-radius:14px;padding:0 .12em;-webkit-box-decoration-break:clone;box-decoration-break:clone}
+h1 .acc{color:var(--accent)}
+.intro{font-size:19px;max-width:34ch;margin:0 0 22px}
+.ctas{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:14px}
+.btn{display:inline-block;border:var(--line);border-radius:999px;padding:11px 24px;font-weight:700;text-decoration:none;background:var(--paper);box-shadow:var(--pop)}
+.btn.main{background:var(--accent);color:var(--paper)}
+.emailrow{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.email{border:var(--line);border-radius:12px;padding:6px 12px;background:var(--paper);font-weight:500;overflow-wrap:anywhere}
+.copy{border:var(--line);border-radius:12px;padding:6px 14px;background:var(--chip);font:inherit;font-weight:700;color:var(--ink);cursor:pointer}
+.photo{position:relative;border:var(--line);border-radius:28px;overflow:hidden;background:var(--paper);aspect-ratio:4/5;box-shadow:var(--pop)}
+.photo img{width:100%;height:100%;object-fit:cover}
+.photo .handle{position:absolute;left:14px;bottom:14px;border:var(--line);border-radius:999px;padding:5px 14px;background:var(--paper);font-weight:700}
+.ph{display:grid;place-items:center;width:100%;height:100%;text-align:center;font-weight:700;color:var(--ink);color:color-mix(in srgb,var(--ink) 55%,transparent);padding:16px;background-color:var(--paper);
+  background:repeating-linear-gradient(45deg,transparent 0 14px,rgba(0,0,0,.035) 14px 28px)}
+section{padding:34px 0 10px}
+h2{font-family:var(--display);font-weight:800;font-size:clamp(34px,5.5vw,56px);line-height:1.05;letter-spacing:var(--track,-.03em);margin:0 0 22px;text-wrap:balance}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px}
+.stat{border:var(--line);border-radius:20px;background:var(--paper);padding:16px 18px}
+.stat b{display:block;font-family:var(--display);font-weight:800;font-size:34px;line-height:1.1}
+.stat span{font-size:14px;font-weight:600;opacity:.75}
+.brands{display:flex;flex-wrap:wrap;gap:20px}
+.brand{width:112px;text-align:center;font-weight:600;font-size:15px}
+.brand .logo-c{width:104px;height:104px;margin:0 auto 8px;border-radius:50%;border:var(--line);background:var(--paper);overflow:hidden;display:grid;place-items:center;font-family:var(--display);font-weight:800;font-size:15px;line-height:1.1;padding:8px}
+.brand .logo-c img{width:100%;height:100%;object-fit:cover;border-radius:50%}
+.vids{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:16px}
+.vid{border:var(--line);border-radius:22px;background:var(--paper);overflow:hidden;box-shadow:var(--pop);display:flex;flex-direction:column}
+.vid .thumb{aspect-ratio:9/14;background:var(--bg);border-bottom:var(--line);overflow:hidden}
+.vid .thumb img{width:100%;height:100%;object-fit:cover}
+.vid .meta{padding:12px 14px 14px;display:flex;flex-direction:column;gap:8px}
+.vid .tag{align-self:flex-start;background:var(--chip);border:var(--line);border-radius:999px;font-size:12px;font-weight:700;padding:1px 10px}
+.vid .vt{font-weight:700;line-height:1.3}
+.vid a.watch{font-weight:700;font-size:14px;color:var(--accent)}
+.services{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px}
+.svc{border:var(--line);border-radius:20px;background:var(--paper);padding:18px}
+.svc h3{font-family:var(--display);font-weight:800;font-size:22px;margin:0 0 6px}
+.svc p{margin:0;font-size:15px}
+.rates{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px}
+.rate{position:relative;border:var(--line);border-radius:20px;background:var(--paper);padding:18px;display:flex;flex-direction:column;gap:6px}
+.rate h3{font-family:var(--display);font-weight:800;font-size:20px;margin:0}
+.rate .price{font-family:var(--display);font-weight:800;font-size:40px;line-height:1.05;color:var(--accent)}
+.rate .per{font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;opacity:.65}
+.rate p{margin:4px 0 0;font-size:15px}
+.addons{margin-top:14px;border:var(--line);border-radius:20px;background:var(--paper);padding:16px 18px}
+.addons h3{font-family:var(--display);font-weight:800;font-size:20px;margin:0 0 8px}
+.addons ul{margin:0;padding-left:20px}
+.addons li{margin-bottom:4px}
+.note{font-size:14px;opacity:.7;margin:10px 0 0}
+.contact{margin-top:30px;border:var(--line);border-radius:28px;background:var(--accent);color:var(--paper);padding:30px 24px;text-align:center}
+.contact h2{color:var(--paper);margin-bottom:10px}
+.contact p{margin:0 auto 18px;max-width:40ch}
+.contact .btn{color:var(--ink)}
+.credit{text-align:center;font-size:13px;opacity:.7;padding:26px 0 8px}
+.credit a{font-weight:700}
+/* stickers */
+.stk{position:absolute;z-index:5;transform-origin:center;user-select:none;-webkit-user-select:none;line-height:1;touch-action:none}
+.stk .s-in{display:block}
+.stk.emoji .s-in{font-size:56px}
+.stk.label .s-in{font-family:var(--display);font-weight:800;font-size:20px;padding:8px 16px;border:var(--line);border-radius:12px;background:var(--paper);box-shadow:var(--pop);white-space:nowrap}
+.stk.label.chip .s-in{background:var(--chip)}
+.stk.label.acc .s-in{background:var(--accent);color:var(--paper)}
+.stk.tape .s-in{width:130px;height:34px;background:var(--hl);opacity:.88;border-radius:3px;
+  background-image:repeating-linear-gradient(90deg,rgba(255,255,255,.35) 0 8px,transparent 8px 16px);
+  -webkit-mask:linear-gradient(90deg,transparent 0 3px,#000 3px calc(100% - 3px),transparent 0);mask:linear-gradient(90deg,transparent 0 3px,#000 3px calc(100% - 3px),transparent 0)}
+.stk.tape.dots .s-in{background:radial-gradient(var(--paper) 3px,transparent 3.5px) 0 0/12px 12px,var(--accent);opacity:.8}
+.stk.tape.stripe .s-in{background:repeating-linear-gradient(90deg,var(--chip) 0 9px,var(--paper) 9px 18px)}
+.stk.tape.check .s-in{background:var(--gingham)}
+.stk.tape.floral .s-in{background:var(--floral-img) 0 0/26px 26px,var(--bg)}
+.stk.label.scallop .s-in{border:none;box-shadow:none;background:var(--chip);border-radius:999px;outline:1.5px dashed var(--accent);outline-offset:-6px;position:relative;isolation:isolate;padding:12px 26px}
+.stk.label.scallop .s-in::before{content:"";position:absolute;inset:-7px;z-index:-1;border-radius:999px;background:radial-gradient(circle,var(--chip) 7px,transparent 7.5px) 0 0/14px 14px}
+.stk.label.ticket .s-in{border:none;box-shadow:none;padding:14px 26px;outline:1.5px dashed var(--ink);outline-offset:-7px;
+  background:radial-gradient(circle at 0 0,transparent 11px,var(--paper) 11.5px) top left/51% 51% no-repeat,radial-gradient(circle at 100% 0,transparent 11px,var(--paper) 11.5px) top right/51% 51% no-repeat,radial-gradient(circle at 0 100%,transparent 11px,var(--paper) 11.5px) bottom left/51% 51% no-repeat,radial-gradient(circle at 100% 100%,transparent 11px,var(--paper) 11.5px) bottom right/51% 51% no-repeat}
+.stk.label.patch .s-in{background:var(--accent);color:var(--paper);border:2px solid var(--ink);outline:2px dashed rgba(255,255,255,.75);outline-offset:-7px;border-radius:999px;font-family:'Dancing Script',cursive;font-size:24px;padding:10px 22px}
+.stk svg{display:block;width:72px;height:72px}
+@media (max-width:760px){
+  .hero{grid-template-columns:1fr;gap:26px}
+  .nav .navlinks{display:none}
+  .intro{font-size:18px}
+  .brand{width:96px}.brand .logo-c{width:88px;height:88px}
+  .vids{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+}
+
+/* ---------- photo frames ---------- */
+.photo.fr-polaroid,.photo.fr-gingham{border-radius:4px;padding:14px 14px 62px;background:#fff;transform:rotate(-2deg)}
+.photo.fr-gingham{background:var(--gingham);padding:18px 18px 66px;transform:rotate(2deg)}
+.photo.fr-polaroid img,.photo.fr-gingham img,.photo.fr-polaroid .ph,.photo.fr-gingham .ph{border-radius:2px;background-color:var(--paper)}
+.photo.fr-oval{border-radius:50%;border:none;margin:20px;box-shadow:0 0 0 10px var(--paper),0 0 0 12px var(--ink),0 0 0 18px var(--paper),0 0 0 19.5px var(--ink),var(--pop)}
+.photo.fr-oval .handle{left:50%;bottom:7%;transform:translateX(-50%)}
+.photo.fr-camera,.photo.fr-tv{aspect-ratio:5/4;border:none}
+.photo.fr-camera{border-radius:24px;padding:7% 30% 9% 6%;background:linear-gradient(160deg,#f1f1f3,#b8b9c0 55%,#dedfe4);box-shadow:inset 0 0 0 2px rgba(0,0,0,.18),var(--pop)}
+.photo.fr-camera::before{content:"";position:absolute;right:6%;top:50%;width:17%;aspect-ratio:1;transform:translateY(-50%);border-radius:50%;
+  background:radial-gradient(circle,#4a4a50 0 28%,#d4d4da 29% 44%,#8a8a92 45% 58%,#ececf0 59%);box-shadow:0 2px 5px rgba(0,0,0,.25)}
+.photo.fr-camera::after{content:"";position:absolute;right:8%;top:11%;width:13%;height:7%;border-radius:5px;background:var(--accent);box-shadow:0 0 0 2px rgba(0,0,0,.2)}
+.photo.fr-camera img,.photo.fr-camera .ph{border-radius:8px;border:4px solid #26262b;background-color:var(--paper)}
+.photo.fr-tv{border-radius:34px;padding:7% 25% 9% 6%;background:var(--accent);box-shadow:inset 0 -8px 0 rgba(0,0,0,.12),var(--pop)}
+.photo.fr-tv::before,.photo.fr-tv::after{content:"";position:absolute;right:7.5%;width:11%;aspect-ratio:1;border-radius:50%;background:var(--paper);border:2px solid var(--ink)}
+.photo.fr-tv::before{top:20%}.photo.fr-tv::after{top:44%}
+.photo.fr-tv img,.photo.fr-tv .ph{border-radius:30px/24px;border:4px solid var(--ink);background-color:var(--paper)}
+.photo.fr-camera .handle,.photo.fr-tv .handle{left:auto;right:4%;bottom:5%}
+
+/* ---------- concept: clipboard ---------- */
+.st-clip section{position:relative;isolation:isolate;padding:52px 22px 26px;margin:52px 6px 0}
+.st-clip section::before{content:"";position:absolute;inset:16px -8px -12px 12px;z-index:-2;transform:rotate(-1.6deg);border-radius:4px;background:var(--gingham);box-shadow:var(--pop)}
+.st-clip section:nth-of-type(even)::before{transform:rotate(1.8deg);inset:12px 12px -12px -8px}
+.st-clip section::after{content:"";position:absolute;inset:0;z-index:-1;background:var(--paper);border-radius:18px;box-shadow:inset 0 0 0 8px var(--paper),inset 0 0 0 10px var(--accent),var(--pop)}
+.st-clip section > h2{text-align:center}
+.st-clip section > h2::before{content:"";position:absolute;top:-34px;left:50%;width:104px;height:72px;transform:translateX(-50%);background:var(--clip-img) center/contain no-repeat}
+.st-clip .stat,.st-clip .svc,.st-clip .rate,.st-clip .addons{background:var(--bg)}
+.st-clip .brands{justify-content:center}
+
+/* ---------- concept: lace & polka ---------- */
+body.st-lace{background-color:var(--bg);background-image:radial-gradient(var(--dot) 3px,transparent 3.6px);background-size:30px 30px}
+.st-lace .nav{background:var(--paper);padding:14px 20px;border-radius:0 0 18px 18px;border-bottom:none}
+.st-lace section,.st-lace .hero{position:relative;isolation:isolate;padding:34px 24px 26px;margin:40px 12px 0}
+.st-lace section::before,.st-lace .hero::before{content:"";position:absolute;inset:-12px;z-index:-2;border-radius:12px;
+  background:radial-gradient(circle,var(--paper) 7px,transparent 7.6px) 0 0/16px 16px}
+.st-lace section::after,.st-lace .hero::after{content:"";position:absolute;inset:0;z-index:-1;background:var(--paper);border-radius:4px;
+  box-shadow:inset 0 0 0 7px var(--paper),inset 0 0 0 8px var(--ink),inset 0 0 0 11px var(--paper),inset 0 0 0 11.5px var(--ink)}
+.st-lace h2{text-align:center;font-weight:400}
+.st-lace .brands{justify-content:center}
+.st-lace .credit{color:var(--paper)}
+.st-lace .vid .thumb{background:var(--hl)}
+.st-lace .contact{margin:40px 12px 0}
+
+/* ---------- concept: gingham diary ---------- */
+body.st-gingham{background-color:var(--bg);background-image:linear-gradient(90deg,var(--soft) 50%,transparent 0),linear-gradient(var(--soft) 50%,transparent 0);background-size:36px 36px}
+.st-gingham .nav{background:var(--paper);padding:14px 20px;border-radius:0 0 20px 20px;border-bottom:none}
+.st-gingham .hero,.st-gingham section{position:relative;background:var(--paper);border-radius:24px;outline:2px dashed var(--accent);outline-offset:-10px;box-shadow:var(--pop)}
+.st-gingham .hero{padding:30px 26px;margin-top:24px}
+.st-gingham section{padding:30px 22px 26px 50px;margin-top:28px}
+.st-gingham section::before{content:"";position:absolute;left:16px;top:22px;bottom:22px;width:16px;
+  background:radial-gradient(circle,var(--bg) 4.5px,var(--ink) 5px 6.5px,transparent 7px) 0 0/16px 30px repeat-y}
+.st-gingham .credit{background:var(--paper);border-radius:999px;margin:20px auto 0;max-width:260px;padding:8px}
+@media (max-width:760px){
+  .st-clip section{padding:50px 16px 22px;margin:48px 2px 0}
+  .st-lace section,.st-lace .hero{padding:30px 18px 22px;margin:36px 8px 0}
+  .st-gingham section{padding:26px 16px 22px 40px}
+  .st-gingham section::before{left:12px}
+}
+
+.facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px}
+.fact{border:var(--line);border-radius:999px;background:var(--paper);padding:10px 22px;display:flex;flex-wrap:wrap;gap:4px 10px;align-items:baseline}
+.fact b{font-family:var(--display);font-weight:800;color:var(--accent)}
+
+/* ---------- extra frames ---------- */
+.photo.fr-stamp{border:none;border-radius:0;padding:16px;background:radial-gradient(circle,var(--bg) 6px,transparent 6.5px) -9px -9px/18px 18px,#fff;filter:drop-shadow(0 6px 10px rgba(0,0,0,.12));transform:rotate(1.5deg)}
+.photo.fr-stamp img,.photo.fr-stamp .ph{background-color:var(--paper)}
+.photo.fr-dots{border:none;padding:18px;background:radial-gradient(circle,var(--accent) 6px,transparent 6.5px) 0 0/18px 18px,var(--paper);border-radius:36px}
+.photo.fr-dots img,.photo.fr-dots .ph{border-radius:22px;background-color:var(--paper)}
+
+/* ---------- concept: newspaper ---------- */
+.st-news .nav{flex-direction:column;gap:6px;border-bottom:3px double var(--ink);padding:22px 0 10px;text-align:center}
+.st-news .logo{font-family:'UnifrakturMaguntia',var(--display);font-weight:400;font-size:clamp(40px,8vw,76px);letter-spacing:0}
+.st-news .logo .two{color:var(--ink)}
+.st-news .nav .navlinks{display:flex;border-top:1px solid var(--ink);padding-top:6px;width:100%;justify-content:center;text-transform:uppercase;font-size:12px;letter-spacing:.14em}
+.st-news .pill,.st-news .btn,.st-news .email,.st-news .copy,.st-news .fact,.st-news .stat,.st-news .svc,.st-news .rate,.st-news .addons,.st-news .vid,.st-news .photo,.st-news .contact{border-radius:0;box-shadow:none}
+.st-news h1{font-style:italic}
+.st-news section{border-top:1px solid var(--ink);margin-top:26px;padding-top:22px}
+.st-news section > h2{text-align:center;font-style:italic;border-bottom:1px solid var(--ink);padding-bottom:12px}
+.st-news .vids{gap:0;border-left:1px solid var(--ink)}
+.st-news .vid{border-width:0 1px 0 0;border-style:solid}
+.st-news .photo img{filter:grayscale(.15) contrast(1.05)}
+.st-news .brand .logo-c{border-radius:50%}
+
+/* ---------- concept: coquette ---------- */
+body.st-coq{background-color:var(--bg);background-image:radial-gradient(var(--dotc) 3px,transparent 3.6px);background-size:26px 26px}
+.st-coq .nav{background:var(--paper);padding:14px 20px;border-radius:0 0 22px 22px;border-bottom:none}
+.st-coq .hero,.st-coq section{background:linear-gradient(var(--paper),var(--paper)) padding-box,var(--gingham) border-box;border:12px solid transparent;border-radius:26px;box-shadow:var(--pop)}
+.st-coq .hero{padding:24px 22px;margin-top:24px}
+.st-coq section{padding:26px 20px 22px;margin-top:30px}
+.st-coq section > h2{display:table;margin:0 auto 24px;padding:10px 30px 12px;background:var(--chip);border-radius:999px;position:relative;isolation:isolate;outline:1.5px dashed var(--accent);outline-offset:-7px;font-size:clamp(28px,4.4vw,44px)}
+.st-coq section > h2::before{content:"";position:absolute;inset:-8px;z-index:-1;border-radius:999px;background:radial-gradient(circle,var(--chip) 8px,transparent 8.5px) 0 0/16px 16px}
+.st-coq .fact{border-style:dashed}
+.st-coq .brands{justify-content:center}
+
+/* ---------- concept: storybook pastel ---------- */
+body.st-story{background-color:var(--bg);background-image:repeating-linear-gradient(90deg,var(--stripe) 0 14px,transparent 14px 28px)}
+.st-story .nav{background:var(--paper);padding:14px 22px;border-radius:0 0 28px 28px;border:2px solid var(--ink);border-top:none}
+.st-story .hero,.st-story section{border:2px solid var(--ink);border-radius:36px;outline:2px dashed var(--ink);outline-offset:-12px;box-shadow:0 8px 0 rgba(0,0,0,.06)}
+.st-story .hero{background:var(--paper);padding:30px 28px;margin-top:24px}
+.st-story section{padding:32px 26px 28px;margin-top:26px;background:var(--tint1)}
+.st-story section:nth-of-type(even){background:var(--tint2)}
+.st-story section > h2{text-align:center}
+.st-story .brands{justify-content:center}
+
+/* ---------- background patterns (override the style's own) ---------- */
+body.bgp{background-color:var(--bg)}
+body.bgp.bgp-plain{background-image:none}
+body.bgp.bgp-polka{background-image:radial-gradient(var(--dotc) 3px,transparent 3.6px);background-size:26px 26px}
+body.bgp.bgp-gingham{background-image:linear-gradient(90deg,var(--soft) 50%,transparent 0),linear-gradient(var(--soft) 50%,transparent 0);background-size:36px 36px}
+body.bgp.bgp-stripes{background-image:repeating-linear-gradient(90deg,var(--stripe) 0 14px,transparent 14px 28px);background-size:auto}
+body.bgp.bgp-plaid{background-image:linear-gradient(90deg,var(--soft) 40%,transparent 0),linear-gradient(var(--soft) 40%,transparent 0),linear-gradient(90deg,transparent 70%,var(--line2) 70% 72%,transparent 0),linear-gradient(transparent 70%,var(--line2) 70% 72%,transparent 0);background-size:48px 48px}
+body.bgp.bgp-hearts{background-image:var(--hearts-img);background-size:44px 44px}
+body.bgp.bgp-floral{background-image:var(--floral-img);background-size:40px 40px}
+body.bgp.bgp-patch{background-image:var(--floral-img),linear-gradient(90deg,var(--tint1) 50%,var(--tint2) 0),linear-gradient(var(--soft) 50%,transparent 0);background-size:40px 40px,240px 240px,240px 240px}
+@media (max-width:760px){
+  .st-coq .hero,.st-coq section{border-width:9px}
+  .st-coq section{padding:24px 14px 20px}
+  .st-story section{padding:28px 16px 22px}
+}
+.stk.big svg{width:130px;height:130px}
+.stk.wide svg{width:104px;height:72px}
+</style>
+<style id="editorcss">
+/* editor chrome only: never exported */
+:root{--ed-ink:#2a1622;--ed-paper:#fffafc;--ed-pink:#ff6f9f;--ed-mute:#7b6670}
+body.editing{padding-bottom:110px}
+.editing [data-e]{outline:1.5px dashed transparent;outline-offset:3px;border-radius:6px;cursor:text;transition:outline-color .15s}
+.editing [data-e]:hover,.editing [data-e]:focus{outline-color:var(--ed-pink)}
+.editing [data-e]:focus{background:rgba(255,111,159,.08)}
+.editing [data-img]{cursor:pointer}
+.editing [data-img]:not(.photo)::after{content:"tap to change photo";position:absolute;right:10px;top:10px;background:var(--ed-ink);color:#fff;font:600 12px/1 system-ui,sans-serif;padding:6px 9px;border-radius:999px;opacity:.85;pointer-events:none}
+.editing .logo-c[data-img]::after{content:"＋";right:auto;top:auto;bottom:4px;left:50%;transform:translateX(-50%);padding:4px 7px}
+[data-img]{position:relative}
+.ed-only{display:none!important}
+.framechip{position:absolute;top:10px;right:10px;z-index:4}
+.photo.fr-camera .framechip,.photo.fr-tv .framechip{top:4%;left:4%;right:auto}
+.stylecard{all:unset;cursor:pointer;border:1.5px solid var(--ed-ink);border-radius:16px;overflow:hidden;flex:1 1 150px;display:flex;flex-direction:column}
+.stylecard[aria-pressed="true"]{box-shadow:0 0 0 3px var(--ed-pink)}
+.stylecard .sp{height:64px;border-bottom:1.5px solid var(--ed-ink)}
+.stylecard b{padding:8px 10px 0;font-size:14px}
+.stylecard small{padding:0 10px 10px;font-size:12px;color:var(--ed-mute)}
+.editing .ed-only{display:revert!important}
+.editing .ed-flex.ed-only{display:flex!important}
+.mini{font:600 12px/1 system-ui,sans-serif;border:1.5px solid var(--ed-ink);background:var(--ed-paper);color:var(--ed-ink);border-radius:999px;padding:6px 10px;cursor:pointer}
+.mini.x{position:absolute;top:8px;right:8px;z-index:3}
+.editing .logo-c[data-e]{border-radius:50%}
+.vid,.brand,.svc,.stat,.rate,.fact{position:relative}
+.brand .mini.x{right:0;top:0}
+.addcard{border:2px dashed var(--ink);border-radius:22px;background:transparent;font:700 15px/1.2 var(--body);color:var(--ink);opacity:.6;cursor:pointer;min-height:120px;padding:14px}
+.addcard:hover{opacity:1}
+.linkchip{margin-left:6px;vertical-align:middle}
+.welcome{margin:16px 0 0;border:1.5px solid var(--ed-ink);border-radius:18px;background:var(--ed-paper);color:var(--ed-ink);padding:14px 16px;font:500 15px/1.45 system-ui,sans-serif;display:flex;gap:12px;align-items:flex-start;justify-content:space-between}
+.welcome b{font-weight:700}
+/* sticker selection */
+.editing .stk{cursor:grab}
+.editing .stk.sel{outline:2px dashed var(--ed-pink);outline-offset:6px;border-radius:6px}
+.stkbar{position:absolute;z-index:40;display:flex;gap:4px;background:var(--ed-ink);border-radius:999px;padding:4px;box-shadow:0 6px 18px rgba(0,0,0,.2)}
+.stkbar button{all:unset;color:#fff;font:600 14px/1 system-ui,sans-serif;width:32px;height:32px;display:grid;place-items:center;border-radius:50%;cursor:pointer}
+.stkbar button:hover,.stkbar button:focus-visible{background:rgba(255,255,255,.18)}
+/* dock */
+.dock{position:fixed;left:50%;transform:translateX(-50%);bottom:calc(14px + env(safe-area-inset-bottom,0px));z-index:50;display:flex;gap:4px;background:var(--ed-ink);padding:6px;border-radius:999px;box-shadow:0 10px 30px rgba(0,0,0,.25);max-width:calc(100% - 24px)}
+.dock button{all:unset;cursor:pointer;color:#fff;font:600 14px/1 system-ui,sans-serif;padding:11px 14px;border-radius:999px;white-space:nowrap;display:flex;align-items:center;gap:6px}
+.dock button:hover,.dock button:focus-visible{background:rgba(255,255,255,.15)}
+.dock button[aria-pressed="true"]{background:var(--ed-pink)}
+.dock .ico{font-size:16px}
+.panel{position:fixed;left:50%;transform:translateX(-50%);bottom:calc(78px + env(safe-area-inset-bottom,0px));z-index:49;width:min(560px,calc(100% - 24px));max-height:min(62vh,520px);overflow:auto;background:var(--ed-paper);color:var(--ed-ink);border:1.5px solid var(--ed-ink);border-radius:24px;padding:18px;box-shadow:0 14px 40px rgba(0,0,0,.22);font:15px/1.4 system-ui,sans-serif}
+.panel h4{margin:0 0 10px;font-size:13px;letter-spacing:.06em;text-transform:uppercase;color:var(--ed-mute)}
+.panel .row{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:16px}
+.pal{all:unset;cursor:pointer;border:1.5px solid var(--ed-ink);border-radius:16px;padding:8px 10px 9px;display:flex;flex-direction:column;gap:6px;font-weight:600;font-size:13px;min-width:92px}
+.pal[aria-pressed="true"]{box-shadow:0 0 0 3px var(--ed-pink)}
+.pal .sw{display:flex}
+.pal .sw i{width:20px;height:20px;border-radius:50%;border:1.5px solid var(--ed-ink);margin-right:-5px}
+.cust{display:grid;grid-template-columns:repeat(auto-fit,minmax(110px,1fr));gap:10px}
+.cust label{display:flex;align-items:center;gap:8px;font-size:14px;font-weight:600}
+.cust input{width:38px;height:38px;border:1.5px solid var(--ed-ink);border-radius:50%;padding:0;background:none;cursor:pointer;overflow:hidden}
+.cust input::-webkit-color-swatch-wrapper{padding:0}.cust input::-webkit-color-swatch{border:none;border-radius:50%}
+.fontopt{all:unset;cursor:pointer;border:1.5px solid var(--ed-ink);border-radius:16px;padding:12px 14px;flex:1 1 140px}
+.fontopt[aria-pressed="true"]{box-shadow:0 0 0 3px var(--ed-pink)}
+.fontopt big{display:block;font-size:24px;line-height:1.1;margin-bottom:4px}
+.fontopt small{font-size:13px;color:var(--ed-mute)}
+.stkgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(58px,1fr));gap:8px;margin-bottom:16px}
+.stkgrid button{all:unset;cursor:pointer;height:58px;border-radius:14px;border:1.5px solid #e9dde3;display:grid;place-items:center;font-size:30px;background:#fff}
+.stkgrid button:hover,.stkgrid button:focus-visible{border-color:var(--ed-ink)}
+.stkgrid svg{width:44px;height:44px}
+.stkgrid button.w2{grid-column:span 2}
+.stkgrid button.w2 svg{width:80px}
+.lblrow{display:flex;flex-wrap:wrap;gap:8px}
+.lblrow button{all:unset;cursor:pointer;font-weight:700;font-size:13px;border:1.5px solid var(--ed-ink);border-radius:10px;padding:7px 11px;background:#fff}
+.bigbtn{all:unset;cursor:pointer;display:block;text-align:center;border:1.5px solid var(--ed-ink);border-radius:16px;padding:14px;font-weight:700;margin-bottom:10px}
+.bigbtn.go{background:var(--ed-pink);color:#fff}
+.bigbtn small{display:block;font-weight:500;font-size:13px;opacity:.85;margin-top:3px}
+.steps{margin:6px 0 0;padding-left:20px;color:var(--ed-mute);font-size:14px}
+.steps li{margin-bottom:4px}
+.steps code{background:#f5edf1;padding:1px 5px;border-radius:5px;color:var(--ed-ink)}
+.linkpop{position:fixed;z-index:60;left:50%;top:30%;transform:translateX(-50%);width:min(420px,calc(100% - 24px));background:var(--ed-paper);color:var(--ed-ink);border:1.5px solid var(--ed-ink);border-radius:20px;padding:16px;box-shadow:0 14px 40px rgba(0,0,0,.25);font:15px/1.4 system-ui,sans-serif}
+.linkpop input{width:100%;font:inherit;border:1.5px solid var(--ed-ink);border-radius:12px;padding:10px 12px;margin:8px 0 12px;background:#fff;color:var(--ed-ink)}
+.linkpop .acts{display:flex;gap:8px;justify-content:flex-end}
+.toast{position:fixed;left:50%;top:18px;transform:translateX(-50%);z-index:70;background:var(--ed-ink);color:#fff;font:600 14px/1 system-ui,sans-serif;padding:12px 18px;border-radius:999px}
+:focus-visible{outline:2px solid var(--ed-pink);outline-offset:2px}
+@media (max-width:520px){.dock button .txt{display:none}.dock button{padding:12px 15px}.dock .ico{font-size:19px}}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+</head>
+<body class="editing">
+<noscript><p style="max-width:640px;margin:24px auto;padding:0 16px;font:16px/1.5 system-ui,sans-serif">Creator Portfolio Template: a free, in-browser editor for building a UGC or beauty creator portfolio. It needs JavaScript. Pick a style, colours, fonts and stickers, edit the text, then download your own site. Template by <a href="https://www.tiktok.com/@dear_annako">@dear_annako</a>.</p></noscript>
+
+<div class="site" id="site">
+  <header class="nav">
+    <div class="logo" data-e>your<span class="two">name</span></div>
+    <nav class="navlinks"><a href="#work" data-e>Work</a><a href="#brands" data-e>Brands</a><a href="#rates" data-e>Rates</a><a href="#contact" data-e>Contact</a></nav>
+  </header>
+
+  <div class="welcome ed-flex ed-only" id="welcome">
+    <div><b>Make it yours ♡</b> Tap any text to change it, tap a photo to add yours. Use the bar at the bottom to pick a style, colours, fonts and stickers, then hit <b>Save</b>. Your edits stay in this browser while you work.</div>
+    <button class="mini" type="button" id="hideWelcome">Got it</button>
+  </div>
+
+  <div class="hero">
+    <div>
+      <span class="pill" data-e>Beauty + lifestyle creator</span>
+      <h1 data-e>Skincare <span class="mark">tested</span> on <span class="acc">real</span> skin.</h1>
+      <p class="intro" data-e>Hi, I'm [your name]. I make GRWMs, routines and honest product videos on TikTok. Open to gifted PR and paid UGC.</p>
+      <div class="ctas">
+        <a class="btn main" data-link data-mail href="mailto:you@email.com" data-e>Email me</a>
+        <a class="btn" data-link href="https://www.tiktok.com/@yourhandle" target="_blank" rel="noopener" data-e>Watch my videos</a>
+      </div>
+      <div class="emailrow">
+        <span class="email" id="emailText" data-e>you@email.com</span>
+        <button class="copy" type="button" data-copy>Copy</button>
+      </div>
+    </div>
+    <div class="photo" data-img>
+      <div class="ph">tap to add your photo</div>
+      <span class="handle" data-e>@yourhandle</span>
+    </div>
+  </div>
+
+  <section id="about">
+    <h2 data-e>Get to know me</h2>
+    <div class="facts" data-list="fact">
+      <div class="fact"><b data-e>Based in</b><span data-e>Texas, USA</span></div>
+      <div class="fact"><b data-e>Skin type</b><span data-e>combination, acne-prone</span></div>
+      <div class="fact"><b data-e>I post about</b><span data-e>K-beauty, GRWMs, travel vlogs</span></div>
+      <div class="fact"><b data-e>Fun fact</b><span data-e>I film everything in my car</span></div>
+    </div>
+  </section>
+
+  <section>
+    <h2 data-e>Quick numbers</h2>
+    <div class="stats" data-list="stat">
+      <div class="stat"><b data-e>12.4K</b><span data-e>TikTok followers</span></div>
+      <div class="stat"><b data-e>4.8%</b><span data-e>avg. engagement</span></div>
+      <div class="stat"><b data-e>74%</b><span data-e>women 18–24</span></div>
+      <div class="stat"><b data-e>US</b><span data-e>top audience</span></div>
+    </div>
+  </section>
+
+  <section id="brands">
+    <h2 data-e>Brands I've worked with</h2>
+    <div class="brands" data-list="brand">
+      <div class="brand"><div class="logo-c" data-img data-e>Brand one</div><span data-e>Brand one</span></div>
+      <div class="brand"><div class="logo-c" data-img data-e>Brand two</div><span data-e>Brand two</span></div>
+      <div class="brand"><div class="logo-c" data-img data-e>Brand three</div><span data-e>Brand three</span></div>
+    </div>
+  </section>
+
+  <section id="work">
+    <h2 data-e>Videos to watch</h2>
+    <div class="vids" data-list="vid">
+      <article class="vid"><div class="thumb" data-img><div class="ph">tap to add a thumbnail</div></div><div class="meta"><span class="tag" data-e>Brand work</span><span class="vt" data-e>Morning routine with a gifted serum</span><a class="watch" data-link href="https://www.tiktok.com/@yourhandle" target="_blank" rel="noopener">Watch on TikTok →</a></div></article>
+      <article class="vid"><div class="thumb" data-img><div class="ph">tap to add a thumbnail</div></div><div class="meta"><span class="tag" data-e>GRWM</span><span class="vt" data-e>5-minute makeup for class</span><a class="watch" data-link href="https://www.tiktok.com/@yourhandle" target="_blank" rel="noopener">Watch on TikTok →</a></div></article>
+      <article class="vid"><div class="thumb" data-img><div class="ph">tap to add a thumbnail</div></div><div class="meta"><span class="tag" data-e>Review</span><span class="vt" data-e>Sunscreen for oily skin, honest take</span><a class="watch" data-link href="https://www.tiktok.com/@yourhandle" target="_blank" rel="noopener">Watch on TikTok →</a></div></article>
+    </div>
+  </section>
+
+  <section>
+    <h2 data-e>What I can make for you</h2>
+    <div class="services" data-list="svc">
+      <div class="svc"><h3 data-e>TikTok post</h3><p data-e>A 15–30 s video on my account: hook, demo, honest result.</p></div>
+      <div class="svc"><h3 data-e>UGC video</h3><p data-e>Raw or edited footage for your ads and pages. You own the usage.</p></div>
+      <div class="svc"><h3 data-e>Gifted PR</h3><p data-e>Send it over. If I love it, it goes in a video.</p></div>
+    </div>
+  </section>
+
+  <section id="rates">
+    <h2 data-e>Rates</h2>
+    <div class="rates" data-list="rate">
+      <div class="rate"><h3 data-e>UGC video</h3><span class="price" data-e>$120</span><span class="per" data-e>per video</span><p data-e>15–60 s, filmed and edited, 1 round of changes. Yours to post.</p></div>
+      <div class="rate"><h3 data-e>3-video bundle</h3><span class="price" data-e>$300</span><span class="per" data-e>3 videos</span><p data-e>Three different hooks or angles for the same product.</p></div>
+      <div class="rate"><h3 data-e>Posted on my TikTok</h3><span class="price" data-e>$150</span><span class="per" data-e>per post</span><p data-e>Posted on @yourhandle with your tag and link.</p></div>
+    </div>
+    <div class="addons">
+      <h3 data-e>Add-ons</h3>
+      <ul data-e><li>Paid ad usage (30 days): +$50</li><li>Extra hook: +$25</li><li>48-hour rush: +$30</li></ul>
+    </div>
+    <p class="note" data-e>Gifted PR welcome. Prices in USD.</p>
+  </section>
+
+  <div class="contact" id="contact">
+    <h2 data-e>Let's work together</h2>
+    <p data-e>I reply within 2 days. Tell me about your product and timeline.</p>
+    <a class="btn" data-link data-mail href="mailto:you@email.com" data-e>Email me</a>
+  </div>
+
+  <p class="credit">template by <a href="https://www.tiktok.com/@dear_annako" target="_blank" rel="noopener">@dear_annako</a> ♡</p>
+</div>
+
+<!-- editor UI (removed from the saved site) -->
+<div id="editor">
+  <div class="panel" id="p-styles" hidden>
+    <h4>Pick a look (you can still change colours and fonts after)</h4>
+    <div class="row" id="styleRow"></div>
+    <h4>Background pattern</h4>
+    <div class="lblrow" id="bgpRow" style="margin-bottom:16px"></div>
+    <h4>Photo frame</h4>
+    <div class="lblrow" id="frameRow"></div>
+  </div>
+  <div class="panel" id="p-colours" hidden>
+    <h4>Palettes</h4>
+    <div class="row" id="palRow"></div>
+    <h4>Or pick your own</h4>
+    <div class="cust" id="custRow"></div>
+  </div>
+  <div class="panel" id="p-fonts" hidden>
+    <h4>Font style</h4>
+    <div class="row" id="fontRow"></div>
+  </div>
+  <div class="panel" id="p-stickers" hidden>
+    <h4>Tap to add, then drag it anywhere</h4>
+    <div class="stkgrid" id="stkGrid2"></div>
+    <h4>More</h4>
+    <div class="stkgrid" id="stkGrid"></div>
+    <h4>Labels (tap a label on the page to rewrite it)</h4>
+    <div class="lblrow" id="lblRow"></div>
+  </div>
+  <div class="panel" id="p-save" hidden>
+    <h4>Save your portfolio</h4>
+    <button class="bigbtn go" type="button" id="saveHtml">Download my website<small>An index.html file you can put online for free</small></button>
+    <button class="bigbtn" type="button" id="saveImg">Save as an image<small>A long PNG to DM or email to brands</small></button>
+    <h4 style="margin-top:14px">Put it online in 2 minutes (free)</h4>
+    <ol class="steps">
+      <li>On a computer, make a new folder and put the downloaded <code>index.html</code> in it.</li>
+      <li>Go to <b>app.netlify.com/drop</b> and drag the folder onto the page.</li>
+      <li>You get a link. Make a free account to keep it and rename it to something like <code>yourname.netlify.app</code>.</li>
+      <li>Put that link in your bio and your PR emails.</li>
+    </ol>
+    <h4 style="margin-top:14px">Start over</h4>
+    <button class="mini" type="button" id="resetBtn">Reset to the blank template</button>
+    <span id="resetConfirm" hidden> <span style="font-size:14px">This erases your edits.</span> <button class="mini" type="button" id="resetYes" style="background:var(--ed-pink);color:#fff">Yes, reset</button></span>
+  </div>
+
+  <nav class="dock" aria-label="Editor">
+    <button type="button" data-panel="p-styles"><span class="ico">🎀</span><span class="txt">Styles</span></button>
+    <button type="button" data-panel="p-colours"><span class="ico">🎨</span><span class="txt">Colours</span></button>
+    <button type="button" data-panel="p-fonts"><span class="ico">Aa</span><span class="txt">Fonts</span></button>
+    <button type="button" data-panel="p-stickers"><span class="ico">⭐</span><span class="txt">Stickers</span></button>
+    <button type="button" id="previewBtn" aria-pressed="false"><span class="ico">👁</span><span class="txt">Preview</span></button>
+    <button type="button" data-panel="p-save"><span class="ico">💾</span><span class="txt">Save</span></button>
+  </nav>
+  <input type="file" id="fileIn" accept="image/*" hidden>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<script>
+(() => {
+const KEY = 'annako-portfolio-template-v1';
+const $ = (s, r = document) => r.querySelector(s);
+const $$ = (s, r = document) => [...r.querySelectorAll(s)];
+const site = $('#site'), root = document.documentElement;
+const store = {
+  get() { try { return JSON.parse(localStorage.getItem(KEY)); } catch { return null; } },
+  set(v) { try { localStorage.setItem(KEY, JSON.stringify(v)); } catch {} },
+  clear() { try { localStorage.removeItem(KEY); } catch {} }
+};
+const toast = (msg) => { const t = document.createElement('div'); t.className = 'toast'; t.textContent = msg; document.body.append(t); setTimeout(() => t.remove(), 2200); };
+
+/* ---------- palettes + fonts ---------- */
+const PALETTES = [
+  { name: 'Strawberry milk', bg: '#ffe6ee', paper: '#fffafc', ink: '#2a1622', accent: '#ff6f9f', hl: '#cfe86a', chip: '#ffe27a' },
+  { name: 'Matcha latte',    bg: '#eef3dc', paper: '#fbfdf4', ink: '#1f2a17', accent: '#5f8f2e', hl: '#ffd2df', chip: '#f6e3a1' },
+  { name: 'Lavender',        bg: '#efe9ff', paper: '#fcfbff', ink: '#231a3d', accent: '#7c5cf0', hl: '#ffe27a', chip: '#ffd1e3' },
+  { name: 'Butter toast',    bg: '#fff3d1', paper: '#fffcf2', ink: '#2e2112', accent: '#e0782c', hl: '#c6e4ff', chip: '#ffd0da' },
+  { name: 'Sky',             bg: '#e2f0ff', paper: '#fafdff', ink: '#10213d', accent: '#2f6fe0', hl: '#ffe27a', chip: '#ffd3e6' },
+  { name: 'Cherry night',    bg: '#1d1317', paper: '#2b1d23', ink: '#fff0f5', accent: '#ff4d7d', hl: '#c9e66a', chip: '#ffe27a' },
+  { name: 'Baby blue',       bg: '#eaf2fb', paper: '#fffdf7', ink: '#26304a', accent: '#c8333f', hl: '#bcd4f2', chip: '#f6d77a', gingham: '#8fb3e6', clip: '#a9c8ec' },
+  { name: 'Cocoa lace',      bg: '#4a2d22', paper: '#fbf5ea', ink: '#3b2318', accent: '#a0604a', hl: '#f1d6c2', chip: '#ead3b4', gingham: '#a0604a', clip: '#d9d9de' },
+  { name: 'Picnic',          bg: '#fff5f3', paper: '#fffdfb', ink: '#3a1f1f', accent: '#de4f5c', hl: '#cbe3a6', chip: '#ffd9a0', gingham: '#ef8c95', clip: '#f6c6cf' },
+  { name: 'Newsprint',       bg: '#efeadf', paper: '#f8f5ee', ink: '#1d1b18', accent: '#b23a48', hl: '#e6d6ae', chip: '#efe2c2', gingham: '#1d1b18', clip: '#cfcfd4' },
+  { name: 'Rose lace',       bg: '#fbe8ee', paper: '#fffaf6', ink: '#5a3a3f', accent: '#d27891', hl: '#d9e6c4', chip: '#f6d6de', gingham: '#a9c48a', clip: '#e8b5c3' },
+  { name: 'Storybook',       bg: '#fdf5d8', paper: '#fffdf3', ink: '#4a3b2a', accent: '#e06a5f', hl: '#bcd7f0', chip: '#f6d87a', gingham: '#9cc0e6', clip: '#f6d87a' }
+];
+const CUSTOM = [['bg', 'Background'], ['paper', 'Cards'], ['ink', 'Text'], ['accent', 'Accent'], ['hl', 'Highlight'], ['chip', 'Tags']];
+const FONTS = [
+  { name: 'Bold & bubbly', d: "'Bricolage Grotesque','Figtree',system-ui,sans-serif", b: "'Figtree',system-ui,sans-serif", note: 'Bricolage + Figtree' },
+  { name: 'Soft editorial', d: "'Fraunces',Georgia,serif", b: "'DM Sans',system-ui,sans-serif", note: 'Fraunces + DM Sans' },
+  { name: 'Cute diary', d: "'Gaegu','Nunito',system-ui,sans-serif", b: "'Nunito',system-ui,sans-serif", note: 'Gaegu + Nunito' },
+  { name: 'Retro charm', d: "'Shrikhand',Georgia,serif", b: "'Nunito',system-ui,sans-serif", note: 'Shrikhand + Nunito' },
+  { name: 'Marshmallow', d: "'Titan One','Nunito',system-ui,sans-serif", b: "'Nunito',system-ui,sans-serif", note: 'Titan One + Nunito' },
+  { name: 'Love letter', d: "'Pinyon Script','Dancing Script',cursive", b: "'Cormorant Garamond',Georgia,serif", note: 'Pinyon Script + Cormorant' },
+  { name: 'Pencil diary', d: "'Patrick Hand','Gaegu',system-ui,sans-serif", b: "'Patrick Hand','Nunito',system-ui,sans-serif", note: 'Patrick Hand' },
+  { name: 'Dainty bloom', d: "'Dancing Script',cursive", b: "'DM Sans',system-ui,sans-serif", note: 'Dancing Script + DM Sans' },
+  { name: 'Newspaper', d: "'Playfair Display',Georgia,serif", b: "'Libre Baskerville',Georgia,serif", note: 'Playfair + Baskerville' }
+];
+const STYLES = [
+  { id: 'clean', name: 'Clean', note: 'bold, simple, lots of space', pal: 'Strawberry milk', font: 'Bold & bubbly', frame: 'fr-round' },
+  { id: 'clip', name: 'Clipboard', note: 'binder clips + gingham paper', pal: 'Baby blue', font: 'Retro charm', frame: 'fr-polaroid' },
+  { id: 'lace', name: 'Lace & polka', note: 'vintage cocoa, oval frame', pal: 'Cocoa lace', font: 'Love letter', frame: 'fr-oval' },
+  { id: 'gingham', name: 'Gingham diary', note: 'picnic check + notebook', pal: 'Picnic', font: 'Cute diary', frame: 'fr-gingham' },
+  { id: 'news', name: 'Newspaper', note: 'masthead, columns, newsprint', pal: 'Newsprint', font: 'Newspaper', frame: 'fr-stamp' },
+  { id: 'coq', name: 'Coquette', note: 'polka dots, cloud labels, sage trim', pal: 'Rose lace', font: 'Love letter', frame: 'fr-dots' },
+  { id: 'story', name: 'Storybook', note: 'butter + sky stripes, stitched cards', pal: 'Storybook', font: 'Cute diary', frame: 'fr-polaroid' }
+];
+const BGPS = [['auto', 'Style default'], ['plain', 'Plain'], ['polka', 'Polka dots'], ['gingham', 'Gingham'], ['stripes', 'Stripes'], ['plaid', 'Plaid'], ['hearts', 'Tiny hearts'], ['floral', 'Ditsy floral'], ['patch', 'Patchwork']];
+const FRAMES = [['fr-round', 'Rounded'], ['fr-polaroid', 'Polaroid'], ['fr-gingham', 'Gingham polaroid'], ['fr-oval', 'Oval'], ['fr-camera', 'Digital camera'], ['fr-tv', 'Retro TV'], ['fr-stamp', 'Postage stamp'], ['fr-dots', 'Lace dots']];
+let theme = { ...PALETTES[0], font: 0, style: 'clean' };
+function applyTheme() {
+  for (const [k] of CUSTOM) root.style.setProperty('--' + k, theme[k]);
+  const f = FONTS[theme.font] || FONTS[0];
+  root.style.setProperty('--display', f.d); root.style.setProperty('--body', f.b);
+  root.style.setProperty('--track', theme.font < 2 ? '-.035em' : '0');
+  const g = theme.gingham || theme.accent, ga = rgba(g, .45);
+  root.style.setProperty('--gingham', `linear-gradient(90deg,${ga} 50%,transparent 0) 0 0/22px 22px,linear-gradient(${ga} 50%,transparent 0) 0 0/22px 22px,#fff`);
+  root.style.setProperty('--soft', rgba(g, .22));
+  root.style.setProperty('--dot', rgba(theme.paper, .8));
+  root.style.setProperty('--clip-img', `url("data:image/svg+xml,${encodeURIComponent(clipSVG(theme.clip || theme.accent))}")`);
+  root.style.setProperty('--dotc', rgba(theme.accent, .32));
+  root.style.setProperty('--stripe', rgba(theme.chip, .35));
+  root.style.setProperty('--line2', rgba(theme.ink, .14));
+  root.style.setProperty('--tint1', rgba(theme.hl, .35));
+  root.style.setProperty('--tint2', rgba(theme.chip, .35));
+  const svgUrl = x => `url("data:image/svg+xml,${encodeURIComponent(x)}")`;
+  root.style.setProperty('--hearts-img', svgUrl(`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44"><path d="M11 16s-6-3.7-6-7.7A3 3 0 0 1 11 7a3 3 0 0 1 6 1.3c0 4-6 7.7-6 7.7zM33 38s-6-3.7-6-7.7A3 3 0 0 1 33 29a3 3 0 0 1 6 1.3c0 4-6 7.7-6 7.7z" fill="${rgba(theme.accent, .45)}"/></svg>`));
+  root.style.setProperty('--floral-img', svgUrl(`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40"><g fill="${rgba(theme.accent, .5)}"><circle cx="10" cy="7" r="2.6"/><circle cx="13.3" cy="10" r="2.6"/><circle cx="10" cy="13" r="2.6"/><circle cx="6.7" cy="10" r="2.6"/></g><circle cx="10" cy="10" r="1.6" fill="${theme.chip}"/><g fill="${rgba(theme.gingham || theme.hl, .6)}"><circle cx="30" cy="27" r="2.6"/><circle cx="33.3" cy="30" r="2.6"/><circle cx="30" cy="33" r="2.6"/><circle cx="26.7" cy="30" r="2.6"/></g><circle cx="30" cy="30" r="1.6" fill="${theme.paper}"/><path d="M22 14q3-3 6 0" stroke="${rgba(theme.ink, .25)}" fill="none" stroke-width="1.3"/></svg>`));
+  BGPS.forEach(([id]) => document.body.classList.remove('bgp-' + id));
+  document.body.classList.toggle('bgp', !!theme.bgp && theme.bgp !== 'auto');
+  if (theme.bgp && theme.bgp !== 'auto') document.body.classList.add('bgp-' + theme.bgp);
+  $$('#bgpRow button').forEach((b, i) => b.setAttribute('aria-pressed', BGPS[i][0] === (theme.bgp || 'auto')));
+  STYLES.forEach(st => document.body.classList.toggle('st-' + st.id, st.id === (theme.style || 'clean')));
+  $$('.stylecard').forEach((b, i) => b.setAttribute('aria-pressed', STYLES[i].id === (theme.style || 'clean')));
+  $$('.pal').forEach((b, i) => b.setAttribute('aria-pressed', PALETTES[i].name === theme.name));
+  $$('.fontopt').forEach((b, i) => b.setAttribute('aria-pressed', i === theme.font));
+  CUSTOM.forEach(([k]) => { const inp = $('#c-' + k); if (inp) inp.value = theme[k]; });
+}
+function rgba(hex, a) { const n = parseInt(hex.slice(1), 16); return `rgba(${n >> 16},${(n >> 8) & 255},${n & 255},${a})`; }
+function clipSVG(c) {
+  const wave = 'q-5 7 -10 0'.repeat ? Array(8).fill('q-5 7 -10 0').join(' ') : '';
+  return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 70"><path fill-rule="evenodd" d="M50 2a14 14 0 1 1 0 28a14 14 0 1 1 0-28zm0 8a6 6 0 1 0 0 12a6 6 0 1 0 0-12z" fill="${c}" stroke="rgba(0,0,0,.22)" stroke-width="1.5"/><rect x="40" y="24" width="20" height="10" fill="${c}"/><path d="M14 31H86a4 4 0 0 1 4 4V56 ${wave} V35a4 4 0 0 1 4-4z" fill="${c}" stroke="rgba(0,0,0,.22)" stroke-width="1.5"/><rect x="18" y="36" width="64" height="5" rx="2.5" fill="#fff" opacity=".4"/><circle cx="12" cy="33" r="3" fill="rgba(0,0,0,.25)"/><circle cx="88" cy="33" r="3" fill="rgba(0,0,0,.25)"/></svg>`;
+}
+STYLES.forEach(st => {
+  const p = PALETTES.find(x => x.name === st.pal), b = document.createElement('button'); b.type = 'button'; b.className = 'stylecard';
+  const g = rgba(p.gingham || p.accent, .45);
+  const dc = rgba(p.accent, .35), st2 = rgba(p.chip, .45);
+  const bgs = { news: `linear-gradient(${p.ink} 0 0) 50% 18px/70% 6px no-repeat,linear-gradient(${p.ink} 0 0) 50% 32px/90% 1px no-repeat,${p.bg}`,
+    coq: `radial-gradient(${dc} 3px,transparent 3.5px) 0 0/16px 16px,${p.bg}`, story: `repeating-linear-gradient(90deg,${st2} 0 10px,transparent 10px 20px),${p.bg}`, clean: p.bg, clip: `linear-gradient(90deg,${g} 50%,transparent 0) 0 0/14px 14px,linear-gradient(${g} 50%,transparent 0) 0 0/14px 14px,#fff`,
+    lace: `radial-gradient(${p.paper} 2.5px,transparent 3px) 0 0/16px 16px,${p.bg}`, gingham: `linear-gradient(90deg,${g} 50%,transparent 0) 0 0/18px 18px,linear-gradient(${g} 50%,transparent 0) 0 0/18px 18px,${p.bg}` };
+  b.innerHTML = `<span class="sp" style="background:${bgs[st.id]}"></span><b>${st.name}</b><small>${st.note}</small>`;
+  b.onclick = () => {
+    theme = { ...p, font: FONTS.findIndex(f => f.name === st.font), style: st.id, bgp: 'auto' };
+    setFrame($('.photo', site), st.frame); applyTheme(); save();
+  };
+  $('#styleRow').append(b);
+});
+FRAMES.forEach(([cls, label]) => {
+  const b = document.createElement('button'); b.type = 'button'; b.textContent = label;
+  b.onclick = () => { setFrame($('.photo', site), cls); save(); };
+  $('#frameRow').append(b);
+});
+BGPS.forEach(([id, label]) => {
+  const b = document.createElement('button'); b.type = 'button'; b.textContent = label;
+  b.onclick = () => { theme.bgp = id; applyTheme(); save(); };
+  $('#bgpRow').append(b);
+});
+function setFrame(box, cls) { if (!box) return; FRAMES.forEach(([c]) => box.classList.remove(c)); box.classList.add(cls); }
+PALETTES.forEach(p => {
+  const b = document.createElement('button'); b.type = 'button'; b.className = 'pal';
+  b.innerHTML = `<span class="sw">${[p.bg, p.accent, p.hl, p.chip, p.ink].map(c => `<i style="background:${c}"></i>`).join('')}</span>${p.name}`;
+  b.onclick = () => { theme = { ...p, font: theme.font, style: theme.style, bgp: theme.bgp }; applyTheme(); save(); };
+  $('#palRow').append(b);
+});
+CUSTOM.forEach(([k, label]) => {
+  const l = document.createElement('label');
+  l.innerHTML = `<input type="color" id="c-${k}"> ${label}`;
+  l.querySelector('input').oninput = e => { theme[k] = e.target.value; theme.name = 'custom'; applyTheme(); save(); };
+  $('#custRow').append(l);
+});
+FONTS.forEach((f, i) => {
+  const b = document.createElement('button'); b.type = 'button'; b.className = 'fontopt';
+  b.innerHTML = `<big style="font-family:${f.d};font-weight:800">${f.name}</big><small style="font-family:${f.b}">${f.note}</small>`;
+  b.onclick = () => { theme.font = i; applyTheme(); save(); };
+  $('#fontRow').append(b);
+});
+
+/* ---------- stickers ---------- */
+const SVG = {
+  heart: '<svg viewBox="0 0 64 64"><path d="M32 56S6 40 6 22a13 13 0 0 1 26-4 13 13 0 0 1 26 4c0 18-26 34-26 34z" fill="var(--accent)" stroke="var(--ink)" stroke-width="2.5" stroke-linejoin="round"/><path d="M15 20a7 7 0 0 1 7-6" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" opacity=".8"/></svg>',
+  star: '<svg viewBox="0 0 64 64"><path d="M32 5l7.6 17.5 19 1.8-14.4 12.6 4.3 18.6L32 45.8 15.5 55.5l4.3-18.6L5.4 24.3l19-1.8z" fill="var(--chip)" stroke="var(--ink)" stroke-width="2.5" stroke-linejoin="round"/></svg>',
+  bow: '<svg viewBox="0 0 64 64"><g fill="var(--accent)" stroke="var(--ink)" stroke-width="2.5" stroke-linejoin="round"><path d="M30 30C20 14 6 16 7 27s15 11 23 5z"/><path d="M34 30c10-16 24-14 23-3s-15 11-23 5z"/><path d="M29 33l-9 22 8-3 3 6 2-24z"/><path d="M35 33l9 22-8-3-3 6-2-24z"/><circle cx="32" cy="31" r="5"/></g></svg>',
+  sparkle: '<svg viewBox="0 0 64 64"><path d="M32 4c3 16 8 21 24 28-16 7-21 12-24 28-3-16-8-21-24-28 16-7 21-12 24-28z" fill="var(--hl)" stroke="var(--ink)" stroke-width="2.5" stroke-linejoin="round"/></svg>',
+  flower: '<svg viewBox="0 0 64 64"><g fill="var(--paper)" stroke="var(--ink)" stroke-width="2.5"><circle cx="32" cy="15" r="11"/><circle cx="49" cy="28" r="11"/><circle cx="42" cy="48" r="11"/><circle cx="22" cy="48" r="11"/><circle cx="15" cy="28" r="11"/></g><circle cx="32" cy="33" r="9" fill="var(--chip)" stroke="var(--ink)" stroke-width="2.5"/></svg>',
+  cherry: '<svg viewBox="0 0 64 64"><path d="M22 40C26 24 34 12 46 8M42 40c0-14 0-24 4-32" fill="none" stroke="var(--ink)" stroke-width="2.5" stroke-linecap="round"/><path d="M46 8c6 2 10 6 9 11-7-1-9-5-9-11z" fill="var(--hl)" stroke="var(--ink)" stroke-width="2.5" stroke-linejoin="round"/><circle cx="21" cy="46" r="11" fill="var(--accent)" stroke="var(--ink)" stroke-width="2.5"/><circle cx="43" cy="47" r="11" fill="var(--accent)" stroke="var(--ink)" stroke-width="2.5"/></svg>',
+  seal: '<svg viewBox="0 0 64 64"><path d="M32 4l6 6 8-2 3 8 8 3-2 8 6 6-6 6 2 8-8 3-3 8-8-2-6 6-6-6-8 2-3-8-8-3 2-8-6-6 6-6-2-8 8-3 3-8 8 2z" fill="var(--accent)" stroke="var(--ink)" stroke-width="2.5" stroke-linejoin="round"/><path d="M32 44S20 36 20 28a6 6 0 0 1 12-2 6 6 0 0 1 12 2c0 8-12 16-12 16z" fill="var(--paper)"/></svg>',
+  squiggle: '<svg viewBox="0 0 64 64"><path d="M4 40c8-16 14-16 18 0s10 16 18 0 14-16 20 0" fill="none" stroke="var(--accent)" stroke-width="5" stroke-linecap="round"/></svg>'
+};
+const D = `<defs><linearGradient id="chr" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fff"/><stop offset=".35" stop-color="#c3c7cd"/><stop offset=".55" stop-color="#6f747b"/><stop offset=".75" stop-color="#e8ebee"/><stop offset="1" stop-color="#9aa0a7"/></linearGradient></defs>`;
+const holes4 = (x, y, d) => [[x - d, y - d], [x + d, y - d], [x - d, y + d], [x + d, y + d]].map(([a, b]) => `<circle cx="${a}" cy="${b}" r="3.2" fill="rgba(0,0,0,.32)"/>`).join('');
+const CORNER = 'M0 0H100C84 8 88 22 74 28S62 46 50 52 40 70 28 76 12 90 0 100Z';
+const SVG2 = {
+  clip: clipSVG('var(--accent)'), clipChip: clipSVG('var(--chip)'), clipSilver: clipSVG('url(#chr)').replace('<path', D + '<path'),
+  button: `<svg viewBox="0 0 64 64"><circle cx="32" cy="32" r="28" fill="var(--accent)" stroke="rgba(0,0,0,.2)" stroke-width="2"/><circle cx="32" cy="32" r="20" fill="none" stroke="rgba(0,0,0,.15)" stroke-width="2.5"/>${holes4(32, 32, 6)}<ellipse cx="22" cy="18" rx="9" ry="4" fill="#fff" opacity=".45" transform="rotate(-25 22 18)"/></svg>`,
+  buttonCream: `<svg viewBox="0 0 64 64"><circle cx="32" cy="32" r="28" fill="var(--paper)" stroke="rgba(0,0,0,.22)" stroke-width="2"/><circle cx="32" cy="32" r="20" fill="none" stroke="rgba(0,0,0,.12)" stroke-width="2.5"/>${holes4(32, 32, 6)}<path d="M26 26l12 12M38 26L26 38" stroke="var(--accent)" stroke-width="2.5" stroke-linecap="round"/></svg>`,
+  buttonHeart: `<svg viewBox="0 0 64 64"><path d="M32 56S6 40 6 22a13 13 0 0 1 26-4 13 13 0 0 1 26 4c0 18-26 34-26 34z" fill="var(--chip)" stroke="rgba(0,0,0,.22)" stroke-width="2"/>${holes4(32, 30, 5)}<ellipse cx="18" cy="18" rx="6" ry="3" fill="#fff" opacity=".5" transform="rotate(-35 18 18)"/></svg>`,
+  buttonStar: `<svg viewBox="0 0 64 64"><path d="M32 5l7.6 17.5 19 1.8-14.4 12.6 4.3 18.6L32 45.8 15.5 55.5l4.3-18.6L5.4 24.3l19-1.8z" fill="var(--accent)" stroke="rgba(0,0,0,.22)" stroke-width="2" stroke-linejoin="round"/><circle cx="27" cy="33" r="3.2" fill="rgba(0,0,0,.32)"/><circle cx="37" cy="33" r="3.2" fill="rgba(0,0,0,.32)"/></svg>`,
+  buttonFlower: `<svg viewBox="0 0 64 64"><g fill="var(--hl)" stroke="rgba(0,0,0,.2)" stroke-width="2"><circle cx="32" cy="15" r="12"/><circle cx="48" cy="27" r="12"/><circle cx="42" cy="46" r="12"/><circle cx="22" cy="46" r="12"/><circle cx="16" cy="27" r="12"/></g><circle cx="32" cy="32" r="13" fill="var(--hl)"/><circle cx="27" cy="32" r="3.2" fill="rgba(0,0,0,.32)"/><circle cx="37" cy="32" r="3.2" fill="rgba(0,0,0,.32)"/></svg>`,
+  buttonBunny: `<svg viewBox="0 0 64 64"><g fill="#f4e7cf" stroke="rgba(0,0,0,.2)" stroke-width="2"><ellipse cx="22" cy="16" rx="7" ry="14"/><ellipse cx="42" cy="16" rx="7" ry="14"/><circle cx="32" cy="40" r="20"/></g><ellipse cx="22" cy="17" rx="3" ry="8" fill="var(--accent)" opacity=".35"/><ellipse cx="42" cy="17" rx="3" ry="8" fill="var(--accent)" opacity=".35"/><circle cx="26" cy="40" r="3.5" fill="rgba(0,0,0,.32)"/><circle cx="38" cy="40" r="3.5" fill="rgba(0,0,0,.32)"/></svg>`,
+  chromeStar: `<svg viewBox="0 0 64 64">${D}<path d="M32 4l8 18.5 20 2-15 13.3 4.5 19.7L32 47 14.5 57.5 19 37.8 4 24.5l20-2z" fill="url(#chr)" stroke="#8b9097" stroke-width="1.5" stroke-linejoin="round"/></svg>`,
+  chromeHeart: `<svg viewBox="0 0 64 64">${D}<path d="M32 56S6 40 6 22a13 13 0 0 1 26-4 13 13 0 0 1 26 4c0 18-26 34-26 34z" fill="url(#chr)" stroke="#8b9097" stroke-width="1.5"/></svg>`,
+  sealBow: `<svg viewBox="0 0 64 64"><path d="M32 3c8 0 10 4 16 6s10 7 11 14-2 10-1 16-4 12-10 15-10 7-17 6-11-3-16-7S5 44 5 37s-2-12 2-18 8-9 14-12S26 3 32 3z" fill="var(--accent)" stroke="rgba(0,0,0,.2)" stroke-width="2"/><circle cx="32" cy="32" r="19" fill="none" stroke="rgba(0,0,0,.18)" stroke-width="3"/><g fill="none" stroke="rgba(255,255,255,.75)" stroke-width="2" stroke-linecap="round"><path d="M32 31c-5-7-13-6-12 0s8 4 12 0zM32 31c5-7 13-6 12 0s-8 4-12 0zM31 33l-5 10M33 33l5 10"/></g></svg>`,
+  puffyBow: `<svg viewBox="0 0 64 64"><g fill="var(--accent)" stroke="rgba(0,0,0,.18)" stroke-width="2" stroke-linejoin="round"><path d="M30 29C18 10 3 14 4 27s17 12 26 4z"/><path d="M34 29c12-19 27-15 26-2s-17 12-26 4z"/><path d="M28 33l-8 22 7-2 4 6 1-25z"/><path d="M36 33l8 22-7-2-4 6-1-25z"/><ellipse cx="32" cy="31" rx="7" ry="6"/></g><g fill="#fff" opacity=".55"><ellipse cx="13" cy="21" rx="5" ry="2.5" transform="rotate(-30 13 21)"/><ellipse cx="45" cy="20" rx="5" ry="2.5" transform="rotate(25 45 20)"/><ellipse cx="30" cy="29" rx="2.5" ry="1.5"/></g></svg>`,
+  cornerGingham: `<svg viewBox="0 0 100 100"><defs><pattern id="pg" width="12" height="12" patternUnits="userSpaceOnUse"><rect width="12" height="12" fill="#fff"/><rect width="6" height="12" fill="var(--accent)" opacity=".45"/><rect width="12" height="6" fill="var(--accent)" opacity=".45"/></pattern></defs><path d="${CORNER}" fill="url(#pg)"/></svg>`,
+  cornerStars: `<svg viewBox="0 0 100 100"><defs><pattern id="ps" width="14" height="14" patternUnits="userSpaceOnUse"><rect width="14" height="14" fill="var(--bg)"/><path d="M7 2l1.5 3.4 3.7.3-2.8 2.4.9 3.6L7 9.8 3.7 11.7l.9-3.6L1.8 5.7l3.7-.3z" fill="var(--accent)"/></pattern></defs><path d="${CORNER}" fill="url(#ps)"/></svg>`,
+  cornerPlaid: `<svg viewBox="0 0 100 100"><defs><pattern id="pp" width="20" height="20" patternUnits="userSpaceOnUse"><rect width="20" height="20" fill="#efe4d0"/><rect width="8" height="20" fill="var(--accent)" opacity=".55"/><rect width="20" height="8" fill="var(--accent)" opacity=".55"/><rect x="13" width="1.5" height="20" fill="var(--ink)" opacity=".35"/><rect y="13" width="20" height="1.5" fill="var(--ink)" opacity=".35"/></pattern></defs><path d="${CORNER}" fill="url(#pp)"/></svg>`,
+  cornerHearts: `<svg viewBox="0 0 100 100"><defs><pattern id="ph" width="24" height="24" patternUnits="userSpaceOnUse"><rect width="24" height="24" fill="#d8ccb6"/><path d="M12 18s-7-4.3-7-9a3.6 3.6 0 0 1 7-1.2A3.6 3.6 0 0 1 19 9c0 4.7-7 9-7 9z" fill="var(--accent)"/></pattern></defs><path d="${CORNER}" fill="url(#ph)"/></svg>`,
+  patchStrawberry: `<svg viewBox="0 0 64 64"><path d="M32 58C14 46 8 30 14 20c5-8 13-6 18-4 5-2 13-4 18 4 6 10 0 26-18 38z" fill="#e04b5a" stroke="#7a2430" stroke-width="2"/><path d="M32 54C18 44 13 31 17 23c4-6 10-4 15-2 5-2 11-4 15 2 4 8-1 21-15 31z" fill="none" stroke="#fff" stroke-width="1.6" stroke-dasharray="3 3" opacity=".8"/><path d="M20 16l6 3 6-8 6 8 6-3-3 7H23z" fill="#6fa35b" stroke="#2f5a2a" stroke-width="1.5" stroke-linejoin="round"/><g fill="#ffe7a3"><ellipse cx="24" cy="30" rx="1.3" ry="2"/><ellipse cx="32" cy="34" rx="1.3" ry="2"/><ellipse cx="40" cy="30" rx="1.3" ry="2"/><ellipse cx="27" cy="41" rx="1.3" ry="2"/><ellipse cx="37" cy="41" rx="1.3" ry="2"/><ellipse cx="32" cy="48" rx="1.3" ry="2"/></g></svg>`,
+  patchCloudHeart: `<svg viewBox="0 0 64 64"><path d="M32 57S5 41 5 22a14 14 0 0 1 27-5 14 14 0 0 1 27 5c0 19-27 35-27 35z" fill="#8fb9e8" stroke="#2f4e7a" stroke-width="2"/><path d="M32 52S10 38 10 23a10 10 0 0 1 22-4 10 10 0 0 1 22 4c0 15-22 29-22 29z" fill="none" stroke="#fff" stroke-width="1.6" stroke-dasharray="3 3" opacity=".85"/><path d="M18 30a5 5 0 0 1 8-4 6 6 0 0 1 11 2 4 4 0 0 1 1 8H20a4 4 0 0 1-2-6z" fill="#fff"/></svg>`,
+  patchStar: `<svg viewBox="0 0 64 64"><path d="M32 4l8 18.5 20 2-15 13.3 4.5 19.7L32 47 14.5 57.5 19 37.8 4 24.5l20-2z" fill="#f6cf4d" stroke="#7a5a12" stroke-width="2" stroke-linejoin="round"/><path d="M32 11l6 13.6 14.6 1.5-11 9.7 3.3 14.4L32 42.6 19.1 50.2l3.3-14.4-11-9.7L26 24.6z" fill="none" stroke="#fff" stroke-width="1.5" stroke-dasharray="3 3" opacity=".8"/><circle cx="27" cy="31" r="1.8" fill="#4a3412"/><circle cx="37" cy="31" r="1.8" fill="#4a3412"/><path d="M28 36q4 3 8 0" fill="none" stroke="#4a3412" stroke-width="1.6" stroke-linecap="round"/><circle cx="24" cy="35" r="2" fill="#f29b9b" opacity=".7"/><circle cx="40" cy="35" r="2" fill="#f29b9b" opacity=".7"/></svg>`,
+  patchCherry: `<svg viewBox="0 0 64 64"><path d="M22 40C26 24 34 12 46 8M42 40c0-14 0-24 4-32" fill="none" stroke="#2f5a2a" stroke-width="3" stroke-linecap="round"/><path d="M46 8c7 1 11 6 10 11-8-1-10-5-10-11z" fill="#6fa35b" stroke="#2f5a2a" stroke-width="1.5"/><g stroke="#6e1c28" stroke-width="2"><circle cx="21" cy="46" r="12" fill="#d23a4e"/><circle cx="43" cy="47" r="12" fill="#d23a4e"/></g><g fill="none" stroke="#fff" stroke-width="1.4" stroke-dasharray="2.5 2.5" opacity=".8"><circle cx="21" cy="46" r="8.5"/><circle cx="43" cy="47" r="8.5"/></g><ellipse cx="17" cy="41" rx="3" ry="1.8" fill="#fff" opacity=".7"/><ellipse cx="39" cy="42" rx="3" ry="1.8" fill="#fff" opacity=".7"/></svg>`,
+  patchFlower: `<svg viewBox="0 0 64 64"><g fill="#f29bb5" stroke="#8a3552" stroke-width="2"><circle cx="32" cy="14" r="11"/><circle cx="49" cy="26" r="11"/><circle cx="43" cy="46" r="11"/><circle cx="21" cy="46" r="11"/><circle cx="15" cy="26" r="11"/></g><circle cx="32" cy="32" r="14" fill="#f29bb5"/><circle cx="32" cy="32" r="16" fill="none" stroke="#fff" stroke-width="1.5" stroke-dasharray="3 3" opacity=".8"/><circle cx="32" cy="32" r="8" fill="#f6cf4d" stroke="#8a5a12" stroke-width="1.5"/></svg>`,
+  patchButterfly: `<svg viewBox="0 0 64 64"><g fill="#c8a7e8" stroke="#4e3270" stroke-width="2" stroke-linejoin="round"><path d="M31 30C22 10 4 10 6 22s14 12 25 8z"/><path d="M33 30c9-20 27-20 25-8s-14 12-25 8z"/><path d="M31 33C20 34 10 42 15 50s14-2 16-14z"/><path d="M33 33c11 1 21 9 16 17s-14-2-16-14z"/></g><g fill="none" stroke="#fff" stroke-width="1.3" stroke-dasharray="2.5 2.5" opacity=".85"><path d="M28 28C21 15 10 15 11 22s9 8 17 6z"/><path d="M36 28c7-13 18-13 17-6s-9 8-17 6z"/></g><rect x="30" y="20" width="4" height="30" rx="2" fill="#4e3270"/><path d="M31 21q-3-8-7-10M33 21q3-8 7-10" stroke="#4e3270" stroke-width="1.5" fill="none" stroke-linecap="round"/></svg>`,
+  patchBow: `<svg viewBox="0 0 64 64"><g fill="#f3a6bf" stroke="#8a3552" stroke-width="2" stroke-linejoin="round"><path d="M30 29C18 10 3 14 4 27s17 12 26 4z"/><path d="M34 29c12-19 27-15 26-2s-17 12-26 4z"/><path d="M28 33l-8 22 7-2 4 6 1-25z"/><path d="M36 33l8 22-7-2-4 6-1-25z"/><ellipse cx="32" cy="31" rx="7" ry="6"/></g><g fill="none" stroke="#fff" stroke-width="1.4" stroke-dasharray="2.5 2.5" opacity=".85"><path d="M27 27C18 15 9 18 9 26s10 8 18 3z"/><path d="M37 27c9-12 18-9 18-1s-10 8-18 3z"/></g></svg>`,
+  patchEnvelope: `<svg viewBox="0 0 64 64"><rect x="6" y="14" width="52" height="38" rx="4" fill="#f6dccf" stroke="#7a4a3a" stroke-width="2"/><rect x="10" y="18" width="44" height="30" rx="3" fill="none" stroke="#fff" stroke-width="1.5" stroke-dasharray="3 3"/><path d="M7 16l25 20 25-20" fill="none" stroke="#7a4a3a" stroke-width="2"/><path d="M32 42s-7-4-7-9a3.5 3.5 0 0 1 7-1 3.5 3.5 0 0 1 7 1c0 5-7 9-7 9z" fill="#d23a4e"/></svg>`,
+  lace: `<svg viewBox="0 0 160 40"><path d="M0 0H160V22${Array(8).fill('q-10 18 -20 0').join(' ')}Z" fill="#fff" stroke="rgba(0,0,0,.12)"/>${Array(8).fill(0).map((_, i) => `<circle cx="${10 + i * 20}" cy="24" r="3" fill="var(--bg)"/><circle cx="${10 + i * 20}" cy="10" r="1.8" fill="var(--bg)"/>`).join('')}</svg>`
+};
+function fixVars(svg) {
+  return svg.replace(/<(\w+)([^<>]*?)(\/?)>/g, (m, tag, attrs, sl) => {
+    const st = [];
+    attrs = attrs.replace(/\s(fill|stroke|stop-color)="(var\([^"]+\))"/g, (mm, k, v) => { st.push(k + ':' + v); return ''; });
+    return st.length ? `<${tag}${attrs} style="${st.join(';')}"${sl}>` : m;
+  });
+}
+for (const k in SVG) SVG[k] = fixVars(SVG[k]);
+for (const k in SVG2) SVG[k] = fixVars(SVG2[k]);
+const PATCHES = ['patchStrawberry', 'patchCloudHeart', 'patchStar', 'patchCherry', 'patchFlower', 'patchButterfly', 'patchBow', 'patchEnvelope'];
+const BIG = ['cornerGingham', 'cornerStars', 'cornerPlaid', 'cornerHearts', 'lace'], WIDE = ['clip', 'clipChip', 'clipSilver'];
+const EMOJI = ['🎀', '✨', '🍓', '💌', '🧴', '📸', '🌷', '🫧', '💄', '🍵', '☁️', '🦋'];
+const LABELS = [['open for collabs ♡', 'label'], ['PR friendly', 'label chip'], ['new!', 'label acc'], ['UGC creator', 'label'], ['based in [city]', 'label chip'], ['get to know me', 'label scallop'], ['my rates', 'label ticket'], ['darling', 'label patch'], ['good things take time', 'label patch'],
+  ['washi: plain', 'tape'], ['washi: dots', 'tape dots'], ['washi: stripes', 'tape stripe'], ['washi: gingham', 'tape check'], ['washi: floral', 'tape floral']];
+const grid = $('#stkGrid');
+for (const k in SVG) { const b = document.createElement('button'); b.type = 'button'; b.title = k; b.innerHTML = SVG[k]; if (k === 'lace') b.className = 'w2'; b.onclick = () => addSticker('svg', k); (k in SVG2 ? $('#stkGrid2') : grid).append(b); }
+for (const e of EMOJI) { const b = document.createElement('button'); b.type = 'button'; b.textContent = e; b.onclick = () => addSticker('emoji', e); grid.append(b); }
+for (const [t, c] of LABELS) { const b = document.createElement('button'); b.type = 'button'; b.textContent = t; b.onclick = () => addSticker(c, t); $('#lblRow').append(b); }
+
+function stickerEl(s) {
+  const el = document.createElement('div');
+  el.className = 'stk ' + (s.kind === 'svg' ? 'svgk' + (BIG.includes(s.val) ? ' big' : WIDE.includes(s.val) ? ' wide' : '') : s.kind);
+  const inner = document.createElement('span'); inner.className = 's-in';
+  if (s.kind === 'svg') inner.innerHTML = SVG[s.val] || '';
+  else if (s.kind.startsWith('tape')) inner.textContent = '';
+  else { inner.textContent = s.val; if (s.kind.startsWith('label')) inner.setAttribute('data-e', ''); }
+  el.append(inner);
+  el.dataset.s = JSON.stringify({ kind: s.kind, val: s.val });
+  place(el, s); return el;
+}
+function place(el, s) {
+  el.style.left = s.x + '%'; el.style.top = s.y + 'px';
+  el.style.transform = `translate(-50%,-50%) rotate(${s.r}deg) scale(${s.k})`;
+  el._s = s;
+}
+function addSticker(kind, val) {
+  const r = site.getBoundingClientRect();
+  const y = window.innerHeight * 0.4 - r.top + (Math.random() * 60 - 30);
+  const el = stickerEl({ kind, val, x: 50 + (Math.random() * 30 - 15), y, r: Math.round(Math.random() * 20 - 10), k: 1 });
+  site.append(el); bindEditable(el); select(el); closePanels(); save();
+}
+
+/* drag, select, transform */
+let selected = null; const bar = document.createElement('div'); bar.className = 'stkbar'; bar.hidden = true;
+bar.innerHTML = '<button type="button" data-a="rl" title="Rotate left">⟲</button><button type="button" data-a="rr" title="Rotate right">⟳</button><button type="button" data-a="sm" title="Smaller">−</button><button type="button" data-a="lg" title="Bigger">＋</button><button type="button" data-a="up" title="Bring to front">⬆</button><button type="button" data-a="del" title="Delete">🗑</button>';
+site.append(bar);
+bar.addEventListener('pointerdown', e => e.stopPropagation());
+bar.onclick = e => {
+  const a = e.target.closest('button')?.dataset.a; if (!a || !selected) return;
+  const s = selected._s;
+  if (a === 'rl') s.r -= 10; if (a === 'rr') s.r += 10;
+  if (a === 'sm') s.k = Math.max(.3, +(s.k - .15).toFixed(2)); if (a === 'lg') s.k = Math.min(4, +(s.k + .15).toFixed(2));
+  if (a === 'up') site.append(selected);
+  if (a === 'del') { selected.remove(); select(null); save(); return; }
+  place(selected, s); posBar(); save();
+};
+function select(el) {
+  $$('.stk.sel').forEach(x => x.classList.remove('sel'));
+  selected = el; if (el) { el.classList.add('sel'); bar.hidden = false; site.append(bar); posBar(); } else bar.hidden = true;
+}
+function posBar() {
+  if (!selected) return;
+  const sr = site.getBoundingClientRect(), er = selected.getBoundingClientRect();
+  const bw = 6 * 32 + 12;
+  let left = er.left - sr.left + er.width / 2 - bw / 2;
+  left = Math.max(4, Math.min(left, sr.width - bw - 4));
+  bar.style.left = left + 'px'; bar.style.top = (er.bottom - sr.top + 10) + 'px';
+}
+let drag = null;
+site.addEventListener('pointerdown', e => {
+  if (!document.body.classList.contains('editing')) return;
+  const el = e.target.closest('.stk');
+  if (!el) { if (!e.target.closest('.stkbar')) select(null); return; }
+  if (el.classList.contains('sel') && e.target.closest('[data-e]') && e.detail > 1) return; // double tap = edit text
+  select(el);
+  const sr = site.getBoundingClientRect();
+  drag = { el, id: e.pointerId, sx: e.clientX, sy: e.clientY, x0: el._s.x, y0: el._s.y, w: sr.width, moved: false };
+  el.setPointerCapture(e.pointerId);
+});
+site.addEventListener('pointermove', e => {
+  if (!drag || e.pointerId !== drag.id) return;
+  const dx = e.clientX - drag.sx, dy = e.clientY - drag.sy;
+  if (!drag.moved && Math.hypot(dx, dy) < 4) return;
+  drag.moved = true; e.preventDefault();
+  const s = drag.el._s; s.x = drag.x0 + dx / drag.w * 100; s.y = drag.y0 + dy;
+  place(drag.el, s); posBar();
+});
+const endDrag = e => { if (drag && e.pointerId === drag.id) { if (drag.moved) save(); drag = null; } };
+site.addEventListener('pointerup', endDrag); site.addEventListener('pointercancel', endDrag);
+window.addEventListener('resize', posBar);
+
+/* ---------- text editing ---------- */
+function bindEditable(scope) {
+  $$('[data-e]', scope).concat(scope.matches?.('[data-e]') ? [scope] : []).forEach(el => {
+    if (el._b) return; el._b = true;
+    el.contentEditable = document.body.classList.contains('editing') ? 'true' : 'false';
+    el.spellcheck = false;
+    el.addEventListener('input', () => { if (el.id === 'emailText') syncMail(); save(); });
+    el.addEventListener('click', e => { if (document.body.classList.contains('editing') && el.closest('a')) e.preventDefault(); });
+    el.addEventListener('paste', e => { e.preventDefault(); const t = (e.clipboardData || window.clipboardData).getData('text'); document.execCommand('insertText', false, t); });
+  });
+  // link chips
+  $$('[data-link]:not([data-mail])', scope).forEach(a => {
+    if (a._l) return; a._l = true;
+    const chip = document.createElement('button'); chip.type = 'button'; chip.className = 'mini linkchip ed-only'; chip.textContent = '🔗 link';
+    chip.onclick = e => { e.preventDefault(); e.stopPropagation(); editLink(a); };
+    a.after(chip);
+    if (!a.hasAttribute('data-e')) a.addEventListener('click', e => { if (document.body.classList.contains('editing')) { e.preventDefault(); editLink(a); } });
+  });
+  $$('[data-img]', scope).forEach(box => {
+    if (box._i) return; box._i = true;
+    box.addEventListener('click', e => {
+      if (!document.body.classList.contains('editing')) return;
+      if (e.target.closest('[data-e]') && !box.matches('.logo-c')) return;
+      if (box.matches('.logo-c') && e.target === box && box.textContent.trim() && !box.querySelector('img') && e.offsetY < box.clientHeight - 26) return; // let them type in the circle; "+" at bottom uploads
+      pickImage(box);
+    });
+  });
+}
+function syncMail() {
+  const m = $('#emailText').textContent.trim();
+  $$('[data-mail]').forEach(a => a.href = 'mailto:' + m);
+}
+function editLink(a) {
+  $('.linkpop')?.remove();
+  const pop = document.createElement('div'); pop.className = 'linkpop';
+  pop.innerHTML = '<b>Where should this go?</b><input type="url" id="linkIn" placeholder="https://www.tiktok.com/@you/video/…"><div class="acts"><button class="mini" type="button" data-x>Cancel</button><button class="mini" type="button" data-ok style="background:var(--ed-pink);color:#fff">Save link</button></div>';
+  document.body.append(pop);
+  const inp = $('#linkIn', pop); inp.value = a.getAttribute('href') || ''; inp.focus(); inp.select();
+  const ok = () => { let v = inp.value.trim(); if (v && !/^(https?:|mailto:)/i.test(v)) v = 'https://' + v; a.href = v || '#'; pop.remove(); save(); toast('Link saved'); };
+  $('[data-ok]', pop).onclick = ok; $('[data-x]', pop).onclick = () => pop.remove();
+  inp.onkeydown = e => { if (e.key === 'Enter') ok(); if (e.key === 'Escape') pop.remove(); };
+}
+let imgTarget = null;
+function pickImage(box) { imgTarget = box; $('#fileIn').value = ''; $('#fileIn').click(); }
+$('#fileIn').onchange = e => {
+  const f = e.target.files[0]; if (!f || !imgTarget) return;
+  const rd = new FileReader();
+  rd.onload = () => {
+    const im = new Image();
+    im.onload = () => {
+      const max = imgTarget.matches('.logo-c') ? 320 : 1000;
+      const sc = Math.min(1, max / Math.max(im.width, im.height));
+      const c = document.createElement('canvas'); c.width = Math.round(im.width * sc); c.height = Math.round(im.height * sc);
+      const cx = c.getContext('2d'); cx.fillStyle = '#fff'; cx.fillRect(0, 0, c.width, c.height); cx.drawImage(im, 0, 0, c.width, c.height);
+      const url = c.toDataURL('image/jpeg', .82);
+      const keep = [...imgTarget.children].filter(ch => ch.matches('.handle,.framechip'));
+      const img = document.createElement('img'); img.src = url; img.alt = '';
+      imgTarget.replaceChildren(img, ...keep);
+      if (imgTarget.matches('.logo-c')) { imgTarget.removeAttribute('data-e'); imgTarget.contentEditable = 'false'; }
+      save(); toast('Photo added');
+    };
+    im.src = rd.result;
+  };
+  rd.readAsDataURL(f);
+};
+
+/* ---------- add / remove cards ---------- */
+const BLANK = {
+  fact: '<div class="fact"><b data-e>Label</b><span data-e>your answer</span></div>',
+  stat: '<div class="stat"><b data-e>0</b><span data-e>new number</span></div>',
+  brand: '<div class="brand"><div class="logo-c" data-img data-e>Brand</div><span data-e>Brand name</span></div>',
+  vid: '<article class="vid"><div class="thumb" data-img><div class="ph">tap to add a thumbnail</div></div><div class="meta"><span class="tag" data-e>Tag</span><span class="vt" data-e>Video title</span><a class="watch" data-link href="https://www.tiktok.com/@yourhandle" target="_blank" rel="noopener">Watch on TikTok →</a></div></article>',
+  rate: '<div class="rate"><h3 data-e>New package</h3><span class="price" data-e>$XX</span><span class="per" data-e>per video</span><p data-e>What the brand gets.</p></div>',
+  svc: '<div class="svc"><h3 data-e>New service</h3><p data-e>What you make and what the brand gets.</p></div>'
+};
+function addFrameChip() {
+  const box = $('.photo', site); if (!box || box.querySelector('.framechip')) return;
+  if (!FRAMES.some(([c]) => box.classList.contains(c))) box.classList.add('fr-round');
+  const b = document.createElement('button'); b.type = 'button'; b.className = 'mini framechip ed-only'; b.textContent = '🖼 frame';
+  b.onclick = e => { e.stopPropagation(); const i = FRAMES.findIndex(([c]) => box.classList.contains(c)); setFrame(box, FRAMES[(i + 1) % FRAMES.length][0]); save(); };
+  box.append(b);
+}
+function addRemoveButtons() {
+  $$('[data-list]').forEach(list => {
+    const type = list.dataset.list;
+    [...list.children].forEach(card => {
+      if (card.matches('.addcard') || card.querySelector(':scope > .mini.x')) return;
+      const x = document.createElement('button'); x.type = 'button'; x.className = 'mini x ed-only'; x.textContent = '✕'; x.title = 'Remove';
+      x.onclick = e => { e.stopPropagation(); card.remove(); save(); };
+      card.prepend(x);
+    });
+    if (!list.querySelector('.addcard')) {
+      const add = document.createElement('button'); add.type = 'button'; add.className = 'addcard ed-only';
+      add.textContent = { fact: '+ add a fact', stat: '+ add a number', brand: '+ add brand', vid: '+ add a video', svc: '+ add a service', rate: '+ add a package' }[type];
+      add.onclick = () => { const t = document.createElement('template'); t.innerHTML = BLANK[type]; const card = t.content.firstElementChild; list.insertBefore(card, add); bindEditable(card); addRemoveButtons(); save(); };
+      list.append(add);
+    } else list.append(list.querySelector('.addcard'));
+  });
+}
+
+/* ---------- copy email (also in the saved site) ---------- */
+function bindCopy() {
+  $$('[data-copy]').forEach(b => b.onclick = async () => {
+    const t = $('#emailText').textContent.trim();
+    try { await navigator.clipboard.writeText(t); b.textContent = 'Copied!'; }
+    catch { const r = document.createRange(); r.selectNodeContents($('#emailText')); const s = getSelection(); s.removeAllRanges(); s.addRange(r); b.textContent = 'Selected'; }
+    setTimeout(() => b.textContent = 'Copy', 1500);
+  });
+}
+
+/* ---------- save / load ---------- */
+function cleanSiteHTML() {
+  const clone = site.cloneNode(true);
+  clone.querySelectorAll('.ed-only,.stkbar').forEach(n => n.remove());
+  clone.querySelectorAll('[contenteditable]').forEach(n => n.removeAttribute('contenteditable'));
+  clone.querySelectorAll('[spellcheck]').forEach(n => n.removeAttribute('spellcheck'));
+  clone.querySelectorAll('.sel').forEach(n => n.classList.remove('sel'));
+  clone.querySelectorAll('.stk').forEach(n => { n.style.top = n._s ? n._s.y + 'px' : n.style.top; });
+  return clone;
+}
+function stickersData() { return $$('.stk', site).map(el => ({ ...JSON.parse(el.dataset.s), x: el._s.x, y: el._s.y, r: el._s.r, k: el._s.k, text: el.textContent })); }
+let saveT;
+function save() {
+  clearTimeout(saveT);
+  saveT = setTimeout(() => {
+    const c = cleanSiteHTML(); c.querySelectorAll('.stk').forEach(n => n.remove());
+    store.set({ theme, html: c.innerHTML, stickers: stickersData(), welcome: !$('#welcome') });
+  }, 250);
+}
+function load() {
+  const d = store.get(); if (!d) return;
+  if (d.theme) theme = d.theme;
+  if (d.html) site.innerHTML = d.html;
+  (d.stickers || []).forEach(s => { const el = stickerEl(s); if (s.text && s.kind.startsWith('label')) el.querySelector('.s-in').textContent = s.text; site.append(el); });
+  if (d.welcome) $('#welcome')?.remove();
+}
+
+/* ---------- export ---------- */
+function download(name, blob) {
+  const a = document.createElement('a'); a.href = URL.createObjectURL(blob); a.download = name;
+  document.body.append(a); a.click(); setTimeout(() => { URL.revokeObjectURL(a.href); a.remove(); }, 1000);
+}
+$('#saveHtml').onclick = () => {
+  const c = cleanSiteHTML();
+  const vars = root.style.cssText;
+  const bodyCls = [...document.body.classList].filter(c => c.startsWith('st-') || c.startsWith('bgp')).join(' ');
+  const title = (c.querySelector('.logo')?.textContent || 'My portfolio').trim();
+  const html = `<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>${title.replace(/</g, '&lt;')}</title>
+${$('#fontlink').outerHTML}
+<style>${$('#sitecss').textContent}
+:root{${vars}}</style></head>
+<body class="${bodyCls}"><div class="site" id="site">${c.innerHTML}</div>
+<script>document.querySelectorAll('[data-copy]').forEach(function(b){b.onclick=function(){var t=document.getElementById('emailText').textContent.trim();(navigator.clipboard?navigator.clipboard.writeText(t):Promise.reject()).then(function(){b.textContent='Copied!'},function(){var r=document.createRange();r.selectNodeContents(document.getElementById('emailText'));var s=getSelection();s.removeAllRanges();s.addRange(r);b.textContent='Selected'});setTimeout(function(){b.textContent='Copy'},1500)}});<\/script>
+</body></html>`;
+  download('index.html', new Blob([html], { type: 'text/html' }));
+  toast('Saved index.html');
+};
+$('#saveImg').onclick = async () => {
+  if (!window.html2canvas) { toast('Image saving needs an internet connection'); return; }
+  closePanels(); select(null);
+  document.body.classList.remove('editing'); setEditable(false);
+  try {
+    const canvas = await html2canvas(document.body, { backgroundColor: theme.bg, scale: 2, useCORS: true, ignoreElements: el => el.id === 'editor' || el.classList?.contains('stkbar') || el.classList?.contains('toast') });
+    canvas.toBlob(b => { download('my-portfolio.png', b); toast('Saved my-portfolio.png'); }, 'image/png');
+  } catch { toast('Could not make the image. Try the website download.'); }
+  if ($('#previewBtn').getAttribute('aria-pressed') !== 'true') { document.body.classList.add('editing'); setEditable(true); }
+};
+
+/* ---------- panels, preview, reset ---------- */
+function closePanels() { $$('.panel').forEach(p => p.hidden = true); $$('.dock [data-panel]').forEach(b => b.setAttribute('aria-pressed', 'false')); }
+$$('.dock [data-panel]').forEach(b => b.onclick = () => {
+  const p = $('#' + b.dataset.panel), open = p.hidden; closePanels();
+  if (open) { p.hidden = false; b.setAttribute('aria-pressed', 'true'); if ($('#previewBtn').getAttribute('aria-pressed') === 'true') $('#previewBtn').click(); }
+});
+document.addEventListener('keydown', e => { if (e.key === 'Escape') { closePanels(); select(null); $('.linkpop')?.remove(); } });
+function setEditable(on) { $$('[data-e]', site).forEach(el => el.contentEditable = on ? 'true' : 'false'); }
+$('#previewBtn').onclick = () => {
+  const on = $('#previewBtn').getAttribute('aria-pressed') !== 'true';
+  $('#previewBtn').setAttribute('aria-pressed', on);
+  $('#previewBtn .txt').textContent = on ? 'Edit' : 'Preview';
+  $('#previewBtn .ico').textContent = on ? '✎' : '👁';
+  document.body.classList.toggle('editing', !on); setEditable(!on); select(null); if (on) closePanels();
+};
+$('#resetBtn').onclick = () => { $('#resetConfirm').hidden = false; };
+$('#resetYes').onclick = () => { store.clear(); location.reload(); };
+
+/* ---------- boot ---------- */
+load();
+applyTheme();
+bindEditable(site);
+$$('.stk', site).forEach(el => bindEditable(el));
+addRemoveButtons();
+addFrameChip();
+bindCopy();
+site.append(bar);
+const hw = $('#hideWelcome'); if (hw) hw.onclick = () => { $('#welcome').remove(); save(); };
+if (!store.get()) {
+  // a few stickers so people see what they can do
+  [{ kind: 'svg', val: 'bow', x: 92, y: 150, r: 12, k: 1 }, { kind: 'label', val: 'open for collabs ♡', x: 80, y: 600, r: -6, k: 1 }, { kind: 'svg', val: 'sparkle', x: 46, y: 225, r: 0, k: .8 }]
+    .forEach(s => { const el = stickerEl(s); site.append(el); bindEditable(el); });
+}
+})();
+</script>
+</body>
+</html>
