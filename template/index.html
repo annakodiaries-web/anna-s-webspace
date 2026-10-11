@@ -710,8 +710,10 @@ function applyTheme() {
   root.style.setProperty('--dotc', rgba(theme.accent, .32));
   root.style.setProperty('--stripe', rgba(theme.chip, .35));
   root.style.setProperty('--line2', rgba(theme.ink, .14));
-  root.style.setProperty('--tint1', rgba(theme.hl, .35));
-  root.style.setProperty('--tint2', rgba(theme.chip, .35));
+  // section tints are solid colours (mixed onto the card colour), so background patterns never show through
+  root.style.setProperty('--tint1', theme.sec || mix(theme.hl, theme.paper, .35));
+  root.style.setProperty('--tint2', theme.sec || mix(theme.chip, theme.paper, .35));
+  const sc = $('#c-sec'); if (sc) sc.value = theme.sec || mix(theme.hl, theme.paper, .35);
   const svgUrl = x => `url("data:image/svg+xml,${encodeURIComponent(x)}")`;
   root.style.setProperty('--hearts-img', svgUrl(`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44"><path d="M11 16s-6-3.7-6-7.7A3 3 0 0 1 11 7a3 3 0 0 1 6 1.3c0 4-6 7.7-6 7.7zM33 38s-6-3.7-6-7.7A3 3 0 0 1 33 29a3 3 0 0 1 6 1.3c0 4-6 7.7-6 7.7z" fill="${rgba(theme.accent, .45)}"/></svg>`));
   root.style.setProperty('--floral-img', svgUrl(`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40"><g fill="${rgba(theme.accent, .5)}"><circle cx="10" cy="7" r="2.6"/><circle cx="13.3" cy="10" r="2.6"/><circle cx="10" cy="13" r="2.6"/><circle cx="6.7" cy="10" r="2.6"/></g><circle cx="10" cy="10" r="1.6" fill="${theme.chip}"/><g fill="${rgba(theme.gingham || theme.hl, .6)}"><circle cx="30" cy="27" r="2.6"/><circle cx="33.3" cy="30" r="2.6"/><circle cx="30" cy="33" r="2.6"/><circle cx="26.7" cy="30" r="2.6"/></g><circle cx="30" cy="30" r="1.6" fill="${theme.paper}"/><path d="M22 14q3-3 6 0" stroke="${rgba(theme.ink, .25)}" fill="none" stroke-width="1.3"/></svg>`));
@@ -727,6 +729,7 @@ function applyTheme() {
   $$('.fontopt').forEach((b, i) => b.setAttribute('aria-pressed', i === theme.font));
   CUSTOM.forEach(([k]) => { const inp = $('#c-' + k); if (inp) inp.value = theme[k]; });
 }
+function mix(a, b, t) { const p = h => [1, 3, 5].map(i => parseInt(h.slice(i, i + 2), 16)); const x = p(a), y = p(b); return '#' + x.map((v, i) => Math.round(v * t + y[i] * (1 - t)).toString(16).padStart(2, '0')).join(''); }
 function rgba(hex, a) { const n = parseInt(hex.slice(1), 16); return `rgba(${n >> 16},${(n >> 8) & 255},${n & 255},${a})`; }
 function clipSVG(c) {
   const wave = 'q-5 7 -10 0'.repeat ? Array(8).fill('q-5 7 -10 0').join(' ') : '';
@@ -769,6 +772,12 @@ CUSTOM.forEach(([k, label]) => {
   l.querySelector('input').oninput = e => { theme[k] = e.target.value; theme.name = 'custom'; applyTheme(); save(); };
   $('#custRow').append(l);
 });
+{
+  const l = document.createElement('label');
+  l.innerHTML = '<input type="color" id="c-sec"> Sections';
+  l.querySelector('input').oninput = e => { theme.sec = e.target.value; applyTheme(); save(); };
+  $('#custRow').append(l);
+}
 FONTS.forEach((f, i) => {
   const b = document.createElement('button'); b.type = 'button'; b.className = 'fontopt';
   b.innerHTML = `<big style="font-family:${f.d};font-weight:800">${f.name}</big><small style="font-family:${f.b}">${f.note}</small>`;
