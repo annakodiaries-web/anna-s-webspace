@@ -163,8 +163,13 @@ a{color:inherit}
 .hero > *{min-width:0}
 .pill{display:inline-block;border:var(--line);border-radius:999px;padding:4px 14px;font-weight:700;font-size:14px;background:var(--paper)}
 h1{font-family:var(--display);font-weight:800;font-size:clamp(44px,8.5vw,92px);line-height:.98;letter-spacing:var(--track,-.035em);margin:18px 0 18px;text-wrap:balance;overflow-wrap:anywhere}
-h1 .mark{background:var(--hl);border-radius:14px;padding:0 .12em;-webkit-box-decoration-break:clone;box-decoration-break:clone}
+h1 .mark{background:linear-gradient(transparent 58%,var(--hl) 58%,var(--hl) 92%,transparent 92%);padding:0 .06em;-webkit-box-decoration-break:clone;box-decoration-break:clone}
 h1 .acc{color:var(--accent)}
+.brands-viewport{overflow:hidden;-webkit-mask:linear-gradient(90deg,transparent,#000 7%,#000 93%,transparent);mask:linear-gradient(90deg,transparent,#000 7%,#000 93%,transparent);padding:4px 0}
+.brands.marquee{flex-wrap:nowrap;width:max-content;justify-content:flex-start!important;animation:brandscroll 24s linear infinite}
+.brands-viewport:hover .brands.marquee{animation-play-state:paused}
+@keyframes brandscroll{to{transform:translateX(-50%)}}
+@media (prefers-reduced-motion:reduce){.brands.marquee{animation:none;flex-wrap:wrap;width:auto}.brands.marquee [data-clone]{display:none}}
 .intro{font-size:19px;max-width:34ch;margin:0 0 22px}
 .ctas{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:14px}
 .btn{display:inline-block;border:var(--line);border-radius:999px;padding:11px 24px;font-weight:700;text-decoration:none;background:var(--paper);box-shadow:var(--pop)}
@@ -568,6 +573,8 @@ body.editing{padding-bottom:110px}
   <div class="panel" id="p-styles" hidden>
     <h4>Pick a look (you can still change colours and fonts after)</h4>
     <div class="row" id="styleRow"></div>
+    <h4>Brand logos</h4>
+    <div class="lblrow" id="brandRow" style="margin-bottom:16px"><button type="button" data-b="row">Still row</button><button type="button" data-b="scroll">Scrolling</button></div>
     <h4>Background pattern</h4>
     <div class="lblrow" id="bgpRow" style="margin-bottom:16px"></div>
     <h4>Photo frame</h4>
@@ -712,6 +719,8 @@ function applyTheme() {
   document.body.classList.toggle('bgp', !!theme.bgp && theme.bgp !== 'auto');
   if (theme.bgp && theme.bgp !== 'auto') document.body.classList.add('bgp-' + theme.bgp);
   $$('#bgpRow button').forEach((b, i) => b.setAttribute('aria-pressed', BGPS[i][0] === (theme.bgp || 'auto')));
+  document.body.classList.toggle('brands-scroll', theme.brands === 'scroll');
+  $$('#brandRow button').forEach(b => b.setAttribute('aria-pressed', b.dataset.b === (theme.brands || 'row')));
   STYLES.forEach(st => document.body.classList.toggle('st-' + st.id, st.id === (theme.style || 'clean')));
   $$('.stylecard').forEach((b, i) => b.setAttribute('aria-pressed', STYLES[i].id === (theme.style || 'clean')));
   $$('.pal').forEach((b, i) => b.setAttribute('aria-pressed', PALETTES[i].name === theme.name));
@@ -1009,14 +1018,39 @@ function bindCopy() {
 }
 
 /* ---------- save / load ---------- */
+function marqueeOff(root) {
+  $$('.brands-viewport', root).forEach(v => { v.querySelectorAll('[data-clone]').forEach(n => n.remove()); const b = v.querySelector('.brands'); b.classList.remove('marquee'); v.replaceWith(b); });
+}
+function marqueeOn(root) {
+  $$('.brands', root).forEach(b => {
+    if (b.closest('.brands-viewport')) return;
+    const items = [...b.children].filter(c => c.matches('.brand'));
+    if (items.length < 2) return;
+    const clone = c => { const k = c.cloneNode(true); k.setAttribute('data-clone', ''); k.setAttribute('aria-hidden', 'true'); return k; };
+    // first half: the set repeated until it is wide enough; second half: an exact copy, so -50% loops seamlessly
+    const half = [...items];
+    for (let i = 1; i < Math.ceil(8 / items.length); i++) items.forEach(c => half.push(clone(c)));
+    half.slice(items.length).forEach(k => b.append(k));
+    half.forEach(c => b.append(clone(c)));
+    b.querySelectorAll('.addcard').forEach(a => a.remove());
+    b.classList.add('marquee');
+    const v = document.createElement('div'); v.className = 'brands-viewport'; b.replaceWith(v); v.append(b);
+  });
+}
 function cleanSiteHTML() {
   const clone = site.cloneNode(true);
+  marqueeOff(clone);
   clone.querySelectorAll('.ed-only,.stkbar').forEach(n => n.remove());
   clone.querySelectorAll('[contenteditable]').forEach(n => n.removeAttribute('contenteditable'));
   clone.querySelectorAll('[spellcheck]').forEach(n => n.removeAttribute('spellcheck'));
   clone.querySelectorAll('.sel').forEach(n => n.classList.remove('sel'));
   clone.querySelectorAll('.stk').forEach(n => { n.style.top = n._s ? n._s.y + 'px' : n.style.top; });
   return clone;
+}
+function exportClone() {
+  const c = cleanSiteHTML();
+  if (theme.brands === 'scroll') marqueeOn(c);
+  return c;
 }
 function stickersData() { return $$('.stk', site).map(el => ({ ...JSON.parse(el.dataset.s), x: el._s.x, y: el._s.y, r: el._s.r, k: el._s.k, text: el.textContent })); }
 let saveT;
@@ -1041,9 +1075,9 @@ function download(name, blob) {
   document.body.append(a); a.click(); setTimeout(() => { URL.revokeObjectURL(a.href); a.remove(); }, 1000);
 }
 $('#saveHtml').onclick = () => {
-  const c = cleanSiteHTML();
+  const c = exportClone();
   const vars = root.style.cssText;
-  const bodyCls = [...document.body.classList].filter(c => c.startsWith('st-') || c.startsWith('bgp')).join(' ');
+  const bodyCls = [...document.body.classList].filter(c => c.startsWith('st-') || c.startsWith('bgp') || c === 'brands-scroll').join(' ');
   const title = (c.querySelector('.logo')?.textContent || 'My portfolio').trim();
   const html = `<!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
@@ -1082,7 +1116,9 @@ $('#previewBtn').onclick = () => {
   $('#previewBtn .txt').textContent = on ? 'Edit' : 'Preview';
   $('#previewBtn .ico').textContent = on ? '✎' : '👁';
   document.body.classList.toggle('editing', !on); setEditable(!on); select(null); if (on) closePanels();
+  if (on && theme.brands === 'scroll') marqueeOn(site); else { marqueeOff(site); addRemoveButtons(); }
 };
+$$('#brandRow button').forEach(b => b.onclick = () => { theme.brands = b.dataset.b; applyTheme(); save(); });
 $('#resetBtn').onclick = () => { $('#resetConfirm').hidden = false; };
 $('#resetYes').onclick = () => { store.clear(); location.reload(); };
 
