@@ -383,6 +383,9 @@ body.editing{padding-bottom:110px}
 [data-img]{position:relative}
 .ed-only{display:none!important}
 .framechip{position:absolute;top:10px;right:10px;z-index:4}
+#site > section,#site > .contact{position:relative}
+.secx{position:absolute;top:20px;right:20px;z-index:6}
+#site [data-off]{display:none!important}
 .photo.fr-camera .framechip,.photo.fr-tv .framechip{top:4%;left:4%;right:auto}
 .stylecard{all:unset;cursor:pointer;border:1.5px solid var(--ed-ink);border-radius:16px;overflow:hidden;flex:1 1 150px;display:flex;flex-direction:column}
 .stylecard[aria-pressed="true"]{box-shadow:0 0 0 3px var(--ed-pink)}
@@ -573,6 +576,7 @@ body.editing{padding-bottom:110px}
   <div class="panel" id="p-styles" hidden>
     <h4>Pick a look (you can still change colours and fonts after)</h4>
     <div class="row" id="styleRow"></div>
+    <div id="hiddenWrap" hidden><h4>Removed sections (tap to bring back)</h4><div class="lblrow" id="hiddenRow" style="margin-bottom:16px"></div></div>
     <h4>Brand logos</h4>
     <div class="lblrow" id="brandRow" style="margin-bottom:16px"><button type="button" data-b="row">Still row</button><button type="button" data-b="scroll">Scrolling</button></div>
     <h4>Background pattern</h4>
@@ -991,6 +995,26 @@ const BLANK = {
   rate: '<div class="rate"><h3 data-e>New package</h3><span class="price" data-e>$XX</span><span class="per" data-e>per video</span><p data-e>What the brand gets.</p></div>',
   svc: '<div class="svc"><h3 data-e>New service</h3><p data-e>What you make and what the brand gets.</p></div>'
 };
+function secLabel(sec) { return (sec.querySelector('h2')?.textContent || 'Contact').trim().slice(0, 40); }
+function addSectionButtons() {
+  $$('#site > section, #site > .contact').forEach(sec => {
+    if (sec.querySelector(':scope > .secx')) return;
+    const b = document.createElement('button'); b.type = 'button'; b.className = 'mini secx ed-only'; b.textContent = '✕ remove section';
+    b.onclick = e => { e.stopPropagation(); setSecOff(sec, true); toast('Section removed. Bring it back in 🎀 Styles'); };
+    sec.prepend(b);
+  });
+  renderHidden();
+}
+function setSecOff(sec, off) {
+  sec.toggleAttribute('data-off', off);
+  if (sec.id) $$(`#site .navlinks a[href="#${sec.id}"]`).forEach(a => a.toggleAttribute('data-off', off));
+  renderHidden(); save();
+}
+function renderHidden() {
+  const row = $('#hiddenRow'); if (!row) return; row.innerHTML = '';
+  const off = $$('#site > [data-off]'); $('#hiddenWrap').hidden = !off.length;
+  off.forEach(sec => { const b = document.createElement('button'); b.type = 'button'; b.textContent = '↺ ' + secLabel(sec); b.onclick = () => setSecOff(sec, false); row.append(b); });
+}
 function addFrameChip() {
   const box = $('.photo', site); if (!box || box.querySelector('.framechip')) return;
   if (!FRAMES.some(([c]) => box.classList.contains(c))) box.classList.add('fr-round');
@@ -1049,7 +1073,7 @@ function marqueeOn(root) {
 function cleanSiteHTML() {
   const clone = site.cloneNode(true);
   marqueeOff(clone);
-  clone.querySelectorAll('.ed-only,.stkbar').forEach(n => n.remove());
+  clone.querySelectorAll('.ed-only,.stkbar,[data-off]').forEach(n => n.remove());
   clone.querySelectorAll('[contenteditable]').forEach(n => n.removeAttribute('contenteditable'));
   clone.querySelectorAll('[spellcheck]').forEach(n => n.removeAttribute('spellcheck'));
   clone.querySelectorAll('.sel').forEach(n => n.classList.remove('sel'));
@@ -1138,6 +1162,7 @@ bindEditable(site);
 $$('.stk', site).forEach(el => bindEditable(el));
 addRemoveButtons();
 addFrameChip();
+addSectionButtons();
 bindCopy();
 site.append(bar);
 const hw = $('#hideWelcome'); if (hw) hw.onclick = () => { $('#welcome').remove(); save(); };
