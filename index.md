@@ -1,6 +1,6 @@
 # Annako (@dear_annako)
 
-Beauty + travel creator. Hi, I'm Anna. I make GRWMs, routines and honest product videos on TikTok, and travel vlogs on YouTube. Open to gifted PR and paid UGC.
+UGC creator. Hi, I'm Anna. I make GRWMs, routines and honest product videos on TikTok, and vlogs on YouTube. Open to gifted PR and paid UGC.
 
 Page: https://dearannako.com/
 
@@ -47,7 +47,7 @@ Derma Factory, Beauty of Joseon, ISNTREE, Dr.Cellx, JOOCYEE, TIRTIR, celimax, Ye
 
 ## About
 
-I make beauty and travel content that looks like real life, not an ad. GRWMs, skincare routines and honest reviews, the kind of recommendation you'd get from a friend.
+I make beauty and lifestyle content that looks like real life, not an ad. GRWMs, skincare routines and honest reviews, the kind of recommendation you'd get from a friend.
 
 I'm also a senior studying Neuroscience, so I like reading the ingredient list before I say anything about a product.
 
