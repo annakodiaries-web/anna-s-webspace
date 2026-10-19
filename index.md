@@ -22,7 +22,7 @@ Page: https://dearannako.com/
 Rates are a starting point. Bundles and gifted collabs are always open to chat.
 
 ## Brands worked with
-Derma Factory, Beauty of Joseon, ISNTREE, Dr.Cellx, JOOCYEE, TIRTIR, celimax, YesStyle, CaraSeoul, dasique
+Derma Factory, Beauty of Joseon, ISNTREE, Dr.Cellx, JOOCYEE, TIRTIR, celimax, YesStyle, CaraSeoul, dasique, ILSO, AXIS-Y
 
 ## Videos
 - [Kyoto vlog](https://www.tiktok.com/@dear_annako/video/7683346853223632141) (Travel)
@@ -30,6 +30,8 @@ Derma Factory, Beauty of Joseon, ISNTREE, Dr.Cellx, JOOCYEE, TIRTIR, celimax, Ye
 - [Tokyo vlog day 3](https://www.tiktok.com/@dear_annako/video/7678150848450465037) (Travel)
 - [GRWM soft glam makeup](https://www.tiktok.com/@dear_annako/video/7685495018265611534) (Beauty)
 - [GRWM igari makeup](https://www.tiktok.com/@dear_annako/video/7682536696470097166) (Beauty)
+- [I put potatoes on my face for my pores? wait for the before & after](https://www.tiktok.com/@dear_annako/video/7698236667315899662) (ILSO)
+- [Take. care. of. your. undereyes](https://www.tiktok.com/@dear_annako/video/7697292198471027981) (AXIS-Y)
 - [Heartleaf cleanser that actually foams](https://www.tiktok.com/@dear_annako/video/7694882496487410958) (CaraSeoul)
 - [Best tinted sunscreen ever?](https://www.tiktok.com/@dear_annako/video/7694349349714677005) (Beauty of Joseon)
 - [JOOCYEE aura glazed blush + highlighter](https://www.tiktok.com/@dear_annako/video/7694081245541600525) (JOOCYEE)
@@ -43,7 +45,6 @@ Derma Factory, Beauty of Joseon, ISNTREE, Dr.Cellx, JOOCYEE, TIRTIR, celimax, Ye
 - [He walked in at the wrong time](https://www.tiktok.com/@dear_annako/video/7689485682095525133) (celimax)
 - [JOOCYEE dewy blush](https://www.tiktok.com/@dear_annako/video/7688565417610136845) (JOOCYEE)
 - [My bf's skincare budget for me](https://www.tiktok.com/@dear_annako/video/7692111901928541453) (Beauty)
-- [2000s Shin Min-ah makeup](https://www.tiktok.com/@dear_annako/video/7685057262217481486) (Beauty)
 
 ## About
 
