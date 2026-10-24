@@ -22,14 +22,16 @@ Page: https://dearannako.com/
 Rates are a starting point. Bundles and gifted collabs are always open to chat.
 
 ## Brands worked with
-Derma Factory, Beauty of Joseon, ISNTREE, Dr.Cellx, JOOCYEE, TIRTIR, celimax, YesStyle, CaraSeoul, dasique, ILSO, AXIS-Y
+Derma Factory, Beauty of Joseon, ISNTREE, Dr.Cellx, JOOCYEE, TIRTIR, celimax, YesStyle, CaraSeoul, dasique, ILSO, AXIS-Y, Dr.Althea
 
 ## Videos
-- [Kyoto vlog](https://www.tiktok.com/@dear_annako/video/7683346853223632141) (Travel)
-- [Tokyo vlog ep. 1](https://www.tiktok.com/@dear_annako/video/7677731089124805901) (Travel)
-- [Tokyo vlog day 3](https://www.tiktok.com/@dear_annako/video/7678150848450465037) (Travel)
 - [GRWM soft glam makeup](https://www.tiktok.com/@dear_annako/video/7685495018265611534) (Beauty)
 - [GRWM igari makeup](https://www.tiktok.com/@dear_annako/video/7682536696470097166) (Beauty)
+- [Obsessed with the 345 cream](https://www.tiktok.com/@dear_annako/video/7700039488889801997) (Dr.Althea)
+- [Napped in my makeup, so: pore reset](https://www.tiktok.com/@dear_annako/video/7699501670790712590) (ILSO)
+- [No makeup day, just lashes + rested eyes](https://www.tiktok.com/@dear_annako/video/7699665204652657933) (Dr.Althea)
+- [Dull, tired skin? Get your glow back](https://www.tiktok.com/@dear_annako/video/7699585551824981262) (Dr.Althea)
+- [My favorite 30 sec of my night routine](https://www.tiktok.com/@dear_annako/video/7698920164498181390) (AXIS-Y)
 - [I put potatoes on my face for my pores? wait for the before & after](https://www.tiktok.com/@dear_annako/video/7698236667315899662) (ILSO)
 - [Take. care. of. your. undereyes](https://www.tiktok.com/@dear_annako/video/7697292198471027981) (AXIS-Y)
 - [Heartleaf cleanser that actually foams](https://www.tiktok.com/@dear_annako/video/7694882496487410958) (CaraSeoul)
@@ -40,11 +42,9 @@ Derma Factory, Beauty of Joseon, ISNTREE, Dr.Cellx, JOOCYEE, TIRTIR, celimax, Ye
 - [3 dasique products for $37 at Target](https://www.tiktok.com/@dear_annako/video/7693338325662436621) (dasique)
 - [Derma Factory retinal cream](https://www.tiktok.com/@dear_annako/video/7693201549572508942) (Derma Factory)
 - [Derma Factory niacinamide 20%](https://www.tiktok.com/@dear_annako/video/7693201080401857805) (Derma Factory)
-- [ISNTREE yam root milky toner](https://www.tiktok.com/@dear_annako/video/7691166676557237518) (ISNTREE)
-- [ISNTREE yam root routine](https://www.tiktok.com/@dear_annako/video/7690843755758308621) (ISNTREE)
-- [He walked in at the wrong time](https://www.tiktok.com/@dear_annako/video/7689485682095525133) (celimax)
-- [JOOCYEE dewy blush](https://www.tiktok.com/@dear_annako/video/7688565417610136845) (JOOCYEE)
-- [My bf's skincare budget for me](https://www.tiktok.com/@dear_annako/video/7692111901928541453) (Beauty)
+- [Kyoto vlog](https://www.tiktok.com/@dear_annako/video/7683346853223632141) (Travel)
+- [Tokyo vlog ep. 1](https://www.tiktok.com/@dear_annako/video/7677731089124805901) (Travel)
+- [Tokyo vlog day 3](https://www.tiktok.com/@dear_annako/video/7678150848450465037) (Travel)
 
 ## About
 

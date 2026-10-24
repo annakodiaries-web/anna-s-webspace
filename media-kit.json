@@ -98,27 +98,10 @@
     "CaraSeoul",
     "dasique",
     "ILSO",
-    "AXIS-Y"
+    "AXIS-Y",
+    "Dr.Althea"
   ],
   "videos": [
-    {
-      "title": "Kyoto vlog",
-      "category": "Travel",
-      "brand": null,
-      "url": "https://www.tiktok.com/@dear_annako/video/7683346853223632141"
-    },
-    {
-      "title": "Tokyo vlog ep. 1",
-      "category": "Travel",
-      "brand": null,
-      "url": "https://www.tiktok.com/@dear_annako/video/7677731089124805901"
-    },
-    {
-      "title": "Tokyo vlog day 3",
-      "category": "Travel",
-      "brand": null,
-      "url": "https://www.tiktok.com/@dear_annako/video/7678150848450465037"
-    },
     {
       "title": "GRWM soft glam makeup",
       "category": "Beauty",
@@ -130,6 +113,36 @@
       "category": "Beauty",
       "brand": null,
       "url": "https://www.tiktok.com/@dear_annako/video/7682536696470097166"
+    },
+    {
+      "title": "Obsessed with the 345 cream",
+      "category": "Beauty",
+      "brand": "Dr.Althea",
+      "url": "https://www.tiktok.com/@dear_annako/video/7700039488889801997"
+    },
+    {
+      "title": "Napped in my makeup, so: pore reset",
+      "category": "Beauty",
+      "brand": "ILSO",
+      "url": "https://www.tiktok.com/@dear_annako/video/7699501670790712590"
+    },
+    {
+      "title": "No makeup day, just lashes + rested eyes",
+      "category": "Beauty",
+      "brand": "Dr.Althea",
+      "url": "https://www.tiktok.com/@dear_annako/video/7699665204652657933"
+    },
+    {
+      "title": "Dull, tired skin? Get your glow back",
+      "category": "Beauty",
+      "brand": "Dr.Althea",
+      "url": "https://www.tiktok.com/@dear_annako/video/7699585551824981262"
+    },
+    {
+      "title": "My favorite 30 sec of my night routine",
+      "category": "Beauty",
+      "brand": "AXIS-Y",
+      "url": "https://www.tiktok.com/@dear_annako/video/7698920164498181390"
     },
     {
       "title": "I put potatoes on my face for my pores? wait for the before & after",
@@ -192,34 +205,22 @@
       "url": "https://www.tiktok.com/@dear_annako/video/7693201080401857805"
     },
     {
-      "title": "ISNTREE yam root milky toner",
-      "category": "Beauty",
-      "brand": "ISNTREE",
-      "url": "https://www.tiktok.com/@dear_annako/video/7691166676557237518"
-    },
-    {
-      "title": "ISNTREE yam root routine",
-      "category": "Beauty",
-      "brand": "ISNTREE",
-      "url": "https://www.tiktok.com/@dear_annako/video/7690843755758308621"
-    },
-    {
-      "title": "He walked in at the wrong time",
-      "category": "Beauty",
-      "brand": "celimax",
-      "url": "https://www.tiktok.com/@dear_annako/video/7689485682095525133"
-    },
-    {
-      "title": "JOOCYEE dewy blush",
-      "category": "Beauty",
-      "brand": "JOOCYEE",
-      "url": "https://www.tiktok.com/@dear_annako/video/7688565417610136845"
-    },
-    {
-      "title": "My bf's skincare budget for me",
-      "category": "Beauty",
+      "title": "Kyoto vlog",
+      "category": "Travel",
       "brand": null,
-      "url": "https://www.tiktok.com/@dear_annako/video/7692111901928541453"
+      "url": "https://www.tiktok.com/@dear_annako/video/7683346853223632141"
+    },
+    {
+      "title": "Tokyo vlog ep. 1",
+      "category": "Travel",
+      "brand": null,
+      "url": "https://www.tiktok.com/@dear_annako/video/7677731089124805901"
+    },
+    {
+      "title": "Tokyo vlog day 3",
+      "category": "Travel",
+      "brand": null,
+      "url": "https://www.tiktok.com/@dear_annako/video/7678150848450465037"
     }
   ],
   "discount_code": {
