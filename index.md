@@ -27,6 +27,7 @@ Derma Factory, Beauty of Joseon, ISNTREE, Dr.Cellx, JOOCYEE, TIRTIR, celimax, Ye
 ## Videos
 - [GRWM soft glam makeup](https://www.tiktok.com/@dear_annako/video/7685495018265611534) (Beauty)
 - [GRWM igari makeup](https://www.tiktok.com/@dear_annako/video/7682536696470097166) (Beauty)
+- [345 or 147?? which one is your skin 👇💙🧡 US](https://www.tiktok.com/@dear_annako/video/7701744576943377677) (Dr.Althea)
 - [Zinc ampoule for excess sebum + tiny bumps](https://www.tiktok.com/@dear_annako/video/7701054528644287758) (Heveblue)
 - [Napped in my makeup, so: pore reset](https://www.tiktok.com/@dear_annako/video/7699501670790712590) (ILSO)
 - [No makeup day, just lashes + rested eyes](https://www.tiktok.com/@dear_annako/video/7699665204652657933) (Dr.Althea)
@@ -41,7 +42,6 @@ Derma Factory, Beauty of Joseon, ISNTREE, Dr.Cellx, JOOCYEE, TIRTIR, celimax, Ye
 - [Dr.Cellx pore reset PDRN mask](https://www.tiktok.com/@dear_annako/video/7693578527928585486) (Dr.Cellx)
 - [3 dasique products for $37 at Target](https://www.tiktok.com/@dear_annako/video/7693338325662436621) (dasique)
 - [Derma Factory retinal cream](https://www.tiktok.com/@dear_annako/video/7693201549572508942) (Derma Factory)
-- [Derma Factory niacinamide 20%](https://www.tiktok.com/@dear_annako/video/7693201080401857805) (Derma Factory)
 - [Kyoto vlog](https://www.tiktok.com/@dear_annako/video/7683346853223632141) (Travel)
 - [Tokyo vlog ep. 1](https://www.tiktok.com/@dear_annako/video/7677731089124805901) (Travel)
 - [Tokyo vlog day 3](https://www.tiktok.com/@dear_annako/video/7678150848450465037) (Travel)
