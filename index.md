@@ -22,7 +22,7 @@ Page: https://dearannako.com/
 Rates are a starting point. Bundles and gifted collabs are always open to chat.
 
 ## Brands worked with
-Derma Factory, Beauty of Joseon, ISNTREE, Dr.Cellx, JOOCYEE, TIRTIR, celimax, YesStyle, CaraSeoul, dasique, ILSO, AXIS-Y, Dr.Althea, Heveblue
+Derma Factory, Beauty of Joseon, ISNTREE, JOOCYEE, TIRTIR, celimax, YesStyle, CaraSeoul, ILSO, AXIS-Y, Dr.Althea, Heveblue
 
 ## Videos
 - [GRWM soft glam makeup](https://www.tiktok.com/@dear_annako/video/7685495018265611534) (Beauty)
@@ -39,9 +39,9 @@ Derma Factory, Beauty of Joseon, ISNTREE, Dr.Cellx, JOOCYEE, TIRTIR, celimax, Ye
 - [Best tinted sunscreen ever?](https://www.tiktok.com/@dear_annako/video/7694349349714677005) (Beauty of Joseon)
 - [JOOCYEE aura glazed blush + highlighter](https://www.tiktok.com/@dear_annako/video/7694081245541600525) (JOOCYEE)
 - [Beauty of Joseon tinted mineral sunscreen](https://www.tiktok.com/@dear_annako/video/7693994312425655565) (Beauty of Joseon)
-- [My pores after ONE mask 👀 trying the Dr.Cellx PDRN Pore…](https://www.tiktok.com/@dear_annako/video/7693578527928585486) (Dr.Cellx)
-- [3 dasique products for $37 at Target](https://www.tiktok.com/@dear_annako/video/7693338325662436621) (dasique)
-- [If retinol scares you, this is how I'd start retinal 🐢…](https://www.tiktok.com/@dear_annako/video/7693201549572508942) (Derma Factory)
+- [Niacinamide: I was using the wrong %](https://www.tiktok.com/@dear_annako/video/7693201080401857805) (Derma Factory)
+- [What toner do you use? Mine is made of yam](https://www.tiktok.com/@dear_annako/video/7691166676557237518) (ISNTREE)
+- [My whole skincare routine is... yam?](https://www.tiktok.com/@dear_annako/video/7690843755758308621) (ISNTREE)
 - [Kyoto vlog](https://www.tiktok.com/@dear_annako/video/7683346853223632141) (Travel)
 - [Tokyo vlog ep. 1](https://www.tiktok.com/@dear_annako/video/7677731089124805901) (Travel)
 - [Tokyo vlog day 3](https://www.tiktok.com/@dear_annako/video/7678150848450465037) (Travel)
