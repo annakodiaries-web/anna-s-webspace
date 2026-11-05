@@ -25,7 +25,7 @@ Rates are a starting point. Bundles and gifted collabs are always open to chat.
 Derma Factory, Beauty of Joseon, ISNTREE, JOOCYEE, TIRTIR, celimax, YesStyle, CaraSeoul, ILSO, AXIS-Y, Dr.Althea, Heveblue, CLIO
 
 ## Videos
-- [Dark circles that won't go away? 😭 trying the SEOUL 1988…](https://www.tiktok.com/@dear_annako/video/7704529996986993933) (YesStyle)
+- [SEOUL 1988 Retinal Eye Cream for dark circles](https://www.tiktok.com/@dear_annako/video/7704529996986993933) (YesStyle)
 - [Glow cushion for dry winter skin with CLIO Mesh Cushion](https://www.tiktok.com/@dear_annako/video/7704431318171487502) (CLIO)
 - [Chestnut Latte eye look with CLIO Pro Eye Palette Air](https://www.tiktok.com/@dear_annako/video/7703451474239491342) (CLIO)
 - [Fav step of my skincare routine](https://www.tiktok.com/@dear_annako/video/7702637417450261774) (AXIS-Y)
