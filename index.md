@@ -22,11 +22,12 @@ Page: https://dearannako.com/
 Rates are a starting point. Bundles and gifted collabs are always open to chat.
 
 ## Brands worked with
-Derma Factory, Beauty of Joseon, ISNTREE, JOOCYEE, TIRTIR, celimax, YesStyle, CaraSeoul, ILSO, AXIS-Y, Dr.Althea, Heveblue
+Derma Factory, Beauty of Joseon, ISNTREE, JOOCYEE, TIRTIR, celimax, YesStyle, CaraSeoul, ILSO, AXIS-Y, Dr.Althea, Heveblue, CLIO
 
 ## Videos
-- [GRWM soft glam makeup](https://www.tiktok.com/@dear_annako/video/7685495018265611534) (Beauty)
-- [GRWM igari makeup](https://www.tiktok.com/@dear_annako/video/7682536696470097166) (Beauty)
+- [Dark circles that won't go away? 😭 trying the SEOUL 1988…](https://www.tiktok.com/@dear_annako/video/7704529996986993933) (YesStyle)
+- [Glow cushion for dry winter skin with CLIO Mesh Cushion](https://www.tiktok.com/@dear_annako/video/7704431318171487502) (CLIO)
+- [Chestnut Latte eye look with CLIO Pro Eye Palette Air](https://www.tiktok.com/@dear_annako/video/7703451474239491342) (CLIO)
 - [Fav step of my skincare routine](https://www.tiktok.com/@dear_annako/video/7702637417450261774) (AXIS-Y)
 - [345 or 147? Which one is your skin](https://www.tiktok.com/@dear_annako/video/7701744576943377677) (Dr.Althea)
 - [Zinc ampoule for excess sebum + tiny bumps](https://www.tiktok.com/@dear_annako/video/7701054528644287758) (Heveblue)
@@ -41,7 +42,6 @@ Derma Factory, Beauty of Joseon, ISNTREE, JOOCYEE, TIRTIR, celimax, YesStyle, Ca
 - [Beauty of Joseon tinted mineral sunscreen](https://www.tiktok.com/@dear_annako/video/7693994312425655565) (Beauty of Joseon)
 - [Niacinamide: I was using the wrong %](https://www.tiktok.com/@dear_annako/video/7693201080401857805) (Derma Factory)
 - [What toner do you use? Mine is made of yam](https://www.tiktok.com/@dear_annako/video/7691166676557237518) (ISNTREE)
-- [My whole skincare routine is... yam?](https://www.tiktok.com/@dear_annako/video/7690843755758308621) (ISNTREE)
 - [Kyoto vlog](https://www.tiktok.com/@dear_annako/video/7683346853223632141) (Travel)
 - [Tokyo vlog ep. 1](https://www.tiktok.com/@dear_annako/video/7677731089124805901) (Travel)
 - [Tokyo vlog day 3](https://www.tiktok.com/@dear_annako/video/7678150848450465037) (Travel)
