@@ -651,11 +651,14 @@ section > .wrap{background:var(--paper);border:2px solid var(--ink);border-radiu
 #brands > .wrap{background:#e8f0f2}#rates > .wrap{background:#fcf0c9}
 .hero{padding-top:22px}
 /* photos: tilted polaroids with a thin ink edge */
-.photo .frame{border-radius:4px;background:linear-gradient(90deg,rgba(156,192,230,.6) 50%,transparent 0) 0 0/22px 22px,linear-gradient(rgba(156,192,230,.6) 50%,transparent 0) 0 0/22px 22px,#fff;padding:18px 18px 60px;transform:rotate(-2.5deg);border:2px solid var(--ink);box-shadow:0 10px 24px rgba(74,59,42,.14);overflow:hidden}
-.photo .frame img{border-radius:2px}
-.rate:nth-child(2),.rate:nth-child(2) *{color:#fff}.rate:nth-child(2) li::before{border-color:#fff}.rate:nth-child(2) .go{border-bottom-color:#fff}
-.about .pic{border-radius:4px;overflow:hidden;padding:16px 16px 50px;background:linear-gradient(90deg,rgba(156,192,230,.6) 50%,transparent 0) 0 0/22px 22px,linear-gradient(rgba(156,192,230,.6) 50%,transparent 0) 0 0/22px 22px,#fff;border:2px solid var(--ink);transform:rotate(2deg);box-shadow:0 10px 24px rgba(74,59,42,.14)}
-.about .pic img{border-radius:2px}
+/* photos (2026-11-09): hero = oval with a double ring; about = her Osaka photo on a digital-camera screen (assets/about-camera.webp, a cut-out) */
+.photo{width:min(72%,320px)}
+.photo .frame{border-radius:50%;overflow:hidden;margin:22px;background:var(--lilac);box-shadow:0 0 0 9px var(--matcha),0 0 0 11px var(--ink),0 0 0 18px var(--paper),0 0 0 20px var(--ink),0 14px 26px 16px rgba(74,59,42,.10)}
+.photo .frame img{display:block;border-radius:0}
+.photo .sticker.s1{left:50%;right:auto;top:auto;bottom:4%;transform:translateX(-50%)}
+.about .pic{max-width:460px;width:100%;margin-top:12px;overflow:visible;border-radius:0;background:none;box-shadow:none;transform:rotate(-2deg);filter:drop-shadow(0 10px 12px rgba(74,59,42,.2))}
+.about .pic img{display:block;aspect-ratio:auto;object-fit:contain;border-radius:0}
+@media(min-width:760px){.about{grid-template-columns:minmax(0,440px) 1fr;gap:44px}}
 @media (max-width:640px){section > .wrap{padding:30px 20px;border-radius:28px}.bar .wrap{padding:0 18px}}
 </style>
 </head>
@@ -762,7 +765,7 @@ section > .wrap{background:var(--paper);border:2px solid var(--ink);border-radiu
 
 <section id="about">
   <div class="wrap about">
-    <div class="pic"><img src="assets/about.jpg" alt="Anna in a pink cardigan standing in a flower garden" width="700" height="933" loading="lazy"></div>
+    <div class="pic"><img src="assets/about-camera.webp" alt="Anna with her arms up in front of the Glico sign in Osaka, shown on the screen of a silver digital camera with pink charms" width="1190" height="607" loading="lazy"></div>
     <div>
       <h2>Hi, I'm Annako</h2>
       <p>I make beauty and lifestyle content that looks like real life, not an ad. GRWMs, skincare routines and honest reviews, the kind of recommendation you'd get from a friend.</p>
