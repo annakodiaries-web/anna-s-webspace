@@ -50,5 +50,3 @@ Derma Factory, Beauty of Joseon, ISNTREE, JOOCYEE, TIRTIR, celimax, YesStyle, Ca
 I make beauty and lifestyle content that looks like real life, not an ad. GRWMs, skincare routines and honest reviews, the kind of recommendation you'd get from a friend.
 
 I'm also a senior studying Neuroscience, so I like reading the ingredient list before I say anything about a product.
-
-YesStyle code: ANNAKO10
