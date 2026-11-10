@@ -41,6 +41,8 @@ Derma Factory, Beauty of Joseon, ISNTREE, JOOCYEE, TIRTIR, celimax, YesStyle, Ca
 - [Take. care. of. your. undereyes](https://www.tiktok.com/@dear_annako/video/7697292198471027981) (AXIS-Y)
 - [Heartleaf cleanser that actually foams](https://www.tiktok.com/@dear_annako/video/7694882496487410958) (CaraSeoul)
 - [Best tinted sunscreen ever?](https://www.tiktok.com/@dear_annako/video/7694349349714677005) (Beauty of Joseon)
+- [JOOCYEE aura glazed blush + highlighter](https://www.tiktok.com/@dear_annako/video/7694081245541600525) (JOOCYEE)
+- [Beauty of Joseon tinted mineral sunscreen](https://www.tiktok.com/@dear_annako/video/7693994312425655565) (Beauty of Joseon)
 - [Kyoto vlog](https://www.tiktok.com/@dear_annako/video/7683346853223632141) (Travel)
 - [Tokyo vlog ep. 1](https://www.tiktok.com/@dear_annako/video/7677731089124805901) (Travel)
 - [Tokyo vlog day 3](https://www.tiktok.com/@dear_annako/video/7678150848450465037) (Travel)
