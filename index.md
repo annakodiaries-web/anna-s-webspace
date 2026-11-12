@@ -48,8 +48,6 @@ Derma Factory, Beauty of Joseon, ISNTREE, JOOCYEE, TIRTIR, celimax, YesStyle, Ca
 - [Beauty of Joseon tinted mineral sunscreen](https://www.tiktok.com/@dear_annako/video/7693994312425655565) (Beauty of Joseon)
 - [Niacinamide: I was using the wrong %](https://www.tiktok.com/@dear_annako/video/7693201080401857805) (Derma Factory)
 - [What toner do you use? Mine is made of yam](https://www.tiktok.com/@dear_annako/video/7691166676557237518) (ISNTREE)
-- [My whole skincare routine is... yam?](https://www.tiktok.com/@dear_annako/video/7690843755758308621) (ISNTREE)
-- [He walked in at the wrong time](https://www.tiktok.com/@dear_annako/video/7689485682095525133) (celimax)
 - [Kyoto vlog](https://www.tiktok.com/@dear_annako/video/7683346853223632141) (Travel)
 - [Tokyo vlog ep. 1](https://www.tiktok.com/@dear_annako/video/7677731089124805901) (Travel)
 - [Tokyo vlog day 3](https://www.tiktok.com/@dear_annako/video/7678150848450465037) (Travel)
