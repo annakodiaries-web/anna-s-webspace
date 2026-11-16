@@ -1,6 +1,6 @@
 # Annako (@dear_annako)
 
-UGC creator. Hi, I'm Anna. I make GRWMs, routines and honest product videos on TikTok, and vlogs on YouTube. Open to gifted PR and paid UGC.
+UGC creator. Hi, I'm Anna. I make GRWMs, routines and honest product videos on TikTok, and vlogs on YouTube.
 
 Page: https://dearannako.com/
 
@@ -22,19 +22,30 @@ Page: https://dearannako.com/
 Rates are a starting point. Bundles and gifted collabs are always open to chat.
 
 ## Brands worked with
-Derma Factory, Beauty of Joseon, ISNTREE, JOOCYEE, TIRTIR, celimax, YesStyle, CaraSeoul, ILSO, AXIS-Y, Dr.Althea, Heveblue, CLIO, APLB, Seapuri
+Derma Factory, Beauty of Joseon, ISNTREE, JOOCYEE, CaraSeoul, ILSO, AXIS-Y, Dr.Althea, Heveblue, CLIO, APLB, Seapuri, Baerry, KUMIHO, SOONDING x YesStyle, KSECRET, Goodal, MDP+, TOSOWOONG, AMZGIRL, MEDIHEAL x BAZZAAL
 
 ## Videos
 - [Glow cushion for dry winter skin with CLIO Mesh Cushion](https://www.tiktok.com/@dear_annako/video/7704431318171487502) (CLIO)
+- [No-money Black Friday ep. 1: watch before you buy K-beauty](https://www.tiktok.com/@dear_annako/video/7708536340408814878) (Baerry)
+- [My first pop-up event: KUMIHO K-beauty festival](https://www.tiktok.com/@dear_annako/video/7708256285971451149) (KUMIHO)
+- [Silent haul from the KUMIHO K-beauty festival](https://www.tiktok.com/@dear_annako/video/7708220749164678413) (KUMIHO)
+- [Vitamaxxing my skincare routine with Goodal](https://www.tiktok.com/@dear_annako/video/7707512637529132302) (Goodal)
+- [You're not using your eye patches to their full potential](https://www.tiktok.com/@dear_annako/video/7707512156236926222) (Goodal)
+- [The SPF upgrade you didn't know you needed](https://www.tiktok.com/@dear_annako/video/7707359918369639693) (MDP+)
+- [One thin CLIO cushion layer covered an eyeliner mark](https://www.tiktok.com/@dear_annako/video/7706989995470441741) (CLIO)
+- [Eyes, blush and highlight from one CLIO mini palette](https://www.tiktok.com/@dear_annako/video/7706627812634922253) (CLIO)
 - [For straight lashes that won't hold a curl: CLIO Kill Lash Mascara](https://www.tiktok.com/@dear_annako/video/7706224478908452110) (CLIO)
-- [Cold weather = barrier care season](https://www.tiktok.com/@dear_annako/video/7704904851167120653) (YesStyle)
+- [My skin feels better than ever: arbutin + TXA cream](https://www.tiktok.com/@dear_annako/video/7706040109501615374) (TOSOWOONG)
+- [Cold weather = barrier care season](https://www.tiktok.com/@dear_annako/video/7704904851167120653) (SOONDING x YesStyle)
 - [Soft brown everyday eyes + nose contour, one CLIO palette](https://www.tiktok.com/@dear_annako/video/7704822243511061773) (CLIO)
-- [SEOUL 1988 Retinal Eye Cream for dark circles](https://www.tiktok.com/@dear_annako/video/7704529996986993933) (YesStyle)
+- [SEOUL 1988 Retinal Eye Cream for dark circles](https://www.tiktok.com/@dear_annako/video/7704529996986993933) (KSECRET)
 - [Wash day for dry, stressed hair with APLB](https://www.tiktok.com/@dear_annako/video/7704171163475332365) (APLB)
 - [Hair care routine for thinning hair with Seapuri](https://www.tiktok.com/@dear_annako/video/7703678885291920653) (Seapuri)
 - [Chestnut Latte eye look with CLIO Pro Eye Palette Air](https://www.tiktok.com/@dear_annako/video/7703451474239491342) (CLIO)
 - [Fav step of my skincare routine](https://www.tiktok.com/@dear_annako/video/7702637417450261774) (AXIS-Y)
+- [DIY lash extensions with AMZGIRL](https://www.tiktok.com/@dear_annako/video/7702513857398394125) (AMZGIRL)
 - [345 or 147? Which one is your skin](https://www.tiktok.com/@dear_annako/video/7701744576943377677) (Dr.Althea)
+- [10-minute glow shot with the MEDIHEAL rose face mask](https://www.tiktok.com/@dear_annako/video/7701551894161919245) (MEDIHEAL x BAZZAAL)
 - [Zinc ampoule for excess sebum + tiny bumps](https://www.tiktok.com/@dear_annako/video/7701054528644287758) (Heveblue)
 - [Napped in my makeup, so: pore reset](https://www.tiktok.com/@dear_annako/video/7699501670790712590) (ILSO)
 - [No makeup day, just lashes + rested eyes](https://www.tiktok.com/@dear_annako/video/7699665204652657933) (Dr.Althea)
@@ -48,6 +59,7 @@ Derma Factory, Beauty of Joseon, ISNTREE, JOOCYEE, TIRTIR, celimax, YesStyle, Ca
 - [Beauty of Joseon tinted mineral sunscreen](https://www.tiktok.com/@dear_annako/video/7693994312425655565) (Beauty of Joseon)
 - [Niacinamide: I was using the wrong %](https://www.tiktok.com/@dear_annako/video/7693201080401857805) (Derma Factory)
 - [What toner do you use? Mine is made of yam](https://www.tiktok.com/@dear_annako/video/7691166676557237518) (ISNTREE)
+- [My whole skincare routine is... yam?](https://www.tiktok.com/@dear_annako/video/7690843755758308621) (ISNTREE)
 - [Kyoto vlog](https://www.tiktok.com/@dear_annako/video/7683346853223632141) (Travel)
 - [Tokyo vlog ep. 1](https://www.tiktok.com/@dear_annako/video/7677731089124805901) (Travel)
 - [Tokyo vlog day 3](https://www.tiktok.com/@dear_annako/video/7678150848450465037) (Travel)

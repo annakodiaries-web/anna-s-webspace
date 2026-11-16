@@ -3,7 +3,7 @@
   "legal_name_on_site": "Anna Dang",
   "url": "https://dearannako.com/",
   "positioning": "UGC creator",
-  "summary": "Hi, I'm Anna. I make GRWMs, routines and honest product videos on TikTok, and vlogs on YouTube. Open to gifted PR and paid UGC.",
+  "summary": "Hi, I'm Anna. I make GRWMs, routines and honest product videos on TikTok, and vlogs on YouTube.",
   "open_to": [
     "Gifted PR",
     "Paid UGC"
@@ -91,9 +91,6 @@
     "Beauty of Joseon",
     "ISNTREE",
     "JOOCYEE",
-    "TIRTIR",
-    "celimax",
-    "YesStyle",
     "CaraSeoul",
     "ILSO",
     "AXIS-Y",
@@ -101,7 +98,16 @@
     "Heveblue",
     "CLIO",
     "APLB",
-    "Seapuri"
+    "Seapuri",
+    "Baerry",
+    "KUMIHO",
+    "SOONDING x YesStyle",
+    "KSECRET",
+    "Goodal",
+    "MDP+",
+    "TOSOWOONG",
+    "AMZGIRL",
+    "MEDIHEAL x BAZZAAL"
   ],
   "videos": [
     {
@@ -111,15 +117,69 @@
       "url": "https://www.tiktok.com/@dear_annako/video/7704431318171487502"
     },
     {
+      "title": "No-money Black Friday ep. 1: watch before you buy K-beauty",
+      "category": "Beauty",
+      "brand": "Baerry",
+      "url": "https://www.tiktok.com/@dear_annako/video/7708536340408814878"
+    },
+    {
+      "title": "My first pop-up event: KUMIHO K-beauty festival",
+      "category": "Travel",
+      "brand": "KUMIHO",
+      "url": "https://www.tiktok.com/@dear_annako/video/7708256285971451149"
+    },
+    {
+      "title": "Silent haul from the KUMIHO K-beauty festival",
+      "category": "Beauty",
+      "brand": "KUMIHO",
+      "url": "https://www.tiktok.com/@dear_annako/video/7708220749164678413"
+    },
+    {
+      "title": "Vitamaxxing my skincare routine with Goodal",
+      "category": "Beauty",
+      "brand": "Goodal",
+      "url": "https://www.tiktok.com/@dear_annako/video/7707512637529132302"
+    },
+    {
+      "title": "You're not using your eye patches to their full potential",
+      "category": "Beauty",
+      "brand": "Goodal",
+      "url": "https://www.tiktok.com/@dear_annako/video/7707512156236926222"
+    },
+    {
+      "title": "The SPF upgrade you didn't know you needed",
+      "category": "Beauty",
+      "brand": "MDP+",
+      "url": "https://www.tiktok.com/@dear_annako/video/7707359918369639693"
+    },
+    {
+      "title": "One thin CLIO cushion layer covered an eyeliner mark",
+      "category": "Beauty",
+      "brand": "CLIO",
+      "url": "https://www.tiktok.com/@dear_annako/video/7706989995470441741"
+    },
+    {
+      "title": "Eyes, blush and highlight from one CLIO mini palette",
+      "category": "Beauty",
+      "brand": "CLIO",
+      "url": "https://www.tiktok.com/@dear_annako/video/7706627812634922253"
+    },
+    {
       "title": "For straight lashes that won't hold a curl: CLIO Kill Lash Mascara",
       "category": "Beauty",
       "brand": "CLIO",
       "url": "https://www.tiktok.com/@dear_annako/video/7706224478908452110"
     },
     {
+      "title": "My skin feels better than ever: arbutin + TXA cream",
+      "category": "Beauty",
+      "brand": "TOSOWOONG",
+      "url": "https://www.tiktok.com/@dear_annako/video/7706040109501615374"
+    },
+    {
       "title": "Cold weather = barrier care season",
       "category": "Beauty",
-      "brand": "YesStyle",
+      "brand": "SOONDING x YesStyle",
       "url": "https://www.tiktok.com/@dear_annako/video/7704904851167120653"
     },
     {
@@ -131,7 +191,7 @@
     {
       "title": "SEOUL 1988 Retinal Eye Cream for dark circles",
       "category": "Beauty",
-      "brand": "YesStyle",
+      "brand": "KSECRET",
       "url": "https://www.tiktok.com/@dear_annako/video/7704529996986993933"
     },
     {
@@ -159,10 +219,22 @@
       "url": "https://www.tiktok.com/@dear_annako/video/7702637417450261774"
     },
     {
+      "title": "DIY lash extensions with AMZGIRL",
+      "category": "Beauty",
+      "brand": "AMZGIRL",
+      "url": "https://www.tiktok.com/@dear_annako/video/7702513857398394125"
+    },
+    {
       "title": "345 or 147? Which one is your skin",
       "category": "Beauty",
       "brand": "Dr.Althea",
       "url": "https://www.tiktok.com/@dear_annako/video/7701744576943377677"
+    },
+    {
+      "title": "10-minute glow shot with the MEDIHEAL rose face mask",
+      "category": "Beauty",
+      "brand": "MEDIHEAL x BAZZAAL",
+      "url": "https://www.tiktok.com/@dear_annako/video/7701551894161919245"
     },
     {
       "title": "Zinc ampoule for excess sebum + tiny bumps",
@@ -241,6 +313,12 @@
       "category": "Beauty",
       "brand": "ISNTREE",
       "url": "https://www.tiktok.com/@dear_annako/video/7691166676557237518"
+    },
+    {
+      "title": "My whole skincare routine is... yam?",
+      "category": "Beauty",
+      "brand": "ISNTREE",
+      "url": "https://www.tiktok.com/@dear_annako/video/7690843755758308621"
     },
     {
       "title": "Kyoto vlog",
