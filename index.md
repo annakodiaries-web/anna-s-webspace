@@ -28,7 +28,7 @@ Page: https://dearannako.com/
 Rates are a starting point. Bundles and gifted collabs are always open to chat.
 
 ## Brands worked with
-Derma Factory, Beauty of Joseon, ISNTREE, JOOCYEE, CaraSeoul, ILSO, AXIS-Y, Dr.Althea, Heveblue, CLIO, APLB, Seapuri, Baerry, KUMIHO, SOONDING x YesStyle, KSECRET, Goodal, MDP+, TOSOWOONG, AMZGIRL, MEDIHEAL x BAZZAAL
+Derma Factory, Beauty of Joseon, ISNTREE, JOOCYEE, CaraSeoul, ILSO, AXIS-Y, Dr.Althea, Heveblue, CLIO, APLB, Seapuri, Baerry, KUMIHO, SOONDING x YesStyle, KSECRET, Goodal, MDP+, TOSOWOONG, AMZGIRL, MEDIHEAL x BAZZAAL, P.CALM
 
 ## Videos
 - [Glow cushion for dry winter skin with CLIO Mesh Cushion](https://www.tiktok.com/@dear_annako/video/7704431318171487502) (CLIO)
@@ -39,6 +39,7 @@ Derma Factory, Beauty of Joseon, ISNTREE, JOOCYEE, CaraSeoul, ILSO, AXIS-Y, Dr.A
 - [You're not using your eye patches to their full potential](https://www.tiktok.com/@dear_annako/video/7707512156236926222) (Goodal)
 - [The SPF upgrade you didn't know you needed](https://www.tiktok.com/@dear_annako/video/7707359918369639693) (MDP+)
 - [One thin CLIO cushion layer covered an eyeliner mark](https://www.tiktok.com/@dear_annako/video/7706989995470441741) (CLIO)
+- [The viral bubble mask: P.CALM Holy Basil Bubble Deep Mask](https://www.tiktok.com/@dear_annako/video/7706686349293800718) (P.CALM)
 - [Eyes, blush and highlight from one CLIO mini palette](https://www.tiktok.com/@dear_annako/video/7706627812634922253) (CLIO)
 - [For straight lashes that won't hold a curl: CLIO Kill Lash Mascara](https://www.tiktok.com/@dear_annako/video/7706224478908452110) (CLIO)
 - [My skin feels better than ever: arbutin + TXA cream](https://www.tiktok.com/@dear_annako/video/7706040109501615374) (TOSOWOONG)
