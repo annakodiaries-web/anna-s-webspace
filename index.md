@@ -75,26 +75,3 @@ Derma Factory, Beauty of Joseon, ISNTREE, JOOCYEE, CaraSeoul, ILSO, AXIS-Y, Dr.A
 I make beauty and lifestyle content that looks like real life, not an ad. GRWMs, skincare routines and honest reviews, the kind of recommendation you'd get from a friend.
 
 I'm also a senior studying Neuroscience, so I like reading the ingredient list before I say anything about a product.
-
-## FAQ
-
-### What kind of content do you make?
-Beauty and lifestyle UGC: K-beauty skincare routines, makeup GRWMs, hair care and honest product reviews, plus travel vlogs. Everything is vertical video made for TikTok, Reels and Shorts.
-
-### How much does a UGC video cost?
-A single UGC video starts at $120 and a 3-video bundle is $300. A video posted on my TikTok @dear_annako is $150. These are starting points, so tell me what you need.
-
-### What's included in a UGC video?
-A 15 to 60 second video with the concept and script, the raw footage and one round of edits. The 3-video bundle comes with different hooks or angles and two rounds of edits.
-
-### Can we run your video as a paid ad?
-Yes. Paid ad usage is an add-on at +$50 per 30 days. An extra hook is +$25 and a 48-hour rush is +$30.
-
-### Do you do gifted PR collabs?
-Yes. Product-for-content collabs, bundles and long-term deals are all open to chat. Email me what you have in mind.
-
-### Which brands have you worked with?
-CLIO, Beauty of Joseon, Goodal, ISNTREE, AXIS-Y, Dr.Althea and more K-beauty, makeup and hair care brands. The full list is in the Brands section.
-
-### How do I book you?
-Email annako.diaries@gmail.com with your brand, the product and your timeline. You can see more of my work on TikTok @dear_annako, Instagram @annako.10 and YouTube @annako.archive.
