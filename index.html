@@ -1007,7 +1007,7 @@ body,#rates{background:var(--bg)}
 .btn,.btn:not(.alt){background:var(--rose);color:var(--ink)}
 .btn.alt{background:var(--paper)}
 .contact .btn{background:var(--rose);color:var(--ink)}
-.cur{background:var(--rose);color:var(--ink)}
+.cur{background:var(--rose);color:var(--ink);will-change:translate,scale}
 .me .sticker{background:var(--rose)}
 .tape,.tape.p,.tape.c{background-image:var(--tape-p)}
 #work{background-color:var(--deep);background-image:linear-gradient(rgba(246,186,214,.09) 1px,transparent 1px),linear-gradient(90deg,rgba(246,186,214,.09) 1px,transparent 1px)}
@@ -1810,12 +1810,12 @@ section > .wrap,.contact .wrap{position:relative;z-index:1}
   var badge=$('#cur'); /* not "cur": that name is the video tab filter */
   if(badge&&HOVER&&MOTION){
     var cx=0,cy=0,tx=0,ty=0,run=false;
-    function cstep(){cx+=(tx-cx)*.22;cy+=(ty-cy)*.22;badge.style.transform='translate3d('+cx.toFixed(1)+'px,'+cy.toFixed(1)+'px,0)';
+    function cstep(){cx+=(tx-cx)*.22;cy+=(ty-cy)*.22;badge.style.translate=cx.toFixed(1)+'px '+cy.toFixed(1)+'px'; /* "translate", not "transform": the pop uses "scale", and scale is applied outside transform, so it used to drag the badge in from the top-left corner */
       if(Math.abs(tx-cx)+Math.abs(ty-cy)>.3)requestAnimationFrame(cstep);else run=false}
     addEventListener('mousemove',function(e){
       tx=e.clientX;ty=e.clientY;
       var hit=!LBOPEN&&e.target.closest&&e.target.closest('.vid .th,.fc,.bx-card:not(:disabled),.pill');
-      if(hit&&!badge.classList.contains('on')){cx=tx;cy=ty}
+      if(hit&&!badge.classList.contains('on')){cx=tx;cy=ty;badge.style.translate=cx.toFixed(1)+'px '+cy.toFixed(1)+'px'} /* appear exactly under the pointer */
       badge.classList.toggle('on',!!hit);
       if(!run){run=true;requestAnimationFrame(cstep)}
     },{passive:true});
