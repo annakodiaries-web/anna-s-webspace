@@ -2,8 +2,22 @@
   "name": "Annako",
   "legal_name_on_site": "Anna Dang",
   "url": "https://dearannako.com/",
-  "positioning": "UGC creator",
+  "positioning": "Beauty and lifestyle UGC creator",
   "summary": "Hi, I'm Anna. I make GRWMs, routines and honest product videos on TikTok, and vlogs on YouTube.",
+  "niches": [
+    "K-beauty",
+    "Skincare routines",
+    "Makeup and GRWM",
+    "Hair care",
+    "Honest product reviews",
+    "Lifestyle",
+    "Travel vlogs"
+  ],
+  "formats": [
+    "UGC video for brands (9:16 vertical, 15 to 60 seconds)",
+    "Posted TikTok video on @dear_annako",
+    "YouTube vlog"
+  ],
   "open_to": [
     "Gifted PR",
     "Paid UGC"
@@ -337,6 +351,36 @@
       "category": "Travel",
       "brand": null,
       "url": "https://www.tiktok.com/@dear_annako/video/7678150848450465037"
+    }
+  ],
+  "faq": [
+    {
+      "question": "What kind of content do you make?",
+      "answer": "Beauty and lifestyle UGC: K-beauty skincare routines, makeup GRWMs, hair care and honest product reviews, plus travel vlogs. Everything is vertical video made for TikTok, Reels and Shorts."
+    },
+    {
+      "question": "How much does a UGC video cost?",
+      "answer": "A single UGC video starts at $120 and a 3-video bundle is $300. A video posted on my TikTok @dear_annako is $150. These are starting points, so tell me what you need."
+    },
+    {
+      "question": "What's included in a UGC video?",
+      "answer": "A 15 to 60 second video with the concept and script, the raw footage and one round of edits. The 3-video bundle comes with different hooks or angles and two rounds of edits."
+    },
+    {
+      "question": "Can we run your video as a paid ad?",
+      "answer": "Yes. Paid ad usage is an add-on at +$50 per 30 days. An extra hook is +$25 and a 48-hour rush is +$30."
+    },
+    {
+      "question": "Do you do gifted PR collabs?",
+      "answer": "Yes. Product-for-content collabs, bundles and long-term deals are all open to chat. Email me what you have in mind."
+    },
+    {
+      "question": "Which brands have you worked with?",
+      "answer": "CLIO, Beauty of Joseon, Goodal, ISNTREE, AXIS-Y, Dr.Althea and more K-beauty, makeup and hair care brands. The full list is in the Brands section."
+    },
+    {
+      "question": "How do I book you?",
+      "answer": "Email annako.diaries@gmail.com with your brand, the product and your timeline. You can see more of my work on TikTok @dear_annako, Instagram @annako.10 and YouTube @annako.archive."
     }
   ],
   "discount_code": null,
